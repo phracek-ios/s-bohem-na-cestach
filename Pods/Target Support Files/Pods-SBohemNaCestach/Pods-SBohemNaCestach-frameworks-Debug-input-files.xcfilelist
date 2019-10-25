@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-SBohemNaCestach/Pods-SBohemNaCestach-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework
+${BUILT_PRODUCTS_DIR}/DynamicColor/DynamicColor.framework
+${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
+${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework
