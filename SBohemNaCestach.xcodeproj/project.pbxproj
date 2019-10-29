@@ -22,6 +22,7 @@
 		0193F34623638F5A000DF0D8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0193F34523638F5A000DF0D8 /* Colors.swift */; };
 		019E4EE423583F7700BA0117 /* prayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 019E4EE223583F7700BA0117 /* prayers.json */; };
 		019E4EE523583F7700BA0117 /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = 019E4EE323583F7700BA0117 /* about.json */; };
+		01D24F1B236894DE0004FB0F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D24F1A236894DD0004FB0F /* R.generated.swift */; };
 		01E2489C2359D4C900A04B4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E2489B2359D4C900A04B4C /* Main.storyboard */; };
 		3356A073B995EB2939C5C4F1 /* Pods_SBohemNaCestach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9555814B7CFCED41AE0C7C /* Pods_SBohemNaCestach.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		0193F34523638F5A000DF0D8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		019E4EE223583F7700BA0117 /* prayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prayers.json; sourceTree = "<group>"; };
 		019E4EE323583F7700BA0117 /* about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
+		01D24F1A236894DD0004FB0F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		01E2489B2359D4C900A04B4C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7EE18E27E6D1995BC49116A6 /* Pods-SBohemNaCestach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBohemNaCestach.release.xcconfig"; path = "Target Support Files/Pods-SBohemNaCestach/Pods-SBohemNaCestach.release.xcconfig"; sourceTree = "<group>"; };
 		A774414DB69CD2999D434A66 /* Pods-SBohemNaCestach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBohemNaCestach.debug.xcconfig"; path = "Target Support Files/Pods-SBohemNaCestach/Pods-SBohemNaCestach.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		01440A5923574A0400452615 /* SBohemNaCestach */ = {
 			isa = PBXGroup;
 			children = (
+				01D24F1A236894DD0004FB0F /* R.generated.swift */,
 				016B2FEC2359CA30005698D9 /* Utilities */,
 				019E4EE123583F0600BA0117 /* Controllers */,
 				019E4EE023583EFB00BA0117 /* Services */,
@@ -232,6 +235,7 @@
 			buildConfigurationList = 01440A8123574A0600452615 /* Build configuration list for PBXNativeTarget "SBohemNaCestach" */;
 			buildPhases = (
 				B1A9F5494C0251910E00F62B /* [CP] Check Pods Manifest.lock */,
+				01D24F19236893AF0004FB0F /* ShellScript */,
 				01440A5323574A0400452615 /* Sources */,
 				01440A5423574A0400452615 /* Frameworks */,
 				01440A5523574A0400452615 /* Resources */,
@@ -356,6 +360,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01D24F19236893AF0004FB0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"",
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		88AA3627BC474B50B6FADB11 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +428,7 @@
 			files = (
 				016B2FE72359C902005698D9 /* PrayersStructure.swift in Sources */,
 				0193F34623638F5A000DF0D8 /* Colors.swift in Sources */,
+				01D24F1B236894DE0004FB0F /* R.generated.swift in Sources */,
 				016B2FE92359C93A005698D9 /* Prayer.swift in Sources */,
 				0193F34023632C58000DF0D8 /* PrayersTableViewController.swift in Sources */,
 				0193F34323632C71000DF0D8 /* PrayersTableViewCell.swift in Sources */,
