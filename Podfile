@@ -8,4 +8,5 @@ target 'SBohemNaCestach' do
   pod 'BonMot'
   pod 'R.swift'
   pod 'DynamicColor'
+  pod 'TinyConstraints'
 end

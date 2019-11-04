@@ -13,6 +13,7 @@ class PrayersTableViewController: UITableViewController {
     struct RowData {
         let type: Int
         let name: String
+        let text: String
     }
     let cellIdentifier = "PrayersTableViewCell"
     fileprivate var rowData = [RowData]()
@@ -20,7 +21,10 @@ class PrayersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "S Bohem na cestách"
+        let label = UILabel()
+        label.text = "S Bohem na cestách"
+        label.textAlignment = .left
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
         prayersStructure = PrayersDataService.shared.prayersStructure
         // Register cell
         tableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
@@ -59,12 +63,20 @@ class PrayersTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = rowData[indexPath.row]
+        
+        let view = R.storyboard.main.prayerViewController()!
+        view.prayerTitle = data.name
+        view.prayer = data.text
+        navigationController?.pushViewController(view, animated: true)
+    }
 
     private func loadPrayersMenu() {
         guard let prayersStructure = prayersStructure else { return }
         
         for prayer in prayersStructure.prayers {
-            rowData.append(RowData(type: prayer.id, name: prayer.name))
+            rowData.append(RowData(type: prayer.id, name: prayer.name, text: prayer.prayer))
         }
     }
 }

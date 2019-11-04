@@ -20,102 +20,112 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00C00B63096A1E0ABA79821ADA4C518B /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDC791AC2C8336F716B9404B3DB881 /* DynamicColor+Lab.swift */; };
-		03BFE6FD99F11F0D3BA3E67430F99624 /* BonMot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E754C5F9F22C79D1CE41E7A6A0FCB5 /* BonMot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00C00B63096A1E0ABA79821ADA4C518B /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558063707A9FB4C9C473EC1478D0ECFF /* DynamicColor+Lab.swift */; };
+		03BFE6FD99F11F0D3BA3E67430F99624 /* BonMot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA28CC30B2D6418E59EDA21E9C978A39 /* BonMot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0531D2ECFAED1869832D1960366BF51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72614F5BF0889B9E5461A91E7A363D38 /* Foundation.framework */; };
-		085099EB0FF0816D632361327673E896 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2CE02B07B1BDBCB4603D4C0AED3C6 /* Transform.swift */; };
-		085E1345CDD6E0200D5F926CF4E4C081 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01F356609CE137F9867F2E511A8A7A /* ReuseIdentifierProtocol.swift */; };
-		0A0218B7E7032F88E95372A33D0E59FA /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01917624D1867E5959B4230578ED373A /* StoryboardSegueIdentifierProtocol.swift */; };
-		0BAC834C3FB6DB0E45FF4C81D5040701 /* ContextualAlternates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC26C45323594FA62C609AB5D91FC89C /* ContextualAlternates.swift */; };
-		0D65D443327A322CBEE3066DAE010511 /* Ligatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D86DB18CD07E30D7C51ED4221F530 /* Ligatures.swift */; };
-		13461A2FE7D1733253DDAAE91F5133A7 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F3BFDB4BB079EEAD34993C881C6251 /* UICollectionView+ReuseIdentifierProtocol.swift */; };
-		13E1619BA0A4532695E71843A3060362 /* MutableCopying.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33FD9F6B5E6B948C4BA9043A0892BD /* MutableCopying.swift */; };
-		140367E0931A2DC78AB9F5549E7B51D2 /* NSAttributedString+Adaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF9DBE09CE87EF8BD3A474793DA6B6 /* NSAttributedString+Adaptive.swift */; };
-		146E17A399ECCE6FC1AE6DE3E59B05D1 /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C93E75E73869F87EF266408AE0D1B8A /* DynamicColor+HSB.swift */; };
-		14A4321C01A29101488A72BC9094D3C6 /* FontInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2546A9194AACB19C7C297BE581ACE3A /* FontInspector.swift */; };
+		085099EB0FF0816D632361327673E896 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2731E1B47E83DD87AF11DEA08E1E213 /* Transform.swift */; };
+		085E1345CDD6E0200D5F926CF4E4C081 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73C07EBA135712771794D6F3B69CDF7 /* ReuseIdentifierProtocol.swift */; };
+		0A0218B7E7032F88E95372A33D0E59FA /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C4AE21945C75CFF9813604E1EE415 /* StoryboardSegueIdentifierProtocol.swift */; };
+		0BAC834C3FB6DB0E45FF4C81D5040701 /* ContextualAlternates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF2C8BC315A5A25D2C520DD52123DD /* ContextualAlternates.swift */; };
+		0D24FEFEF4298905C4AE3E9FC22DBC38 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C2C50D1CA930E666B2E6AC4DD802FF /* TinyConstraints.swift */; };
+		0D65D443327A322CBEE3066DAE010511 /* Ligatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA163A5A38FF848CA43EAC379673B547 /* Ligatures.swift */; };
+		13461A2FE7D1733253DDAAE91F5133A7 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687DFAC468E8A6F6C97344FE5D8AF73 /* UICollectionView+ReuseIdentifierProtocol.swift */; };
+		13E1619BA0A4532695E71843A3060362 /* MutableCopying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4234E2D139AAA075C14E9CB7B518C0 /* MutableCopying.swift */; };
+		140367E0931A2DC78AB9F5549E7B51D2 /* NSAttributedString+Adaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7719BC3ADAD81C74C8DFD2841B09E0F /* NSAttributedString+Adaptive.swift */; };
+		146E17A399ECCE6FC1AE6DE3E59B05D1 /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360749D03C3FE66C22493B83EB2CF52 /* DynamicColor+HSB.swift */; };
+		14A4321C01A29101488A72BC9094D3C6 /* FontInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF239ED2F6EE4DB3A83DF7B5D4662249 /* FontInspector.swift */; };
 		1BDF5C626963183B4FDE2A7554BBCB28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854AC7160622FE9E87A65706C7399225 /* UIKit.framework */; };
-		1FC834FFB09CF44A9E12CA6A7FB50C48 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6010AA4C3FE7AC8E700789E57C3E7DA /* DynamicColor+HSL.swift */; };
-		2190C724BFC6EBDB60D55F429C30CA68 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE29999BEB045E9D08B7A7813A27531 /* UIImage+ImageResource.swift */; };
-		273C8549B316E7A19B65447D08392FCB /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D738D99A788E4834E362A707C12BA66E /* UINib+NibResource.swift */; };
-		28F6DC2DB83FA6A599F2731697A093F1 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035021615AF9B7F71693C01A1DB0610 /* UIViewController+NibResource.swift */; };
-		2B1882D305F355C882158F91A5978C81 /* TTTAttributedLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7256D49C5251ACD0B209B0CBA64B254B /* TTTAttributedLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B3259A3A80BF6E82B6E757802AEA165 /* FontFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80284306915E01C1E1826009587C603F /* FontFeatures.swift */; };
+		1FC834FFB09CF44A9E12CA6A7FB50C48 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D193C4527D48805859B438C3FF91E1 /* DynamicColor+HSL.swift */; };
+		2190C724BFC6EBDB60D55F429C30CA68 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B923F1E7DBDC44E2A73C1A7E53FBAA /* UIImage+ImageResource.swift */; };
+		273C8549B316E7A19B65447D08392FCB /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93AF2CB5FD6A7DB7AB462762563968 /* UINib+NibResource.swift */; };
+		28F6DC2DB83FA6A599F2731697A093F1 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB32501A6B46DA76CE6F0AF89FCB6A1 /* UIViewController+NibResource.swift */; };
+		2B1882D305F355C882158F91A5978C81 /* TTTAttributedLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1F18535CF6ACAE09B6FC3402EAFB26 /* TTTAttributedLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B3259A3A80BF6E82B6E757802AEA165 /* FontFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207C6C6B03D313111A0F52A681E60066 /* FontFeatures.swift */; };
 		2FDD92540DEBCC7BD2688DD1A8AFD8BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72614F5BF0889B9E5461A91E7A363D38 /* Foundation.framework */; };
+		31B66F039F061EA4391D1E06356DB787 /* Pods-SBohemNaCestach-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6328C4880EF4DE00CBF45AAD1EFE1DDC /* Pods-SBohemNaCestach-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		373D460E83EC2FC1F68EF65A20323F4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72614F5BF0889B9E5461A91E7A363D38 /* Foundation.framework */; };
-		3A46B4678762C6BEC70938FCB07A2DB0 /* Emphasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36F3E6A9DEA24DC0C5B74597EE0F3AD /* Emphasis.swift */; };
-		418F6F68F387AE0ACE8F5CB02B0F0A4C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1DE38FCAB6298C8582BB577A34D36 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
-		42E338F0D218C9EA4B6B410ABF9078A0 /* XMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86637E44B9CE33E03619A278CF7C32 /* XMLBuilder.swift */; };
-		42FDEBF2A2867FA5AB5C7697526065C3 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F80ABF59DAC4BCEFE926C6A98F2CDBA /* Platform.swift */; };
-		4C9C8DA4C69364315E6B2D037C40DBCB /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00034DC8BB44794193A7C2D8ECE91C9 /* DynamicColor.swift */; };
-		580356598DE937380F39207DE14EF240 /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB6BFF0160C88E10FA0ADEBCBF140A /* Compatibility.swift */; };
-		5B5D6303E6BD4A611F64D519A76B6849 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D48A0D0B11E101A5DB6F9A33D77F2F /* Data+FileResource.swift */; };
-		5D8B94FB4C9A35CF90171ED8E30791FB /* NSAttributedString+BonMot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B11B13B3AEE6F134A71AF03750AEBAD /* NSAttributedString+BonMot.swift */; };
-		5DE008096F3D670A3E86B44F0C9DCAAF /* AttributedStringTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B708B55283DBA5E252CC7CBD787DA4 /* AttributedStringTransformation.swift */; };
-		662CB941B10C4313EA83466290595697 /* Image+Tinting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCE6D4AF8DB57CC9522E72CDA881E81 /* Image+Tinting.swift */; };
-		680AEC5E7C049F327CD07A09642E14CC /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B29BCD6C6A9D992178A8CAE5D0B43B0 /* FileResource.swift */; };
-		71B273E749EEA83662770BC064B232E4 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860515E54A0900FA6AAFF3AB33A32DCC /* UITableView+ReuseIdentifierProtocol.swift */; };
-		734EF3ECC80EC57DF88F681BB893A371 /* TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4200548CD7EF1182582DE4AC21DB0A1 /* TTTAttributedLabel-dummy.m */; };
-		7668BE6FEC58A9B7832B8A43A1A3BAF5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9E829CC9DB760A9D6C121493F02E5 /* Array.swift */; };
-		787C2D5A903E84974D32122E3BC7271F /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2435D80BDA1467DF762B27834DA9F29 /* NibResource.swift */; };
-		78FEB707F4316AB0B6DAC1B0A54782CE /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F350435A07A9D940A6399863BA7FBB3 /* UIStoryboard+StoryboardResource.swift */; };
-		7C6728F02A59EF3FD0B8D5BA464A2E00 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DA55749B34188670323F491F97DFC6 /* Bundle+FileResource.swift */; };
-		7D7EBD23329B0DEF17CFC16CC610B187 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC99F0E72BB68557DC2769CDA0049D3 /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E0FC4807B0FC552B6F1F5E862372CB4 /* Pods-SBohemNaCestach-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E64BD0933FF7435D36E8F516AB30A0 /* Pods-SBohemNaCestach-dummy.m */; };
-		7EC693BAC523A4204C85D63179F523FE /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122231D04943C47AF6E0DC7FF4F3032 /* DynamicGradient.swift */; };
-		80EFA9D6C06A802E5F6DC52C46C575BE /* UIKit+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03DF0EE91D0232DC6D05227C518864E /* UIKit+Helpers.swift */; };
-		833F08FCFFEB5655316F591B65BE0745 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E101798D4FCD1F19ED9783A3E66CF /* R.swift.Library-dummy.m */; };
-		83BE2465205E0B3267A58F716C79DA87 /* AdaptiveStyleTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FC2FE8333E32E74F7F6012E54D51AB /* AdaptiveStyleTransformation.swift */; };
+		3A46B4678762C6BEC70938FCB07A2DB0 /* Emphasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA504409041DBE8E7AA9B3EE0C13834 /* Emphasis.swift */; };
+		3FEE4FA3D73AADA8C75EB979BF56AD18 /* Pods-SBohemNaCestach-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E64BD0933FF7435D36E8F516AB30A0 /* Pods-SBohemNaCestach-dummy.m */; };
+		418F6F68F387AE0ACE8F5CB02B0F0A4C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9302CA465B645E311EF5DE812FEE7B71 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
+		42E338F0D218C9EA4B6B410ABF9078A0 /* XMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4487A489BEB2730EF5CAF9442126BB7 /* XMLBuilder.swift */; };
+		42FDEBF2A2867FA5AB5C7697526065C3 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7174FCFD66A32DE717BEC9473B0B4EFA /* Platform.swift */; };
+		4C9C8DA4C69364315E6B2D037C40DBCB /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24961173E0A285EA21AEBB4B193514B9 /* DynamicColor.swift */; };
+		580356598DE937380F39207DE14EF240 /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41614FA4F17BF4DC4516D9BFB2241B3 /* Compatibility.swift */; };
+		5B5D6303E6BD4A611F64D519A76B6849 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A782FC15B8F5AC0923C2DD1E8C5AA1 /* Data+FileResource.swift */; };
+		5D8B94FB4C9A35CF90171ED8E30791FB /* NSAttributedString+BonMot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAAE86594634786E3CD48577C07E7C /* NSAttributedString+BonMot.swift */; };
+		5DE008096F3D670A3E86B44F0C9DCAAF /* AttributedStringTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CCDE40C2274BF061A3BFAE682A36 /* AttributedStringTransformation.swift */; };
+		602071FBBC9CE2E7E138D4B67223D4A9 /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 108AB5C8F2C93E932328ED25C328335C /* TinyConstraints-dummy.m */; };
+		662CB941B10C4313EA83466290595697 /* Image+Tinting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7100E4E49ABCB4B401D3AC35FDA993C /* Image+Tinting.swift */; };
+		680AEC5E7C049F327CD07A09642E14CC /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E716A0BA2A1ED8AF440B88A50F65B2FE /* FileResource.swift */; };
+		71B273E749EEA83662770BC064B232E4 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D264BA4D0A887BF60CC1C51F8D01C8 /* UITableView+ReuseIdentifierProtocol.swift */; };
+		734EF3ECC80EC57DF88F681BB893A371 /* TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF535ED967DFD120530D2C00F14DC2F8 /* TTTAttributedLabel-dummy.m */; };
+		7668BE6FEC58A9B7832B8A43A1A3BAF5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619F8CAF27BB1AB64208E0210B37874 /* Array.swift */; };
+		787C2D5A903E84974D32122E3BC7271F /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C724B4D84BBBD3968C05C2D53A461C5 /* NibResource.swift */; };
+		78FEB707F4316AB0B6DAC1B0A54782CE /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD671743E546347DCA4D0C0319DD8A4 /* UIStoryboard+StoryboardResource.swift */; };
+		7C6728F02A59EF3FD0B8D5BA464A2E00 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A42744E3BE08E95B2709F5C79ED9F /* Bundle+FileResource.swift */; };
+		7D7EBD23329B0DEF17CFC16CC610B187 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F72BB59C515DBBEE60C539F89A2A41 /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC693BAC523A4204C85D63179F523FE /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43531B21143C52F5A4DC4367958B34DF /* DynamicGradient.swift */; };
+		7F686C87FC60238F640B1973302B6D08 /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A558D04CA552F8E800C64D22068324F /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C64F8B50FDB2E25A939480C3FEC43A /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833E800A9890CCC28875C1894805158 /* TinyConstraints+superview.swift */; };
+		80EFA9D6C06A802E5F6DC52C46C575BE /* UIKit+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3132753198ABEE84EB02A43536DF4C7 /* UIKit+Helpers.swift */; };
+		833F08FCFFEB5655316F591B65BE0745 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DB7FD2D5EB10E4FD8A7E493552335E /* R.swift.Library-dummy.m */; };
+		83BE2465205E0B3267A58F716C79DA87 /* AdaptiveStyleTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2381110E118A93C27BFCC9416C64A392 /* AdaptiveStyleTransformation.swift */; };
 		83F6D2FD350618FE16C51C7DCF0DB2E5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2578EECB7882C646D329990617FA83 /* CoreText.framework */; };
-		87F0BC540A5E8D2A932E9CBD42CA8628 /* UIKit+AdaptableTextContainerSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11AA0CB5E4C96499B74C6304DF4DDDA /* UIKit+AdaptableTextContainerSupport.swift */; };
-		8C58EEF353181356477F0633458B0E6D /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AEBB1F307CDEA025D4B2EA9DD081D /* StringResource.swift */; };
-		8C8A0FF45122507799EB62E999023B1E /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D2746737507060BC01ECB69824692C7 /* TTTAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9136B8B4D43BE6F07C17B3236B07166A /* Pods-SBohemNaCestach-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6328C4880EF4DE00CBF45AAD1EFE1DDC /* Pods-SBohemNaCestach-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91737A0CD5D9BF86AC43822A74BAE0BF /* Composable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFFD400481930C450BE1A1EECA99C96 /* Composable.swift */; };
-		95ED5AF14487CEC9DD432FA9863C5B22 /* StylisticAlternates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144DCF02602B40CC6EB29FCF6BECD780 /* StylisticAlternates.swift */; };
-		99B6F74CFF1ED6469E8EE34375E2EC72 /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF159BBFBFFD90CB2D778E7D4E649B /* DynamicColor+RGBA.swift */; };
+		87F0BC540A5E8D2A932E9CBD42CA8628 /* UIKit+AdaptableTextContainerSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E53016B24E72278789592FEF5A6D4A /* UIKit+AdaptableTextContainerSupport.swift */; };
+		8C58EEF353181356477F0633458B0E6D /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD030CCCCC7DC22D5E32A262CDA68FC8 /* StringResource.swift */; };
+		8C8A0FF45122507799EB62E999023B1E /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FC1704B6E7102B4A561021687FD4E8 /* TTTAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91737A0CD5D9BF86AC43822A74BAE0BF /* Composable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05906EB2FC4363B5C74E69D4510342 /* Composable.swift */; };
+		95ED5AF14487CEC9DD432FA9863C5B22 /* StylisticAlternates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C13F4196EFF3B807226C9280EB1174 /* StylisticAlternates.swift */; };
+		979CFA5F4D7A8E4A37E02A44D2D3ABD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72614F5BF0889B9E5461A91E7A363D38 /* Foundation.framework */; };
+		99B6F74CFF1ED6469E8EE34375E2EC72 /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AEAB8DD71F5F46C7A9C928F5E3676 /* DynamicColor+RGBA.swift */; };
 		9ED3E3CA71DDF425ACDAF4088A7684E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4993027155FF33078344E9A543A126 /* CoreGraphics.framework */; };
-		9F2F94EFB17237C6156DA668CB5A151A /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3DE1B610FDF3FE47922773B3799E44 /* UIColor+ColorResource.swift */; };
-		A372DEE1A3AFC1D2F84B90AE14EED4BA /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAED802BB2E64FA3384F63E7A716A1 /* NibResource+UIKit.swift */; };
-		A41ECB2111B0AC9128D266D0C03FB292 /* Tracking+Adaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822642048F61AAD29ADF423360DEF66 /* Tracking+Adaptive.swift */; };
-		A557C11ACF7309CA840E12567E0684A6 /* Special.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0411DAF9F72965EC74EB46E1472DA6 /* Special.swift */; };
-		A61AC00065227CD0C45388BCD5B78BF3 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488ED835C0355470CD6E71909DD6D7D /* DynamicColor+XYZ.swift */; };
-		AA7BE361795059885DD384BD5B217588 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74B346366BAF1ED3E1D1B2D76D4128 /* HSL.swift */; };
-		AAC48090458927B1917D117DB0BE7A30 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB861153AA6C5607B890585A35B0F04 /* DynamicColor+Mixing.swift */; };
-		AC1CF2F15B2476B3735791BE5E49F1C6 /* DynamicColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC961365E0D3D5974066E9B1E0C8FE1F /* DynamicColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC5E0904D950F141AF8C72B32B60A6DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72614F5BF0889B9E5461A91E7A363D38 /* Foundation.framework */; };
-		AD1FD4609566517C6973D925E621A80B /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F33F4AFFEEAE5CF54E217B77E9C3E7 /* StoryboardResource.swift */; };
-		AF67373B66D530A05B3A2B66F783061E /* Tab+Adaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D3EBD7C1525AAA4629D5D7025422 /* Tab+Adaptive.swift */; };
-		B0B4606B06E5578B5F77E19774AF3EC0 /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F19B182D26335D95CF6335A30AB7B5 /* Tracking.swift */; };
-		B1E2FA42DF4AC1C67A92CA1E1C060A33 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A05BD7A550AFF5284EEAC37FF4E83F8 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
-		B2A5CE8CD682CB685687143831B6B240 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED2F02B154A28E38EC873E2C579049 /* Validatable.swift */; };
-		B41DF244ABE936F746A29A4B001E50D3 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC1D800A95667BAB1A37EBA7CB3A46 /* StoryboardResourceWithInitialController+UIKit.swift */; };
-		B5A4512E966A04C9477A257142745DD5 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F09F86FE8711A648391F67DEA45FFE /* ImageResource.swift */; };
-		BC943CA2CF08DB3B4D23C7273596624C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BB845E72CF34581EC0F38C0E432E8 /* Identifier.swift */; };
-		BE0920664F7E6EE1B0972B77263B9E26 /* BonMot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6530721D07440AD39EAA9139D569EC /* BonMot-dummy.m */; };
-		C4CD35C88A995D3A58E04FDD04E89CD8 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D784AA3558CFC618D09DAFFC14B506 /* Tab.swift */; };
-		C9C10E6E222942011C0205766E077762 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B182CDA638DC734995D5A9E736AA7C02 /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CF2B83E156DFBEE2FBF3CF2E4702CF00 /* StyleableUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F50C9A4D094112EB56D6A3B46922FE /* StyleableUIElement.swift */; };
-		D00F8A962282C7EA226E12E22E269BCE /* DynamicColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E15A782B7D84603AD0C320BC6C6CB034 /* DynamicColor-dummy.m */; };
+		9F2F94EFB17237C6156DA668CB5A151A /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479D47089A4E8206136C3578A4F0384 /* UIColor+ColorResource.swift */; };
+		A372DEE1A3AFC1D2F84B90AE14EED4BA /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350A1BC97FF8C030823783DAB2018F1 /* NibResource+UIKit.swift */; };
+		A41ECB2111B0AC9128D266D0C03FB292 /* Tracking+Adaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21274D18610E6E0637875546FB76C96 /* Tracking+Adaptive.swift */; };
+		A557C11ACF7309CA840E12567E0684A6 /* Special.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CCE141EC8DA4035404985DA1BB1D7 /* Special.swift */; };
+		A61AC00065227CD0C45388BCD5B78BF3 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFDABD5CEFFA8B52F905AD0B7BBA10 /* DynamicColor+XYZ.swift */; };
+		AA7BE361795059885DD384BD5B217588 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264CC3B36D041B24B87011D6BD16DC8 /* HSL.swift */; };
+		AAC48090458927B1917D117DB0BE7A30 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316F4036D84F75E7BE49D24C728C007 /* DynamicColor+Mixing.swift */; };
+		AC1CF2F15B2476B3735791BE5E49F1C6 /* DynamicColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0AD8E39F8244490E26F39B6783D226 /* DynamicColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD1FD4609566517C6973D925E621A80B /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D12F8D08BDC70B7F0481DBEE5ADAFDF /* StoryboardResource.swift */; };
+		AF67373B66D530A05B3A2B66F783061E /* Tab+Adaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB62390D3CAE282E857BF104B68A0DC /* Tab+Adaptive.swift */; };
+		B0B4606B06E5578B5F77E19774AF3EC0 /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59263FF6708ABD3E0F8D7C50C19EBF93 /* Tracking.swift */; };
+		B1E2FA42DF4AC1C67A92CA1E1C060A33 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB46E4ABFBE98AAAB341020F2C3E12 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
+		B2A5CE8CD682CB685687143831B6B240 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28293BB668D47F2FEC52C430A3C5A8A1 /* Validatable.swift */; };
+		B41DF244ABE936F746A29A4B001E50D3 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A442E3C98E93651AD090BAF320F98 /* StoryboardResourceWithInitialController+UIKit.swift */; };
+		B5A4512E966A04C9477A257142745DD5 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACBF6B12134185768D91FDA336548AD /* ImageResource.swift */; };
+		BC943CA2CF08DB3B4D23C7273596624C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EC145A38DC3F72037DC0201A8ABF7 /* Identifier.swift */; };
+		BE0920664F7E6EE1B0972B77263B9E26 /* BonMot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1502BBE28B59F8DE09768BDFBDD955EE /* BonMot-dummy.m */; };
+		C4CD35C88A995D3A58E04FDD04E89CD8 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43309924857AE21140893BA61BC2FE /* Tab.swift */; };
+		C9C10E6E222942011C0205766E077762 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AAC8B8C94B3DD20B0F3E9ABAE0FA92 /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CBF8630B51B556B1D93FF064C433A66E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC1B0973CE306D2F143B2F34EF12D4B /* Constraints.swift */; };
+		CCAEE4BF0C676D5173590E04D29BAE92 /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CB94021E6672BA78A1A1FBD160650F /* TinyEdgeInsets.swift */; };
+		CF2B83E156DFBEE2FBF3CF2E4702CF00 /* StyleableUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6FBCA8C51A5156E8F55F3014F8359 /* StyleableUIElement.swift */; };
+		CFF984D0BDE08492C60CC2D9C75E2C96 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07583BC1778834B73B9EAA36C2F33B1 /* Abstraction.swift */; };
+		D00F8A962282C7EA226E12E22E269BCE /* DynamicColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5926485DEDCF1A93F9793E05DDCEF173 /* DynamicColor-dummy.m */; };
 		D68F0B4A2D65D1C3FAFBBB11C3D51FE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72614F5BF0889B9E5461A91E7A363D38 /* Foundation.framework */; };
-		DBD84B279ED406A0EDB7134E3B798C9E /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178A531FC8139D368FC281A19BCA2FF0 /* DynamicColorSpace.swift */; };
-		DDCCDA0CC4F6901364FFA98C9D878CF0 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4BC509771AA0C4D56FF995665DA1E /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
-		DF41CB6A477F6F68445668EB9C2719A8 /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B223153A308E8D68AB6CD9BBF76A6 /* DynamicColor+Deriving.swift */; };
-		E08A31DA32C66E8F9FB6C5180228DDC6 /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D194E68F0F6CB6B9E5035CCB0A0353B /* ContrastDisplayContext.swift */; };
-		E2E23A0BA2E6DECE6B80040989C81C9D /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCBE8F492AD0E4245CAE1B8EBE672B /* FontResource.swift */; };
-		E6CC4BE98CD3A7CF9F172A67B7D3C852 /* AccessibilityHeadingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE72178D0D5341E6B3FD4DB998DC7E4 /* AccessibilityHeadingLevel.swift */; };
-		E72ACC0E99AC174048980172900D4BAA /* NamedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A260E89BFA7F50C8DAF2D88712FD8AD /* NamedStyles.swift */; };
-		E833488627BBDFF1AD8E08DA998F8911 /* AdaptableTextContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19743395E5A78B80AB250E0CE5E004 /* AdaptableTextContainer.swift */; };
-		EA4A942BC84D6C801BF1C45D6D787074 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09565A62834D99C9BE6773F649923D38 /* Utils.swift */; };
-		EDB09FEF14F948C58491AD459C55829C /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDBDE66F009123428DDE8EE6B0A8B2 /* UIFont+FontResource.swift */; };
-		EDCFC5B0AD3CA4514BA167968CC3FCE1 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7477C53E9FFE2DC94381BBD63DE6C39 /* ColorResource.swift */; };
-		EE9C49ECB0513F8E45259AE810731A42 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90F3024E9D519120836A29FB92F45B /* StoryboardViewControllerResource.swift */; };
-		F02555A006C30C569563156CEB69C3C3 /* AdaptiveStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F66AFCD7C577F1CEC551251426B317 /* AdaptiveStyle.swift */; };
-		F1F53B3CDE6B276E9BBB922E3A05219F /* TextAlignmentConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51A0D0D16A2DA94D6B99518A1EEE5F /* TextAlignmentConstraint.swift */; };
-		F50D261096C7193920D62C751374B4FD /* StringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591857CF9CCC2AD640CD3069CF696D5 /* StringStyle.swift */; };
-		F535CF9062DF9F16043A27C7B8ACDB06 /* StringStyle+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5370B3D6D7C9EE27212193EA08A34 /* StringStyle+Part.swift */; };
+		DBD84B279ED406A0EDB7134E3B798C9E /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99EBF03127AFED5540A81B638914D56 /* DynamicColorSpace.swift */; };
+		DDCCDA0CC4F6901364FFA98C9D878CF0 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829BD53B97970126F4B9001C5C6E981 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
+		DF41CB6A477F6F68445668EB9C2719A8 /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18646877E4E1DD0881BF8BEAF52D1368 /* DynamicColor+Deriving.swift */; };
+		DF7A6BC0D371FF7ECA74781F562C475F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35447C2C2E69D8F7A7532B8CA526827D /* Stack.swift */; };
+		E08A31DA32C66E8F9FB6C5180228DDC6 /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF8A58C65306285DDD7F443A6F915E /* ContrastDisplayContext.swift */; };
+		E2E23A0BA2E6DECE6B80040989C81C9D /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D6F730C0926F7FFCAFE0953ACFE82A /* FontResource.swift */; };
+		E6CC4BE98CD3A7CF9F172A67B7D3C852 /* AccessibilityHeadingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33599B90FA9C4401A3261A877DD41D7 /* AccessibilityHeadingLevel.swift */; };
+		E72ACC0E99AC174048980172900D4BAA /* NamedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE823C2BBF6FE908791356434B3782EC /* NamedStyles.swift */; };
+		E833488627BBDFF1AD8E08DA998F8911 /* AdaptableTextContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558BDEDAE3A125290AAC028BCF3D548 /* AdaptableTextContainer.swift */; };
+		EA4A942BC84D6C801BF1C45D6D787074 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503126E88A60D8174DA8033826D1D1CD /* Utils.swift */; };
+		EAB56C7B2652650A976538B12FBAC59D /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AF10AF4F7BE0BB7874883C048D49 /* Constrainable.swift */; };
+		EDB09FEF14F948C58491AD459C55829C /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF676C08B40DECB2FA07625D17DAA /* UIFont+FontResource.swift */; };
+		EDCFC5B0AD3CA4514BA167968CC3FCE1 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6787E2231BC7CECC2E1A2EA12B03D164 /* ColorResource.swift */; };
+		EE9C49ECB0513F8E45259AE810731A42 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116A9B05FF1A793817EBD0B9729321A /* StoryboardViewControllerResource.swift */; };
+		F02555A006C30C569563156CEB69C3C3 /* AdaptiveStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6CEFF86F03661530002E85EC0815C /* AdaptiveStyle.swift */; };
+		F1F53B3CDE6B276E9BBB922E3A05219F /* TextAlignmentConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384F09A5131B49ED233DAACF1F44A7C /* TextAlignmentConstraint.swift */; };
+		F50D261096C7193920D62C751374B4FD /* StringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C2925B92C6F2EF9CF7194780DEF118 /* StringStyle.swift */; };
+		F535CF9062DF9F16043A27C7B8ACDB06 /* StringStyle+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E3DAD71BB1A0A6B7CD17A0A0D9F49B /* StringStyle+Part.swift */; };
+		F89DDE2BE4B4C16826AC30BBC21ACC57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72614F5BF0889B9E5461A91E7A363D38 /* Foundation.framework */; };
 		F9D683EC3C28807A84B7D15EE705F954 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854AC7160622FE9E87A65706C7399225 /* UIKit.framework */; };
 		FBFF7CEFC57B9B3D76844B06FE60D063 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0999B3B8EB2A4BE1832140AFE9069AF3 /* QuartzCore.framework */; };
-		FCB756907323A7A895F54AB9892E0F2E /* EmbeddedTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7170271A1923C7B4ECBE81BE45DAE32 /* EmbeddedTransformation.swift */; };
+		FCB756907323A7A895F54AB9892E0F2E /* EmbeddedTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE5C51580F731340262863295428F5 /* EmbeddedTransformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,168 +136,197 @@
 			remoteGlobalIDString = B12748D8506CB48696BD90F2CA4F4E38;
 			remoteInfo = R.swift.Library;
 		};
-		385F57C76BC31C28FB062AE697FAACB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 02365F2640C87181DBDCB1D175FA6C00;
-			remoteInfo = DynamicColor;
-		};
-		49B33C5F043DC07A05AC15A78F14F7AD /* PBXContainerItemProxy */ = {
+		270CDA1D74AED9C90CD6F468C75CBAD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4C48FB7D363771FBD71AB44C090CB586;
 			remoteInfo = BonMot;
 		};
-		560EEAC970BE3EC977A1B140A9379447 /* PBXContainerItemProxy */ = {
+		3AB1B4133C352F13C1C2BD6BA02C84EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E077C5049157367A707E75CFDAB49F84;
 			remoteInfo = TTTAttributedLabel;
 		};
-		CEC7AEB3C72CD77B5996B5E6A852F140 /* PBXContainerItemProxy */ = {
+		3FDCC9EE5B6AA036A2F2189898675A67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
-			remoteInfo = R.swift;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
 		};
-		F08898E738A0C03EEE0803D1EF25EDAF /* PBXContainerItemProxy */ = {
+		5FFE51EDE00D4547392F3126FD92AB83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B12748D8506CB48696BD90F2CA4F4E38;
 			remoteInfo = R.swift.Library;
 		};
+		669517565273E79AE31CB3BD2CF37383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
+			remoteInfo = R.swift;
+		};
+		943D5D2E4952DE9F6C0086B351C685C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02365F2640C87181DBDCB1D175FA6C00;
+			remoteInfo = DynamicColor;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01917624D1867E5959B4230578ED373A /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
-		04ED2F02B154A28E38EC873E2C579049 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
-		084E5D5EC76B2F193E56DB24BB32E428 /* DynamicColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DynamicColor.modulemap; sourceTree = "<group>"; };
-		08E754C5F9F22C79D1CE41E7A6A0FCB5 /* BonMot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BonMot-umbrella.h"; sourceTree = "<group>"; };
-		09565A62834D99C9BE6773F649923D38 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		0384F09A5131B49ED233DAACF1F44A7C /* TextAlignmentConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAlignmentConstraint.swift; path = Sources/UIKit/TextAlignmentConstraint.swift; sourceTree = "<group>"; };
 		0999B3B8EB2A4BE1832140AFE9069AF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		1122231D04943C47AF6E0DC7FF4F3032 /* DynamicGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicGradient.swift; path = Sources/DynamicGradient.swift; sourceTree = "<group>"; };
-		12EA4F74617A9FD3C030AEC47C330AEE /* BonMot-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BonMot-Info.plist"; sourceTree = "<group>"; };
-		144DCF02602B40CC6EB29FCF6BECD780 /* StylisticAlternates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StylisticAlternates.swift; path = Sources/StylisticAlternates.swift; sourceTree = "<group>"; };
-		16F33F4AFFEEAE5CF54E217B77E9C3E7 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
-		178A531FC8139D368FC281A19BCA2FF0 /* DynamicColorSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColorSpace.swift; path = Sources/DynamicColorSpace.swift; sourceTree = "<group>"; };
-		17F19B182D26335D95CF6335A30AB7B5 /* Tracking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tracking.swift; path = Sources/Tracking.swift; sourceTree = "<group>"; };
-		1822642048F61AAD29ADF423360DEF66 /* Tracking+Adaptive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Tracking+Adaptive.swift"; path = "Sources/UIKit/Tracking+Adaptive.swift"; sourceTree = "<group>"; };
-		1B29BCD6C6A9D992178A8CAE5D0B43B0 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
-		1E01F356609CE137F9867F2E511A8A7A /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
-		209B223153A308E8D68AB6CD9BBF76A6 /* DynamicColor+Deriving.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Deriving.swift"; path = "Sources/DynamicColor+Deriving.swift"; sourceTree = "<group>"; };
+		0D12F8D08BDC70B7F0481DBEE5ADAFDF /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
+		0E8601521E6B9A9FB7BC97A60F667B09 /* TTTAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTTAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		108AB5C8F2C93E932328ED25C328335C /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
+		1502BBE28B59F8DE09768BDFBDD955EE /* BonMot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BonMot-dummy.m"; sourceTree = "<group>"; };
+		16ED93C7ACAEF537163A30F57121A08A /* BonMot-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BonMot-Info.plist"; sourceTree = "<group>"; };
+		18646877E4E1DD0881BF8BEAF52D1368 /* DynamicColor+Deriving.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Deriving.swift"; path = "Sources/DynamicColor+Deriving.swift"; sourceTree = "<group>"; };
+		1B1F18535CF6ACAE09B6FC3402EAFB26 /* TTTAttributedLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-umbrella.h"; sourceTree = "<group>"; };
+		1B3C4AE21945C75CFF9813604E1EE415 /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
+		1E4234E2D139AAA075C14E9CB7B518C0 /* MutableCopying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableCopying.swift; path = Sources/MutableCopying.swift; sourceTree = "<group>"; };
+		1EB32501A6B46DA76CE6F0AF89FCB6A1 /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
+		207C6C6B03D313111A0F52A681E60066 /* FontFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontFeatures.swift; path = Sources/FontFeatures.swift; sourceTree = "<group>"; };
+		2116A9B05FF1A793817EBD0B9729321A /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+		2350A1BC97FF8C030823783DAB2018F1 /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
+		2381110E118A93C27BFCC9416C64A392 /* AdaptiveStyleTransformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdaptiveStyleTransformation.swift; path = Sources/UIKit/AdaptiveStyleTransformation.swift; sourceTree = "<group>"; };
+		248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24906358D4472592AAB45254D975D5E2 /* TTTAttributedLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTTAttributedLabel.framework; path = TTTAttributedLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EFE36194071912E3E0BACDE95F5368F /* BonMot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BonMot.xcconfig; sourceTree = "<group>"; };
-		32CF9DBE09CE87EF8BD3A474793DA6B6 /* NSAttributedString+Adaptive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+Adaptive.swift"; path = "Sources/UIKit/NSAttributedString+Adaptive.swift"; sourceTree = "<group>"; };
+		24961173E0A285EA21AEBB4B193514B9 /* DynamicColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColor.swift; path = Sources/DynamicColor.swift; sourceTree = "<group>"; };
+		28293BB668D47F2FEC52C430A3C5A8A1 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
+		31E3DAD71BB1A0A6B7CD17A0A0D9F49B /* StringStyle+Part.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringStyle+Part.swift"; path = "Sources/StringStyle+Part.swift"; sourceTree = "<group>"; };
 		33A4868B2CB72C28A43C9793FA150418 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BonMot.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E64BD0933FF7435D36E8F516AB30A0 /* Pods-SBohemNaCestach-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SBohemNaCestach-dummy.m"; sourceTree = "<group>"; };
-		35426FEFDB5744CB0233B5EBEF41F922 /* DynamicColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicColor.xcconfig; sourceTree = "<group>"; };
-		3591857CF9CCC2AD640CD3069CF696D5 /* StringStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringStyle.swift; path = Sources/StringStyle.swift; sourceTree = "<group>"; };
-		36DA55749B34188670323F491F97DFC6 /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
-		3C3DE1B610FDF3FE47922773B3799E44 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
-		3D6530721D07440AD39EAA9139D569EC /* BonMot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BonMot-dummy.m"; sourceTree = "<group>"; };
+		35447C2C2E69D8F7A7532B8CA526827D /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
 		3FA98E764B81942D6168CD9A8F0EAB63 /* Pods-SBohemNaCestach-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SBohemNaCestach-acknowledgements.plist"; sourceTree = "<group>"; };
-		449AA2C68774EA308EA64FCE46B54F71 /* R.swift.Library-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "R.swift.Library-Info.plist"; sourceTree = "<group>"; };
+		40A782FC15B8F5AC0923C2DD1E8C5AA1 /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
+		40D6F730C0926F7FFCAFE0953ACFE82A /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		40FB0214E4A0B35A6F60F3EA897E7BB5 /* R.swift.Library-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "R.swift.Library-Info.plist"; sourceTree = "<group>"; };
+		43531B21143C52F5A4DC4367958B34DF /* DynamicGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicGradient.swift; path = Sources/DynamicGradient.swift; sourceTree = "<group>"; };
+		43D6FBCA8C51A5156E8F55F3014F8359 /* StyleableUIElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StyleableUIElement.swift; path = Sources/UIKit/StyleableUIElement.swift; sourceTree = "<group>"; };
+		44E53016B24E72278789592FEF5A6D4A /* UIKit+AdaptableTextContainerSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+AdaptableTextContainerSupport.swift"; path = "Sources/UIKit/UIKit+AdaptableTextContainerSupport.swift"; sourceTree = "<group>"; };
 		4603757534A157D07CF86D75DA0641F9 /* DynamicColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicColor.framework; path = DynamicColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48DB6BFF0160C88E10FA0ADEBCBF140A /* Compatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatibility.swift; path = Sources/Compatibility.swift; sourceTree = "<group>"; };
-		4A05BD7A550AFF5284EEAC37FF4E83F8 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
-		4A260E89BFA7F50C8DAF2D88712FD8AD /* NamedStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedStyles.swift; path = Sources/NamedStyles.swift; sourceTree = "<group>"; };
-		4CE29999BEB045E9D08B7A7813A27531 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
-		4D2BB845E72CF34581EC0F38C0E432E8 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
-		4EB861153AA6C5607B890585A35B0F04 /* DynamicColor+Mixing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Mixing.swift"; path = "Sources/DynamicColor+Mixing.swift"; sourceTree = "<group>"; };
-		4F78D3EBD7C1525AAA4629D5D7025422 /* Tab+Adaptive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Tab+Adaptive.swift"; path = "Sources/UIKit/Tab+Adaptive.swift"; sourceTree = "<group>"; };
-		51E5370B3D6D7C9EE27212193EA08A34 /* StringStyle+Part.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringStyle+Part.swift"; path = "Sources/StringStyle+Part.swift"; sourceTree = "<group>"; };
-		5B11B13B3AEE6F134A71AF03750AEBAD /* NSAttributedString+BonMot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+BonMot.swift"; path = "Sources/NSAttributedString+BonMot.swift"; sourceTree = "<group>"; };
-		5CEC1D800A95667BAB1A37EBA7CB3A46 /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		49DB7FD2D5EB10E4FD8A7E493552335E /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
+		4C40ABA8CEF1AF21E3E9B114A58FC563 /* BonMot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BonMot-prefix.pch"; sourceTree = "<group>"; };
+		4EF79DB6FF3BFFF90573D9463631BA77 /* DynamicColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-prefix.pch"; sourceTree = "<group>"; };
+		503126E88A60D8174DA8033826D1D1CD /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		512AEAB8DD71F5F46C7A9C928F5E3676 /* DynamicColor+RGBA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+RGBA.swift"; path = "Sources/DynamicColor+RGBA.swift"; sourceTree = "<group>"; };
+		54D264BA4D0A887BF60CC1C51F8D01C8 /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		558063707A9FB4C9C473EC1478D0ECFF /* DynamicColor+Lab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Lab.swift"; path = "Sources/DynamicColor+Lab.swift"; sourceTree = "<group>"; };
+		5780E18B71BCA2DD14A8893105290FBA /* DynamicColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicColor.xcconfig; sourceTree = "<group>"; };
+		59263FF6708ABD3E0F8D7C50C19EBF93 /* Tracking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tracking.swift; path = Sources/Tracking.swift; sourceTree = "<group>"; };
+		5926485DEDCF1A93F9793E05DDCEF173 /* DynamicColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicColor-dummy.m"; sourceTree = "<group>"; };
+		5A558D04CA552F8E800C64D22068324F /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		5D1625E4B031CE606B386EF69A3C23F6 /* DynamicColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DynamicColor.modulemap; sourceTree = "<group>"; };
+		61C13F4196EFF3B807226C9280EB1174 /* StylisticAlternates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StylisticAlternates.swift; path = Sources/StylisticAlternates.swift; sourceTree = "<group>"; };
+		62A0870730363D8B590232C6B86BEEA4 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
 		6328C4880EF4DE00CBF45AAD1EFE1DDC /* Pods-SBohemNaCestach-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SBohemNaCestach-umbrella.h"; sourceTree = "<group>"; };
+		632F189C4AD58F21BC7B45E035208373 /* BonMot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BonMot.modulemap; sourceTree = "<group>"; };
+		6360749D03C3FE66C22493B83EB2CF52 /* DynamicColor+HSB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSB.swift"; path = "Sources/DynamicColor+HSB.swift"; sourceTree = "<group>"; };
+		6558BDEDAE3A125290AAC028BCF3D548 /* AdaptableTextContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdaptableTextContainer.swift; path = Sources/UIKit/AdaptableTextContainer.swift; sourceTree = "<group>"; };
+		6787E2231BC7CECC2E1A2EA12B03D164 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
 		6887BE6D7B846FA0369CE0C0B4255ECA /* Pods-SBohemNaCestach.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SBohemNaCestach.modulemap"; sourceTree = "<group>"; };
-		6D194E68F0F6CB6B9E5035CCB0A0353B /* ContrastDisplayContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContrastDisplayContext.swift; path = Sources/ContrastDisplayContext.swift; sourceTree = "<group>"; };
-		6D1D86DB18CD07E30D7C51ED4221F530 /* Ligatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ligatures.swift; path = Sources/Ligatures.swift; sourceTree = "<group>"; };
-		70FC2FE8333E32E74F7F6012E54D51AB /* AdaptiveStyleTransformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdaptiveStyleTransformation.swift; path = Sources/UIKit/AdaptiveStyleTransformation.swift; sourceTree = "<group>"; };
-		7256D49C5251ACD0B209B0CBA64B254B /* TTTAttributedLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-umbrella.h"; sourceTree = "<group>"; };
+		6ABDEB3E217A60D4368A45F14D9C85A0 /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		6B4EC145A38DC3F72037DC0201A8ABF7 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		6C724B4D84BBBD3968C05C2D53A461C5 /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		7174FCFD66A32DE717BEC9473B0B4EFA /* Platform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.swift; path = Sources/Platform.swift; sourceTree = "<group>"; };
 		72614F5BF0889B9E5461A91E7A363D38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		72F66AFCD7C577F1CEC551251426B317 /* AdaptiveStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdaptiveStyle.swift; path = Sources/UIKit/AdaptiveStyle.swift; sourceTree = "<group>"; };
-		73BCBE8F492AD0E4245CAE1B8EBE672B /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
-		74D784AA3558CFC618D09DAFFC14B506 /* Tab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tab.swift; path = Sources/Tab.swift; sourceTree = "<group>"; };
-		75B708B55283DBA5E252CC7CBD787DA4 /* AttributedStringTransformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributedStringTransformation.swift; path = Sources/UIKit/AttributedStringTransformation.swift; sourceTree = "<group>"; };
-		779E101798D4FCD1F19ED9783A3E66CF /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
-		77D48A0D0B11E101A5DB6F9A33D77F2F /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
-		7AA2CE02B07B1BDBCB4603D4C0AED3C6 /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = Sources/Transform.swift; sourceTree = "<group>"; };
-		7FCE6D4AF8DB57CC9522E72CDA881E81 /* Image+Tinting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Image+Tinting.swift"; path = "Sources/Image+Tinting.swift"; sourceTree = "<group>"; };
-		80284306915E01C1E1826009587C603F /* FontFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontFeatures.swift; path = Sources/FontFeatures.swift; sourceTree = "<group>"; };
-		8035021615AF9B7F71693C01A1DB0610 /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
+		72B923F1E7DBDC44E2A73C1A7E53FBAA /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
+		75AA8A679F10C53391666BBE3F1C8898 /* TinyConstraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.xcconfig; sourceTree = "<group>"; };
+		76AAC8B8C94B3DD20B0F3E9ABAE0FA92 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
+		76CB94021E6672BA78A1A1FBD160650F /* TinyEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyEdgeInsets.swift; path = TinyConstraints/Classes/TinyEdgeInsets.swift; sourceTree = "<group>"; };
+		7B1A442E3C98E93651AD090BAF320F98 /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
 		854AC7160622FE9E87A65706C7399225 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		860515E54A0900FA6AAFF3AB33A32DCC /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		8B0411DAF9F72965EC74EB46E1472DA6 /* Special.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Special.swift; path = Sources/Special.swift; sourceTree = "<group>"; };
-		8D19743395E5A78B80AB250E0CE5E004 /* AdaptableTextContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdaptableTextContainer.swift; path = Sources/UIKit/AdaptableTextContainer.swift; sourceTree = "<group>"; };
-		8DB11624C3BE8B47C2718EEC5D03AA29 /* TTTAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTTAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		8ACBF6B12134185768D91FDA336548AD /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
+		8B7386A4C4E0C9CEA6DD171C9356AC3C /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
+		8D93AF2CB5FD6A7DB7AB462762563968 /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
 		8EA29405D10C2DE35D365738F2CA19D4 /* Pods-SBohemNaCestach-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SBohemNaCestach-frameworks.sh"; sourceTree = "<group>"; };
-		8EEC4099D9BBDC6DF6E3F3DCE5EE7FCF /* TTTAttributedLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTTAttributedLabel-Info.plist"; sourceTree = "<group>"; };
-		8F350435A07A9D940A6399863BA7FBB3 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
-		8F80ABF59DAC4BCEFE926C6A98F2CDBA /* Platform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.swift; path = Sources/Platform.swift; sourceTree = "<group>"; };
-		9444D6F379182DF014C5A83E47168341 /* BonMot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BonMot.modulemap; sourceTree = "<group>"; };
-		97E48458A146D747C3BA391C77B24033 /* DynamicColor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DynamicColor-Info.plist"; sourceTree = "<group>"; };
-		996E3D85877B16438097F5C19FBA5AF4 /* TTTAttributedLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTTAttributedLabel.modulemap; sourceTree = "<group>"; };
+		92D4CCDE40C2274BF061A3BFAE682A36 /* AttributedStringTransformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributedStringTransformation.swift; path = Sources/UIKit/AttributedStringTransformation.swift; sourceTree = "<group>"; };
+		9302CA465B645E311EF5DE812FEE7B71 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
+		9316F4036D84F75E7BE49D24C728C007 /* DynamicColor+Mixing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Mixing.swift"; path = "Sources/DynamicColor+Mixing.swift"; sourceTree = "<group>"; };
+		93D193C4527D48805859B438C3FF91E1 /* DynamicColor+HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSL.swift"; path = "Sources/DynamicColor+HSL.swift"; sourceTree = "<group>"; };
+		97CFDABD5CEFFA8B52F905AD0B7BBA10 /* DynamicColor+XYZ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+XYZ.swift"; path = "Sources/DynamicColor+XYZ.swift"; sourceTree = "<group>"; };
 		9C4993027155FF33078344E9A543A126 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		9C93E75E73869F87EF266408AE0D1B8A /* DynamicColor+HSB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSB.swift"; path = "Sources/DynamicColor+HSB.swift"; sourceTree = "<group>"; };
-		9D2746737507060BC01ECB69824692C7 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E76C2D9BCDE13DBA34E4111CB27E06E /* Pods-SBohemNaCestach-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SBohemNaCestach-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A11AA0CB5E4C96499B74C6304DF4DDDA /* UIKit+AdaptableTextContainerSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+AdaptableTextContainerSupport.swift"; path = "Sources/UIKit/UIKit+AdaptableTextContainerSupport.swift"; sourceTree = "<group>"; };
-		A2546A9194AACB19C7C297BE581ACE3A /* FontInspector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontInspector.swift; path = Sources/FontInspector.swift; sourceTree = "<group>"; };
-		A6071E10D919920B40D4C7206E572D58 /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
-		A8282551C88A0157F96A69C5DEEF9DB6 /* TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		9F40AF10AF4F7BE0BB7874883C048D49 /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		A1CF2C8BC315A5A25D2C520DD52123DD /* ContextualAlternates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextualAlternates.swift; path = Sources/ContextualAlternates.swift; sourceTree = "<group>"; };
 		A86420F65A14A7FBDEDE133C2F298ED5 /* Pods_SBohemNaCestach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SBohemNaCestach.framework; path = "Pods-SBohemNaCestach.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB51A0D0D16A2DA94D6B99518A1EEE5F /* TextAlignmentConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAlignmentConstraint.swift; path = Sources/UIKit/TextAlignmentConstraint.swift; sourceTree = "<group>"; };
-		AC26C45323594FA62C609AB5D91FC89C /* ContextualAlternates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextualAlternates.swift; path = Sources/ContextualAlternates.swift; sourceTree = "<group>"; };
-		B182CDA638DC734995D5A9E736AA7C02 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
-		B48267D0D834B9966970A38106FB83A9 /* BonMot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BonMot-prefix.pch"; sourceTree = "<group>"; };
-		B488ED835C0355470CD6E71909DD6D7D /* DynamicColor+XYZ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+XYZ.swift"; path = "Sources/DynamicColor+XYZ.swift"; sourceTree = "<group>"; };
-		B4F50C9A4D094112EB56D6A3B46922FE /* StyleableUIElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StyleableUIElement.swift; path = Sources/UIKit/StyleableUIElement.swift; sourceTree = "<group>"; };
-		B7170271A1923C7B4ECBE81BE45DAE32 /* EmbeddedTransformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmbeddedTransformation.swift; path = Sources/UIKit/EmbeddedTransformation.swift; sourceTree = "<group>"; };
-		BD74B346366BAF1ED3E1D1B2D76D4128 /* HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSL.swift; path = Sources/HSL.swift; sourceTree = "<group>"; };
-		BDFFD400481930C450BE1A1EECA99C96 /* Composable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Composable.swift; path = Sources/Composable.swift; sourceTree = "<group>"; };
-		BE86637E44B9CE33E03619A278CF7C32 /* XMLBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLBuilder.swift; path = Sources/XMLBuilder.swift; sourceTree = "<group>"; };
-		BEC99F0E72BB68557DC2769CDA0049D3 /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
-		C5F09F86FE8711A648391F67DEA45FFE /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
+		A94C56DC7FDEA38285F751D3FF5CB471 /* DynamicColor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DynamicColor-Info.plist"; sourceTree = "<group>"; };
+		A99EBF03127AFED5540A81B638914D56 /* DynamicColorSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColorSpace.swift; path = Sources/DynamicColorSpace.swift; sourceTree = "<group>"; };
+		A9F72BB59C515DBBEE60C539F89A2A41 /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
+		AA163A5A38FF848CA43EAC379673B547 /* Ligatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ligatures.swift; path = Sources/Ligatures.swift; sourceTree = "<group>"; };
+		AA28CC30B2D6418E59EDA21E9C978A39 /* BonMot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BonMot-umbrella.h"; sourceTree = "<group>"; };
+		ACDDF676C08B40DECB2FA07625D17DAA /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		AECE5C51580F731340262863295428F5 /* EmbeddedTransformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmbeddedTransformation.swift; path = Sources/UIKit/EmbeddedTransformation.swift; sourceTree = "<group>"; };
+		AF239ED2F6EE4DB3A83DF7B5D4662249 /* FontInspector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontInspector.swift; path = Sources/FontInspector.swift; sourceTree = "<group>"; };
+		AFD671743E546347DCA4D0C0319DD8A4 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		B10CCE141EC8DA4035404985DA1BB1D7 /* Special.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Special.swift; path = Sources/Special.swift; sourceTree = "<group>"; };
+		B3132753198ABEE84EB02A43536DF4C7 /* UIKit+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Helpers.swift"; path = "Sources/UIKit/UIKit+Helpers.swift"; sourceTree = "<group>"; };
+		B41614FA4F17BF4DC4516D9BFB2241B3 /* Compatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatibility.swift; path = Sources/Compatibility.swift; sourceTree = "<group>"; };
+		B4487A489BEB2730EF5CAF9442126BB7 /* XMLBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLBuilder.swift; path = Sources/XMLBuilder.swift; sourceTree = "<group>"; };
+		B7719BC3ADAD81C74C8DFD2841B09E0F /* NSAttributedString+Adaptive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+Adaptive.swift"; path = "Sources/UIKit/NSAttributedString+Adaptive.swift"; sourceTree = "<group>"; };
+		B829BD53B97970126F4B9001C5C6E981 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		BD030CCCCC7DC22D5E32A262CDA68FC8 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
+		BE43309924857AE21140893BA61BC2FE /* Tab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tab.swift; path = Sources/Tab.swift; sourceTree = "<group>"; };
+		BE823C2BBF6FE908791356434B3782EC /* NamedStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedStyles.swift; path = Sources/NamedStyles.swift; sourceTree = "<group>"; };
+		BF514C0BDA2BA0E4ADAA404FB886AAFB /* BonMot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BonMot.xcconfig; sourceTree = "<group>"; };
+		C2FC1704B6E7102B4A561021687FD4E8 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
 		C64A139D3110107554FA0AC72AC6206D /* Pods-SBohemNaCestach-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SBohemNaCestach-Info.plist"; sourceTree = "<group>"; };
-		C6EB7CF3E6CBAAE7007A329C25F4D57B /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
+		C9CAAE86594634786E3CD48577C07E7C /* NSAttributedString+BonMot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+BonMot.swift"; path = "Sources/NSAttributedString+BonMot.swift"; sourceTree = "<group>"; };
 		CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rswift.framework; path = R.swift.Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAE9E829CC9DB760A9D6C121493F02E5 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Array.swift; sourceTree = "<group>"; };
-		CD31C4A566D8BAFB12D3A6BE6613183A /* R.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.xcconfig; sourceTree = "<group>"; };
-		CDFDC791AC2C8336F716B9404B3DB881 /* DynamicColor+Lab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Lab.swift"; path = "Sources/DynamicColor+Lab.swift"; sourceTree = "<group>"; };
-		CE33FD9F6B5E6B948C4BA9043A0892BD /* MutableCopying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableCopying.swift; path = Sources/MutableCopying.swift; sourceTree = "<group>"; };
-		D0FDBDE66F009123428DDE8EE6B0A8B2 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		CED6CEFF86F03661530002E85EC0815C /* AdaptiveStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdaptiveStyle.swift; path = Sources/UIKit/AdaptiveStyle.swift; sourceTree = "<group>"; };
+		D07583BC1778834B73B9EAA36C2F33B1 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
 		D153BE3A22845F2436BD96116E43D960 /* Pods-SBohemNaCestach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SBohemNaCestach.debug.xcconfig"; sourceTree = "<group>"; };
-		D1D16FB762B5799E1747F69A8A3D1E08 /* DynamicColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-prefix.pch"; sourceTree = "<group>"; };
-		D36F3E6A9DEA24DC0C5B74597EE0F3AD /* Emphasis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emphasis.swift; path = Sources/Emphasis.swift; sourceTree = "<group>"; };
-		D738D99A788E4834E362A707C12BA66E /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
-		D9DF159BBFBFFD90CB2D778E7D4E649B /* DynamicColor+RGBA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+RGBA.swift"; path = "Sources/DynamicColor+RGBA.swift"; sourceTree = "<group>"; };
-		DAA4BC509771AA0C4D56FF995665DA1E /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		DC90F3024E9D519120836A29FB92F45B /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+		D264CC3B36D041B24B87011D6BD16DC8 /* HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSL.swift; path = Sources/HSL.swift; sourceTree = "<group>"; };
+		D5CB46E4ABFBE98AAAB341020F2C3E12 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
+		D619F8CAF27BB1AB64208E0210B37874 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Array.swift; sourceTree = "<group>"; };
+		D687DFAC468E8A6F6C97344FE5D8AF73 /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		D716EC990D60C40076116957B8F24725 /* TTTAttributedLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTTAttributedLabel.modulemap; sourceTree = "<group>"; };
+		D833E800A9890CCC28875C1894805158 /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
+		D97944AE14AC5DEC22EB4ED644F1D918 /* TTTAttributedLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTTAttributedLabel-Info.plist"; sourceTree = "<group>"; };
+		DB228064FF67A0C2085962C2DA8ED407 /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
 		DD081FD0C8AD1F60C890004C529D67A0 /* Pods-SBohemNaCestach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SBohemNaCestach.release.xcconfig"; sourceTree = "<group>"; };
-		DEE72178D0D5341E6B3FD4DB998DC7E4 /* AccessibilityHeadingLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessibilityHeadingLevel.swift; path = Sources/AccessibilityHeadingLevel.swift; sourceTree = "<group>"; };
-		E15A782B7D84603AD0C320BC6C6CB034 /* DynamicColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicColor-dummy.m"; sourceTree = "<group>"; };
-		E4200548CD7EF1182582DE4AC21DB0A1 /* TTTAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTTAttributedLabel-dummy.m"; sourceTree = "<group>"; };
-		E73C89B63E5748EE01936B9EBDDC00DB /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
-		E7477C53E9FFE2DC94381BBD63DE6C39 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
-		EEC1DE38FCAB6298C8582BB577A34D36 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
-		EEDAED802BB2E64FA3384F63E7A716A1 /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
-		F00034DC8BB44794193A7C2D8ECE91C9 /* DynamicColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColor.swift; path = Sources/DynamicColor.swift; sourceTree = "<group>"; };
-		F03DF0EE91D0232DC6D05227C518864E /* UIKit+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Helpers.swift"; path = "Sources/UIKit/UIKit+Helpers.swift"; sourceTree = "<group>"; };
-		F0F3BFDB4BB079EEAD34993C881C6251 /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		F19AEBB1F307CDEA025D4B2EA9DD081D /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
-		F2435D80BDA1467DF762B27834DA9F29 /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
-		F6010AA4C3FE7AC8E700789E57C3E7DA /* DynamicColor+HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSL.swift"; path = "Sources/DynamicColor+HSL.swift"; sourceTree = "<group>"; };
+		DF535ED967DFD120530D2C00F14DC2F8 /* TTTAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTTAttributedLabel-dummy.m"; sourceTree = "<group>"; };
+		E05F0C4982F9AFFB478BB7ACD25D92CD /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		E2731E1B47E83DD87AF11DEA08E1E213 /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = Sources/Transform.swift; sourceTree = "<group>"; };
+		E3CF8A58C65306285DDD7F443A6F915E /* ContrastDisplayContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContrastDisplayContext.swift; path = Sources/ContrastDisplayContext.swift; sourceTree = "<group>"; };
+		E479D47089A4E8206136C3578A4F0384 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		E716A0BA2A1ED8AF440B88A50F65B2FE /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		E73C07EBA135712771794D6F3B69CDF7 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		E8C2925B92C6F2EF9CF7194780DEF118 /* StringStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringStyle.swift; path = Sources/StringStyle.swift; sourceTree = "<group>"; };
+		E9C2C50D1CA930E666B2E6AC4DD802FF /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+		EAB62390D3CAE282E857BF104B68A0DC /* Tab+Adaptive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Tab+Adaptive.swift"; path = "Sources/UIKit/Tab+Adaptive.swift"; sourceTree = "<group>"; };
+		EB1A42744E3BE08E95B2709F5C79ED9F /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		EFC60C5D4A6C7E0D49FE6B962A41AA41 /* TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		F21274D18610E6E0637875546FB76C96 /* Tracking+Adaptive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Tracking+Adaptive.swift"; path = "Sources/UIKit/Tracking+Adaptive.swift"; sourceTree = "<group>"; };
+		F33599B90FA9C4401A3261A877DD41D7 /* AccessibilityHeadingLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessibilityHeadingLevel.swift; path = Sources/AccessibilityHeadingLevel.swift; sourceTree = "<group>"; };
+		F6EFC2797725E1A87C2F895C72408231 /* TinyConstraints-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinyConstraints-Info.plist"; sourceTree = "<group>"; };
+		F7100E4E49ABCB4B401D3AC35FDA993C /* Image+Tinting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Image+Tinting.swift"; path = "Sources/Image+Tinting.swift"; sourceTree = "<group>"; };
+		FABE34BF3E283FC0E4F287744CFF5F45 /* R.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.xcconfig; sourceTree = "<group>"; };
 		FB2578EECB7882C646D329990617FA83 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		FC961365E0D3D5974066E9B1E0C8FE1F /* DynamicColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-umbrella.h"; sourceTree = "<group>"; };
+		FCA504409041DBE8E7AA9B3EE0C13834 /* Emphasis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emphasis.swift; path = Sources/Emphasis.swift; sourceTree = "<group>"; };
+		FCC1B0973CE306D2F143B2F34EF12D4B /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
+		FE0AD8E39F8244490E26F39B6783D226 /* DynamicColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-umbrella.h"; sourceTree = "<group>"; };
+		FF05906EB2FC4363B5C74E69D4510342 /* Composable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Composable.swift; path = Sources/Composable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0165059791D63C21208A107C6E6B0DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979CFA5F4D7A8E4A37E02A44D2D3ABD2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30DDF4B40C454C038371AE37121BF17A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,11 +335,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53FB8D221E034EAE5ED20B7F3CBA33EE /* Frameworks */ = {
+		36535A7B888AFE58F76BDA6B07CEB9C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5E0904D950F141AF8C72B32B60A6DB /* Foundation.framework in Frameworks */,
+				F89DDE2BE4B4C16826AC30BBC21ACC57 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,103 +375,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		098339AEA5187F21D661EE21E28E2BDA /* BonMot */ = {
+		006E70FAD08EC35D17658585F8CAA7E2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DEE72178D0D5341E6B3FD4DB998DC7E4 /* AccessibilityHeadingLevel.swift */,
-				8D19743395E5A78B80AB250E0CE5E004 /* AdaptableTextContainer.swift */,
-				72F66AFCD7C577F1CEC551251426B317 /* AdaptiveStyle.swift */,
-				70FC2FE8333E32E74F7F6012E54D51AB /* AdaptiveStyleTransformation.swift */,
-				75B708B55283DBA5E252CC7CBD787DA4 /* AttributedStringTransformation.swift */,
-				48DB6BFF0160C88E10FA0ADEBCBF140A /* Compatibility.swift */,
-				BDFFD400481930C450BE1A1EECA99C96 /* Composable.swift */,
-				AC26C45323594FA62C609AB5D91FC89C /* ContextualAlternates.swift */,
-				B7170271A1923C7B4ECBE81BE45DAE32 /* EmbeddedTransformation.swift */,
-				D36F3E6A9DEA24DC0C5B74597EE0F3AD /* Emphasis.swift */,
-				80284306915E01C1E1826009587C603F /* FontFeatures.swift */,
-				A2546A9194AACB19C7C297BE581ACE3A /* FontInspector.swift */,
-				7FCE6D4AF8DB57CC9522E72CDA881E81 /* Image+Tinting.swift */,
-				6D1D86DB18CD07E30D7C51ED4221F530 /* Ligatures.swift */,
-				CE33FD9F6B5E6B948C4BA9043A0892BD /* MutableCopying.swift */,
-				4A260E89BFA7F50C8DAF2D88712FD8AD /* NamedStyles.swift */,
-				32CF9DBE09CE87EF8BD3A474793DA6B6 /* NSAttributedString+Adaptive.swift */,
-				5B11B13B3AEE6F134A71AF03750AEBAD /* NSAttributedString+BonMot.swift */,
-				8F80ABF59DAC4BCEFE926C6A98F2CDBA /* Platform.swift */,
-				8B0411DAF9F72965EC74EB46E1472DA6 /* Special.swift */,
-				3591857CF9CCC2AD640CD3069CF696D5 /* StringStyle.swift */,
-				51E5370B3D6D7C9EE27212193EA08A34 /* StringStyle+Part.swift */,
-				B4F50C9A4D094112EB56D6A3B46922FE /* StyleableUIElement.swift */,
-				144DCF02602B40CC6EB29FCF6BECD780 /* StylisticAlternates.swift */,
-				74D784AA3558CFC618D09DAFFC14B506 /* Tab.swift */,
-				4F78D3EBD7C1525AAA4629D5D7025422 /* Tab+Adaptive.swift */,
-				AB51A0D0D16A2DA94D6B99518A1EEE5F /* TextAlignmentConstraint.swift */,
-				17F19B182D26335D95CF6335A30AB7B5 /* Tracking.swift */,
-				1822642048F61AAD29ADF423360DEF66 /* Tracking+Adaptive.swift */,
-				7AA2CE02B07B1BDBCB4603D4C0AED3C6 /* Transform.swift */,
-				A11AA0CB5E4C96499B74C6304DF4DDDA /* UIKit+AdaptableTextContainerSupport.swift */,
-				F03DF0EE91D0232DC6D05227C518864E /* UIKit+Helpers.swift */,
-				BE86637E44B9CE33E03619A278CF7C32 /* XMLBuilder.swift */,
-				2588C82974F1182119E01B9D82123665 /* Support Files */,
+				D716EC990D60C40076116957B8F24725 /* TTTAttributedLabel.modulemap */,
+				0E8601521E6B9A9FB7BC97A60F667B09 /* TTTAttributedLabel.xcconfig */,
+				DF535ED967DFD120530D2C00F14DC2F8 /* TTTAttributedLabel-dummy.m */,
+				D97944AE14AC5DEC22EB4ED644F1D918 /* TTTAttributedLabel-Info.plist */,
+				EFC60C5D4A6C7E0D49FE6B962A41AA41 /* TTTAttributedLabel-prefix.pch */,
+				1B1F18535CF6ACAE09B6FC3402EAFB26 /* TTTAttributedLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTTAttributedLabel";
+			sourceTree = "<group>";
+		};
+		05CCD7012B016C5DDA2AC1B07E7DCF87 /* BonMot */ = {
+			isa = PBXGroup;
+			children = (
+				F33599B90FA9C4401A3261A877DD41D7 /* AccessibilityHeadingLevel.swift */,
+				6558BDEDAE3A125290AAC028BCF3D548 /* AdaptableTextContainer.swift */,
+				CED6CEFF86F03661530002E85EC0815C /* AdaptiveStyle.swift */,
+				2381110E118A93C27BFCC9416C64A392 /* AdaptiveStyleTransformation.swift */,
+				92D4CCDE40C2274BF061A3BFAE682A36 /* AttributedStringTransformation.swift */,
+				B41614FA4F17BF4DC4516D9BFB2241B3 /* Compatibility.swift */,
+				FF05906EB2FC4363B5C74E69D4510342 /* Composable.swift */,
+				A1CF2C8BC315A5A25D2C520DD52123DD /* ContextualAlternates.swift */,
+				AECE5C51580F731340262863295428F5 /* EmbeddedTransformation.swift */,
+				FCA504409041DBE8E7AA9B3EE0C13834 /* Emphasis.swift */,
+				207C6C6B03D313111A0F52A681E60066 /* FontFeatures.swift */,
+				AF239ED2F6EE4DB3A83DF7B5D4662249 /* FontInspector.swift */,
+				F7100E4E49ABCB4B401D3AC35FDA993C /* Image+Tinting.swift */,
+				AA163A5A38FF848CA43EAC379673B547 /* Ligatures.swift */,
+				1E4234E2D139AAA075C14E9CB7B518C0 /* MutableCopying.swift */,
+				BE823C2BBF6FE908791356434B3782EC /* NamedStyles.swift */,
+				B7719BC3ADAD81C74C8DFD2841B09E0F /* NSAttributedString+Adaptive.swift */,
+				C9CAAE86594634786E3CD48577C07E7C /* NSAttributedString+BonMot.swift */,
+				7174FCFD66A32DE717BEC9473B0B4EFA /* Platform.swift */,
+				B10CCE141EC8DA4035404985DA1BB1D7 /* Special.swift */,
+				E8C2925B92C6F2EF9CF7194780DEF118 /* StringStyle.swift */,
+				31E3DAD71BB1A0A6B7CD17A0A0D9F49B /* StringStyle+Part.swift */,
+				43D6FBCA8C51A5156E8F55F3014F8359 /* StyleableUIElement.swift */,
+				61C13F4196EFF3B807226C9280EB1174 /* StylisticAlternates.swift */,
+				BE43309924857AE21140893BA61BC2FE /* Tab.swift */,
+				EAB62390D3CAE282E857BF104B68A0DC /* Tab+Adaptive.swift */,
+				0384F09A5131B49ED233DAACF1F44A7C /* TextAlignmentConstraint.swift */,
+				59263FF6708ABD3E0F8D7C50C19EBF93 /* Tracking.swift */,
+				F21274D18610E6E0637875546FB76C96 /* Tracking+Adaptive.swift */,
+				E2731E1B47E83DD87AF11DEA08E1E213 /* Transform.swift */,
+				44E53016B24E72278789592FEF5A6D4A /* UIKit+AdaptableTextContainerSupport.swift */,
+				B3132753198ABEE84EB02A43536DF4C7 /* UIKit+Helpers.swift */,
+				B4487A489BEB2730EF5CAF9442126BB7 /* XMLBuilder.swift */,
+				92BB823AFDD7430AB8C8FB7321380DDE /* Support Files */,
 			);
 			name = BonMot;
 			path = BonMot;
 			sourceTree = "<group>";
 		};
-		2588C82974F1182119E01B9D82123665 /* Support Files */ = {
+		12A2FC76269956B3959BB943741AE1D4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9444D6F379182DF014C5A83E47168341 /* BonMot.modulemap */,
-				2EFE36194071912E3E0BACDE95F5368F /* BonMot.xcconfig */,
-				3D6530721D07440AD39EAA9139D569EC /* BonMot-dummy.m */,
-				12EA4F74617A9FD3C030AEC47C330AEE /* BonMot-Info.plist */,
-				B48267D0D834B9966970A38106FB83A9 /* BonMot-prefix.pch */,
-				08E754C5F9F22C79D1CE41E7A6A0FCB5 /* BonMot-umbrella.h */,
+				E05F0C4982F9AFFB478BB7ACD25D92CD /* R.swift.Library.modulemap */,
+				8B7386A4C4E0C9CEA6DD171C9356AC3C /* R.swift.Library.xcconfig */,
+				49DB7FD2D5EB10E4FD8A7E493552335E /* R.swift.Library-dummy.m */,
+				40FB0214E4A0B35A6F60F3EA897E7BB5 /* R.swift.Library-Info.plist */,
+				62A0870730363D8B590232C6B86BEEA4 /* R.swift.Library-prefix.pch */,
+				A9F72BB59C515DBBEE60C539F89A2A41 /* R.swift.Library-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BonMot";
+			path = "../Target Support Files/R.swift.Library";
 			sourceTree = "<group>";
 		};
-		2623AF582126B663D733074A2C0ACAEA /* TTTAttributedLabel */ = {
+		1D6AC05012EFBDA1C9B61F1F247EE5C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D2746737507060BC01ECB69824692C7 /* TTTAttributedLabel.h */,
-				B182CDA638DC734995D5A9E736AA7C02 /* TTTAttributedLabel.m */,
-				869498EB8CD67887A1FF3E86F5E31101 /* Support Files */,
+				33A4868B2CB72C28A43C9793FA150418 /* BonMot.framework */,
+				4603757534A157D07CF86D75DA0641F9 /* DynamicColor.framework */,
+				A86420F65A14A7FBDEDE133C2F298ED5 /* Pods_SBohemNaCestach.framework */,
+				CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */,
+				248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */,
+				24906358D4472592AAB45254D975D5E2 /* TTTAttributedLabel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		382B8F26BF4E10D9FCE2416642ADCCB5 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C2FC1704B6E7102B4A561021687FD4E8 /* TTTAttributedLabel.h */,
+				76AAC8B8C94B3DD20B0F3E9ABAE0FA92 /* TTTAttributedLabel.m */,
+				006E70FAD08EC35D17658585F8CAA7E2 /* Support Files */,
 			);
 			name = TTTAttributedLabel;
 			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
-		51B71E99F249EF37956E1F50C39A26F8 /* DynamicColor */ = {
+		534634E3F41537F3490325EB581E3C7D /* DynamicColor */ = {
 			isa = PBXGroup;
 			children = (
-				CAE9E829CC9DB760A9D6C121493F02E5 /* Array.swift */,
-				6D194E68F0F6CB6B9E5035CCB0A0353B /* ContrastDisplayContext.swift */,
-				F00034DC8BB44794193A7C2D8ECE91C9 /* DynamicColor.swift */,
-				209B223153A308E8D68AB6CD9BBF76A6 /* DynamicColor+Deriving.swift */,
-				9C93E75E73869F87EF266408AE0D1B8A /* DynamicColor+HSB.swift */,
-				F6010AA4C3FE7AC8E700789E57C3E7DA /* DynamicColor+HSL.swift */,
-				CDFDC791AC2C8336F716B9404B3DB881 /* DynamicColor+Lab.swift */,
-				4EB861153AA6C5607B890585A35B0F04 /* DynamicColor+Mixing.swift */,
-				D9DF159BBFBFFD90CB2D778E7D4E649B /* DynamicColor+RGBA.swift */,
-				B488ED835C0355470CD6E71909DD6D7D /* DynamicColor+XYZ.swift */,
-				178A531FC8139D368FC281A19BCA2FF0 /* DynamicColorSpace.swift */,
-				1122231D04943C47AF6E0DC7FF4F3032 /* DynamicGradient.swift */,
-				BD74B346366BAF1ED3E1D1B2D76D4128 /* HSL.swift */,
-				09565A62834D99C9BE6773F649923D38 /* Utils.swift */,
-				C1372F7F3CCD6CE30E1DB7CC9768E4B8 /* Support Files */,
+				D619F8CAF27BB1AB64208E0210B37874 /* Array.swift */,
+				E3CF8A58C65306285DDD7F443A6F915E /* ContrastDisplayContext.swift */,
+				24961173E0A285EA21AEBB4B193514B9 /* DynamicColor.swift */,
+				18646877E4E1DD0881BF8BEAF52D1368 /* DynamicColor+Deriving.swift */,
+				6360749D03C3FE66C22493B83EB2CF52 /* DynamicColor+HSB.swift */,
+				93D193C4527D48805859B438C3FF91E1 /* DynamicColor+HSL.swift */,
+				558063707A9FB4C9C473EC1478D0ECFF /* DynamicColor+Lab.swift */,
+				9316F4036D84F75E7BE49D24C728C007 /* DynamicColor+Mixing.swift */,
+				512AEAB8DD71F5F46C7A9C928F5E3676 /* DynamicColor+RGBA.swift */,
+				97CFDABD5CEFFA8B52F905AD0B7BBA10 /* DynamicColor+XYZ.swift */,
+				A99EBF03127AFED5540A81B638914D56 /* DynamicColorSpace.swift */,
+				43531B21143C52F5A4DC4367958B34DF /* DynamicGradient.swift */,
+				D264CC3B36D041B24B87011D6BD16DC8 /* HSL.swift */,
+				503126E88A60D8174DA8033826D1D1CD /* Utils.swift */,
+				A716426271B793D06DA7F560EF4F3D3B /* Support Files */,
 			);
 			name = DynamicColor;
 			path = DynamicColor;
 			sourceTree = "<group>";
 		};
-		528BCAE355ACD81CE5159525930261BB /* R.swift */ = {
+		587A6728D272EF4920EF3C420A8B8C2C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9669BC4EC5312826F4142D792A27A67E /* Support Files */,
+				6ABDEB3E217A60D4368A45F14D9C85A0 /* TinyConstraints.modulemap */,
+				75AA8A679F10C53391666BBE3F1C8898 /* TinyConstraints.xcconfig */,
+				108AB5C8F2C93E932328ED25C328335C /* TinyConstraints-dummy.m */,
+				F6EFC2797725E1A87C2F895C72408231 /* TinyConstraints-Info.plist */,
+				DB228064FF67A0C2085962C2DA8ED407 /* TinyConstraints-prefix.pch */,
+				5A558D04CA552F8E800C64D22068324F /* TinyConstraints-umbrella.h */,
 			);
-			name = R.swift;
-			path = R.swift;
+			name = "Support Files";
+			path = "../Target Support Files/TinyConstraints";
 			sourceTree = "<group>";
 		};
 		6D2FE965ADC94EF201B884DE153088A7 /* Targets Support Files */ = {
@@ -443,27 +514,67 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		869498EB8CD67887A1FF3E86F5E31101 /* Support Files */ = {
+		7E81D635BFA94E65767C56EFA573397C /* R.swift.Library */ = {
 			isa = PBXGroup;
 			children = (
-				996E3D85877B16438097F5C19FBA5AF4 /* TTTAttributedLabel.modulemap */,
-				8DB11624C3BE8B47C2718EEC5D03AA29 /* TTTAttributedLabel.xcconfig */,
-				E4200548CD7EF1182582DE4AC21DB0A1 /* TTTAttributedLabel-dummy.m */,
-				8EEC4099D9BBDC6DF6E3F3DCE5EE7FCF /* TTTAttributedLabel-Info.plist */,
-				A8282551C88A0157F96A69C5DEEF9DB6 /* TTTAttributedLabel-prefix.pch */,
-				7256D49C5251ACD0B209B0CBA64B254B /* TTTAttributedLabel-umbrella.h */,
+				EB1A42744E3BE08E95B2709F5C79ED9F /* Bundle+FileResource.swift */,
+				6787E2231BC7CECC2E1A2EA12B03D164 /* ColorResource.swift */,
+				40A782FC15B8F5AC0923C2DD1E8C5AA1 /* Data+FileResource.swift */,
+				E716A0BA2A1ED8AF440B88A50F65B2FE /* FileResource.swift */,
+				40D6F730C0926F7FFCAFE0953ACFE82A /* FontResource.swift */,
+				6B4EC145A38DC3F72037DC0201A8ABF7 /* Identifier.swift */,
+				8ACBF6B12134185768D91FDA336548AD /* ImageResource.swift */,
+				6C724B4D84BBBD3968C05C2D53A461C5 /* NibResource.swift */,
+				2350A1BC97FF8C030823783DAB2018F1 /* NibResource+UIKit.swift */,
+				E73C07EBA135712771794D6F3B69CDF7 /* ReuseIdentifierProtocol.swift */,
+				0D12F8D08BDC70B7F0481DBEE5ADAFDF /* StoryboardResource.swift */,
+				7B1A442E3C98E93651AD090BAF320F98 /* StoryboardResourceWithInitialController+UIKit.swift */,
+				1B3C4AE21945C75CFF9813604E1EE415 /* StoryboardSegueIdentifierProtocol.swift */,
+				2116A9B05FF1A793817EBD0B9729321A /* StoryboardViewControllerResource.swift */,
+				BD030CCCCC7DC22D5E32A262CDA68FC8 /* StringResource.swift */,
+				9302CA465B645E311EF5DE812FEE7B71 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
+				D687DFAC468E8A6F6C97344FE5D8AF73 /* UICollectionView+ReuseIdentifierProtocol.swift */,
+				E479D47089A4E8206136C3578A4F0384 /* UIColor+ColorResource.swift */,
+				ACDDF676C08B40DECB2FA07625D17DAA /* UIFont+FontResource.swift */,
+				72B923F1E7DBDC44E2A73C1A7E53FBAA /* UIImage+ImageResource.swift */,
+				8D93AF2CB5FD6A7DB7AB462762563968 /* UINib+NibResource.swift */,
+				AFD671743E546347DCA4D0C0319DD8A4 /* UIStoryboard+StoryboardResource.swift */,
+				D5CB46E4ABFBE98AAAB341020F2C3E12 /* UIStoryboard+StoryboardViewControllerResource.swift */,
+				54D264BA4D0A887BF60CC1C51F8D01C8 /* UITableView+ReuseIdentifierProtocol.swift */,
+				1EB32501A6B46DA76CE6F0AF89FCB6A1 /* UIViewController+NibResource.swift */,
+				B829BD53B97970126F4B9001C5C6E981 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
+				28293BB668D47F2FEC52C430A3C5A8A1 /* Validatable.swift */,
+				12A2FC76269956B3959BB943741AE1D4 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TTTAttributedLabel";
+			name = R.swift.Library;
+			path = R.swift.Library;
 			sourceTree = "<group>";
 		};
-		9669BC4EC5312826F4142D792A27A67E /* Support Files */ = {
+		853462B82B194151D71E53601F89AF50 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CD31C4A566D8BAFB12D3A6BE6613183A /* R.swift.xcconfig */,
+				05CCD7012B016C5DDA2AC1B07E7DCF87 /* BonMot */,
+				534634E3F41537F3490325EB581E3C7D /* DynamicColor */,
+				F9C0784C88151F79C6623A31F7BE58CA /* R.swift */,
+				7E81D635BFA94E65767C56EFA573397C /* R.swift.Library */,
+				DEB6C44259E31C35279813754FE022EA /* TinyConstraints */,
+				382B8F26BF4E10D9FCE2416642ADCCB5 /* TTTAttributedLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92BB823AFDD7430AB8C8FB7321380DDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				632F189C4AD58F21BC7B45E035208373 /* BonMot.modulemap */,
+				BF514C0BDA2BA0E4ADAA404FB886AAFB /* BonMot.xcconfig */,
+				1502BBE28B59F8DE09768BDFBDD955EE /* BonMot-dummy.m */,
+				16ED93C7ACAEF537163A30F57121A08A /* BonMot-Info.plist */,
+				4C40ABA8CEF1AF21E3E9B114A58FC563 /* BonMot-prefix.pch */,
+				AA28CC30B2D6418E59EDA21E9C978A39 /* BonMot-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/R.swift";
+			path = "../Target Support Files/BonMot";
 			sourceTree = "<group>";
 		};
 		9721B755D9D458598A61B6E0E6E30A8B /* iOS */ = {
@@ -478,28 +589,27 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		AC576B0DD7CA1618D1E4BF1CCA08907C /* Products */ = {
+		A0A9744CAE698579114C130D6506D302 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				33A4868B2CB72C28A43C9793FA150418 /* BonMot.framework */,
-				4603757534A157D07CF86D75DA0641F9 /* DynamicColor.framework */,
-				A86420F65A14A7FBDEDE133C2F298ED5 /* Pods_SBohemNaCestach.framework */,
-				CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */,
-				24906358D4472592AAB45254D975D5E2 /* TTTAttributedLabel.framework */,
+				FABE34BF3E283FC0E4F287744CFF5F45 /* R.swift.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/R.swift";
 			sourceTree = "<group>";
 		};
-		ACEEA85B89F58717FADD72C2E6A10739 /* Pods */ = {
+		A716426271B793D06DA7F560EF4F3D3B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				098339AEA5187F21D661EE21E28E2BDA /* BonMot */,
-				51B71E99F249EF37956E1F50C39A26F8 /* DynamicColor */,
-				528BCAE355ACD81CE5159525930261BB /* R.swift */,
-				C5CFDEC85426C9F0A00A77757C668393 /* R.swift.Library */,
-				2623AF582126B663D733074A2C0ACAEA /* TTTAttributedLabel */,
+				5D1625E4B031CE606B386EF69A3C23F6 /* DynamicColor.modulemap */,
+				5780E18B71BCA2DD14A8893105290FBA /* DynamicColor.xcconfig */,
+				5926485DEDCF1A93F9793E05DDCEF173 /* DynamicColor-dummy.m */,
+				A94C56DC7FDEA38285F751D3FF5CB471 /* DynamicColor-Info.plist */,
+				4EF79DB6FF3BFFF90573D9463631BA77 /* DynamicColor-prefix.pch */,
+				FE0AD8E39F8244490E26F39B6783D226 /* DynamicColor-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/DynamicColor";
 			sourceTree = "<group>";
 		};
 		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
@@ -510,63 +620,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C1372F7F3CCD6CE30E1DB7CC9768E4B8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				084E5D5EC76B2F193E56DB24BB32E428 /* DynamicColor.modulemap */,
-				35426FEFDB5744CB0233B5EBEF41F922 /* DynamicColor.xcconfig */,
-				E15A782B7D84603AD0C320BC6C6CB034 /* DynamicColor-dummy.m */,
-				97E48458A146D747C3BA391C77B24033 /* DynamicColor-Info.plist */,
-				D1D16FB762B5799E1747F69A8A3D1E08 /* DynamicColor-prefix.pch */,
-				FC961365E0D3D5974066E9B1E0C8FE1F /* DynamicColor-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DynamicColor";
-			sourceTree = "<group>";
-		};
-		C5CFDEC85426C9F0A00A77757C668393 /* R.swift.Library */ = {
-			isa = PBXGroup;
-			children = (
-				36DA55749B34188670323F491F97DFC6 /* Bundle+FileResource.swift */,
-				E7477C53E9FFE2DC94381BBD63DE6C39 /* ColorResource.swift */,
-				77D48A0D0B11E101A5DB6F9A33D77F2F /* Data+FileResource.swift */,
-				1B29BCD6C6A9D992178A8CAE5D0B43B0 /* FileResource.swift */,
-				73BCBE8F492AD0E4245CAE1B8EBE672B /* FontResource.swift */,
-				4D2BB845E72CF34581EC0F38C0E432E8 /* Identifier.swift */,
-				C5F09F86FE8711A648391F67DEA45FFE /* ImageResource.swift */,
-				F2435D80BDA1467DF762B27834DA9F29 /* NibResource.swift */,
-				EEDAED802BB2E64FA3384F63E7A716A1 /* NibResource+UIKit.swift */,
-				1E01F356609CE137F9867F2E511A8A7A /* ReuseIdentifierProtocol.swift */,
-				16F33F4AFFEEAE5CF54E217B77E9C3E7 /* StoryboardResource.swift */,
-				5CEC1D800A95667BAB1A37EBA7CB3A46 /* StoryboardResourceWithInitialController+UIKit.swift */,
-				01917624D1867E5959B4230578ED373A /* StoryboardSegueIdentifierProtocol.swift */,
-				DC90F3024E9D519120836A29FB92F45B /* StoryboardViewControllerResource.swift */,
-				F19AEBB1F307CDEA025D4B2EA9DD081D /* StringResource.swift */,
-				EEC1DE38FCAB6298C8582BB577A34D36 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
-				F0F3BFDB4BB079EEAD34993C881C6251 /* UICollectionView+ReuseIdentifierProtocol.swift */,
-				3C3DE1B610FDF3FE47922773B3799E44 /* UIColor+ColorResource.swift */,
-				D0FDBDE66F009123428DDE8EE6B0A8B2 /* UIFont+FontResource.swift */,
-				4CE29999BEB045E9D08B7A7813A27531 /* UIImage+ImageResource.swift */,
-				D738D99A788E4834E362A707C12BA66E /* UINib+NibResource.swift */,
-				8F350435A07A9D940A6399863BA7FBB3 /* UIStoryboard+StoryboardResource.swift */,
-				4A05BD7A550AFF5284EEAC37FF4E83F8 /* UIStoryboard+StoryboardViewControllerResource.swift */,
-				860515E54A0900FA6AAFF3AB33A32DCC /* UITableView+ReuseIdentifierProtocol.swift */,
-				8035021615AF9B7F71693C01A1DB0610 /* UIViewController+NibResource.swift */,
-				DAA4BC509771AA0C4D56FF995665DA1E /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
-				04ED2F02B154A28E38EC873E2C579049 /* Validatable.swift */,
-				F0684721C595355D2253033FDF74D2A9 /* Support Files */,
-			);
-			name = R.swift.Library;
-			path = R.swift.Library;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
-				ACEEA85B89F58717FADD72C2E6A10739 /* Pods */,
-				AC576B0DD7CA1618D1E4BF1CCA08907C /* Products */,
+				853462B82B194151D71E53601F89AF50 /* Pods */,
+				1D6AC05012EFBDA1C9B61F1F247EE5C5 /* Products */,
 				6D2FE965ADC94EF201B884DE153088A7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -588,18 +648,29 @@
 			path = "Target Support Files/Pods-SBohemNaCestach";
 			sourceTree = "<group>";
 		};
-		F0684721C595355D2253033FDF74D2A9 /* Support Files */ = {
+		DEB6C44259E31C35279813754FE022EA /* TinyConstraints */ = {
 			isa = PBXGroup;
 			children = (
-				A6071E10D919920B40D4C7206E572D58 /* R.swift.Library.modulemap */,
-				E73C89B63E5748EE01936B9EBDDC00DB /* R.swift.Library.xcconfig */,
-				779E101798D4FCD1F19ED9783A3E66CF /* R.swift.Library-dummy.m */,
-				449AA2C68774EA308EA64FCE46B54F71 /* R.swift.Library-Info.plist */,
-				C6EB7CF3E6CBAAE7007A329C25F4D57B /* R.swift.Library-prefix.pch */,
-				BEC99F0E72BB68557DC2769CDA0049D3 /* R.swift.Library-umbrella.h */,
+				D07583BC1778834B73B9EAA36C2F33B1 /* Abstraction.swift */,
+				9F40AF10AF4F7BE0BB7874883C048D49 /* Constrainable.swift */,
+				FCC1B0973CE306D2F143B2F34EF12D4B /* Constraints.swift */,
+				35447C2C2E69D8F7A7532B8CA526827D /* Stack.swift */,
+				E9C2C50D1CA930E666B2E6AC4DD802FF /* TinyConstraints.swift */,
+				D833E800A9890CCC28875C1894805158 /* TinyConstraints+superview.swift */,
+				76CB94021E6672BA78A1A1FBD160650F /* TinyEdgeInsets.swift */,
+				587A6728D272EF4920EF3C420A8B8C2C /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/R.swift.Library";
+			name = TinyConstraints;
+			path = TinyConstraints;
+			sourceTree = "<group>";
+		};
+		F9C0784C88151F79C6623A31F7BE58CA /* R.swift */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9744CAE698579114C130D6506D302 /* Support Files */,
+			);
+			name = R.swift;
+			path = R.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,14 +684,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2283B7AA22B843CBA50B9B8FBDF11233 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9136B8B4D43BE6F07C17B3236B07166A /* Pods-SBohemNaCestach-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49DD9354F69CB31AC8621E03553C14E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -630,11 +693,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		61B76C37C4BB20A79064BCA957937A26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B66F039F061EA4391D1E06356DB787 /* Pods-SBohemNaCestach-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B93F2B70E1945DFD8C74996418CB6C1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AC1CF2F15B2476B3735791BE5E49F1C6 /* DynamicColor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FE3D0A640F390EA7AEA8E88F47DEDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F686C87FC60238F640B1973302B6D08 /* TinyConstraints-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +744,24 @@
 			name = DynamicColor;
 			productName = DynamicColor;
 			productReference = 4603757534A157D07CF86D75DA0641F9 /* DynamicColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED162CA822CAFF9F3B82904FBA2988C /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
+			buildPhases = (
+				98FE3D0A640F390EA7AEA8E88F47DEDA /* Headers */,
+				B22F16F1C73358E59AE260C86E3D1F1D /* Sources */,
+				36535A7B888AFE58F76BDA6B07CEB9C6 /* Frameworks */,
+				7465A1319E37DADA12A8BAEB409143AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyConstraints;
+			productName = TinyConstraints;
+			productReference = 248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4C48FB7D363771FBD71AB44C090CB586 /* BonMot */ = {
@@ -723,21 +820,22 @@
 		};
 		E421E849C2045E0FD89E4AD6DACF3570 /* Pods-SBohemNaCestach */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0FFAF33265E13FD0F598A1C13675198D /* Build configuration list for PBXNativeTarget "Pods-SBohemNaCestach" */;
+			buildConfigurationList = 88931082C2933A1C92DC6A97ACD61B5A /* Build configuration list for PBXNativeTarget "Pods-SBohemNaCestach" */;
 			buildPhases = (
-				2283B7AA22B843CBA50B9B8FBDF11233 /* Headers */,
-				9995746D7E1CFE715EDE1478E56E84BF /* Sources */,
-				53FB8D221E034EAE5ED20B7F3CBA33EE /* Frameworks */,
-				5066D0E027FB1A01D1F2DD5A9C0675E1 /* Resources */,
+				61B76C37C4BB20A79064BCA957937A26 /* Headers */,
+				E6E3227C295C3EB54665CDC78CCB2E03 /* Sources */,
+				0165059791D63C21208A107C6E6B0DC4 /* Frameworks */,
+				8A65223A13B7C8C6E9CBCE971B04B626 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C9CF584701B962A1DA320CAA2D7E969 /* PBXTargetDependency */,
-				FA022748C2ADB76274943E4A5768D0CC /* PBXTargetDependency */,
-				84D439DD907FD56FF032DF2AB40BF9E1 /* PBXTargetDependency */,
-				8F39E430B14F49675E50FF9CB06B9D5D /* PBXTargetDependency */,
-				4E756EF4E82BE2765D6464557858E493 /* PBXTargetDependency */,
+				545A335393AD58F8B875383FD4B3274C /* PBXTargetDependency */,
+				4D5D0DF12794213D2CF88EFC7A514D47 /* PBXTargetDependency */,
+				056624F2AEF42D7E2D657E6D4CAB5F4E /* PBXTargetDependency */,
+				898E8F66F206ACD113DE4C571F0795F0 /* PBXTargetDependency */,
+				432376540CD109056FA0E7C6F722482C /* PBXTargetDependency */,
+				C80121E4DC991EE07806419D86D9D4CB /* PBXTargetDependency */,
 			);
 			name = "Pods-SBohemNaCestach";
 			productName = "Pods-SBohemNaCestach";
@@ -761,7 +859,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = AC576B0DD7CA1618D1E4BF1CCA08907C /* Products */;
+			productRefGroup = 1D6AC05012EFBDA1C9B61F1F247EE5C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -770,6 +868,7 @@
 				E421E849C2045E0FD89E4AD6DACF3570 /* Pods-SBohemNaCestach */,
 				230984053C6652DFF510F450F21C5CF7 /* R.swift */,
 				B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */,
+				45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */,
 				E077C5049157367A707E75CFDAB49F84 /* TTTAttributedLabel */,
 			);
 		};
@@ -797,7 +896,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5066D0E027FB1A01D1F2DD5A9C0675E1 /* Resources */ = {
+		7465A1319E37DADA12A8BAEB409143AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A65223A13B7C8C6E9CBCE971B04B626 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -886,14 +992,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9995746D7E1CFE715EDE1478E56E84BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E0FC4807B0FC552B6F1F5E862372CB4 /* Pods-SBohemNaCestach-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F52BBE74F215CD219C080FE067D6C68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -929,14 +1027,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B22F16F1C73358E59AE260C86E3D1F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF984D0BDE08492C60CC2D9C75E2C96 /* Abstraction.swift in Sources */,
+				EAB56C7B2652650A976538B12FBAC59D /* Constrainable.swift in Sources */,
+				CBF8630B51B556B1D93FF064C433A66E /* Constraints.swift in Sources */,
+				DF7A6BC0D371FF7ECA74781F562C475F /* Stack.swift in Sources */,
+				80C64F8B50FDB2E25A939480C3FEC43A /* TinyConstraints+superview.swift in Sources */,
+				602071FBBC9CE2E7E138D4B67223D4A9 /* TinyConstraints-dummy.m in Sources */,
+				0D24FEFEF4298905C4AE3E9FC22DBC38 /* TinyConstraints.swift in Sources */,
+				CCAEE4BF0C676D5173590E04D29BAE92 /* TinyEdgeInsets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E3227C295C3EB54665CDC78CCB2E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEE4FA3D73AADA8C75EB979BF56AD18 /* Pods-SBohemNaCestach-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1C9CF584701B962A1DA320CAA2D7E969 /* PBXTargetDependency */ = {
+		056624F2AEF42D7E2D657E6D4CAB5F4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BonMot;
-			target = 4C48FB7D363771FBD71AB44C090CB586 /* BonMot */;
-			targetProxy = 49B33C5F043DC07A05AC15A78F14F7AD /* PBXContainerItemProxy */;
+			name = R.swift;
+			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
+			targetProxy = 669517565273E79AE31CB3BD2CF37383 /* PBXContainerItemProxy */;
+		};
+		432376540CD109056FA0E7C6F722482C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTTAttributedLabel;
+			target = E077C5049157367A707E75CFDAB49F84 /* TTTAttributedLabel */;
+			targetProxy = 3AB1B4133C352F13C1C2BD6BA02C84EB /* PBXContainerItemProxy */;
 		};
 		4C96BD147A28C219742913509A3A6065 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -944,34 +1071,34 @@
 			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
 			targetProxy = 1F0ACA2E2CAC4C39619D3CD6F4CDA62F /* PBXContainerItemProxy */;
 		};
-		4E756EF4E82BE2765D6464557858E493 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TTTAttributedLabel;
-			target = E077C5049157367A707E75CFDAB49F84 /* TTTAttributedLabel */;
-			targetProxy = 560EEAC970BE3EC977A1B140A9379447 /* PBXContainerItemProxy */;
-		};
-		84D439DD907FD56FF032DF2AB40BF9E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = R.swift;
-			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
-			targetProxy = CEC7AEB3C72CD77B5996B5E6A852F140 /* PBXContainerItemProxy */;
-		};
-		8F39E430B14F49675E50FF9CB06B9D5D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = R.swift.Library;
-			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
-			targetProxy = F08898E738A0C03EEE0803D1EF25EDAF /* PBXContainerItemProxy */;
-		};
-		FA022748C2ADB76274943E4A5768D0CC /* PBXTargetDependency */ = {
+		4D5D0DF12794213D2CF88EFC7A514D47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DynamicColor;
 			target = 02365F2640C87181DBDCB1D175FA6C00 /* DynamicColor */;
-			targetProxy = 385F57C76BC31C28FB062AE697FAACB7 /* PBXContainerItemProxy */;
+			targetProxy = 943D5D2E4952DE9F6C0086B351C685C9 /* PBXContainerItemProxy */;
+		};
+		545A335393AD58F8B875383FD4B3274C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BonMot;
+			target = 4C48FB7D363771FBD71AB44C090CB586 /* BonMot */;
+			targetProxy = 270CDA1D74AED9C90CD6F468C75CBAD6 /* PBXContainerItemProxy */;
+		};
+		898E8F66F206ACD113DE4C571F0795F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
+			targetProxy = 5FFE51EDE00D4547392F3126FD92AB83 /* PBXContainerItemProxy */;
+		};
+		C80121E4DC991EE07806419D86D9D4CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = 3FDCC9EE5B6AA036A2F2189898675A67 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		15F6F2EF6BBA33903963A971D9A7CF21 /* Release */ = {
+		142352EA13C9182BE02F770E6A830247 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD081FD0C8AD1F60C890004C529D67A0 /* Pods-SBohemNaCestach.release.xcconfig */;
 			buildSettings = {
@@ -1076,7 +1203,7 @@
 		};
 		280953B2C329B1538FA170D526C7D5D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD31C4A566D8BAFB12D3A6BE6613183A /* R.swift.xcconfig */;
+			baseConfigurationReference = FABE34BF3E283FC0E4F287744CFF5F45 /* R.swift.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1093,7 +1220,7 @@
 		};
 		398726D960DCA44CB9C7D5866A06AEDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD31C4A566D8BAFB12D3A6BE6613183A /* R.swift.xcconfig */;
+			baseConfigurationReference = FABE34BF3E283FC0E4F287744CFF5F45 /* R.swift.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1107,7 +1234,42 @@
 			};
 			name = Debug;
 		};
-		4EA4EE8F0DD7ABE1214B0310127FB24D /* Debug */ = {
+		4F48839976A6FDFF485898783287B950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF514C0BDA2BA0E4ADAA404FB886AAFB /* BonMot.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BonMot/BonMot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BonMot/BonMot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BonMot/BonMot.modulemap";
+				PRODUCT_MODULE_NAME = BonMot;
+				PRODUCT_NAME = BonMot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		531A28A7F99C7A4A93EF3C38750698E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D153BE3A22845F2436BD96116E43D960 /* Pods-SBohemNaCestach.debug.xcconfig */;
 			buildSettings = {
@@ -1145,44 +1307,9 @@
 			};
 			name = Debug;
 		};
-		4F48839976A6FDFF485898783287B950 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EFE36194071912E3E0BACDE95F5368F /* BonMot.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BonMot/BonMot-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BonMot/BonMot-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BonMot/BonMot.modulemap";
-				PRODUCT_MODULE_NAME = BonMot;
-				PRODUCT_NAME = BonMot;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		5E44B42E0BD758195007F80D2AFF24F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E73C89B63E5748EE01936B9EBDDC00DB /* R.swift.Library.xcconfig */;
+			baseConfigurationReference = 8B7386A4C4E0C9CEA6DD171C9356AC3C /* R.swift.Library.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1218,7 +1345,7 @@
 		};
 		73FAA637A35EECCA80F13C66C9D39294 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35426FEFDB5744CB0233B5EBEF41F922 /* DynamicColor.xcconfig */;
+			baseConfigurationReference = 5780E18B71BCA2DD14A8893105290FBA /* DynamicColor.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1251,9 +1378,44 @@
 			};
 			name = Debug;
 		};
+		808EA8BE922628A603EFF6A61532F38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AA8A679F10C53391666BBE3F1C8898 /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		830BC8AC6A715687E514D616873CD264 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35426FEFDB5744CB0233B5EBEF41F922 /* DynamicColor.xcconfig */;
+			baseConfigurationReference = 5780E18B71BCA2DD14A8893105290FBA /* DynamicColor.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1289,7 +1451,7 @@
 		};
 		95390534E4418121658E2EE52BD87706 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EFE36194071912E3E0BACDE95F5368F /* BonMot.xcconfig */;
+			baseConfigurationReference = BF514C0BDA2BA0E4ADAA404FB886AAFB /* BonMot.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1325,7 +1487,7 @@
 		};
 		A7CF896A64C4113B25F72226100BA812 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DB11624C3BE8B47C2718EEC5D03AA29 /* TTTAttributedLabel.xcconfig */;
+			baseConfigurationReference = 0E8601521E6B9A9FB7BC97A60F667B09 /* TTTAttributedLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1361,7 +1523,7 @@
 		};
 		ABED05272087058A463CDC84C0C4AC03 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DB11624C3BE8B47C2718EEC5D03AA29 /* TTTAttributedLabel.xcconfig */;
+			baseConfigurationReference = 0E8601521E6B9A9FB7BC97A60F667B09 /* TTTAttributedLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1454,9 +1616,45 @@
 			};
 			name = Release;
 		};
+		F94F9A7A89188A502D190530F866A5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AA8A679F10C53391666BBE3F1C8898 /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FF50FBD8BA73D4F76E14C28DF53A2881 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E73C89B63E5748EE01936B9EBDDC00DB /* R.swift.Library.xcconfig */;
+			baseConfigurationReference = 8B7386A4C4E0C9CEA6DD171C9356AC3C /* R.swift.Library.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1492,15 +1690,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0FFAF33265E13FD0F598A1C13675198D /* Build configuration list for PBXNativeTarget "Pods-SBohemNaCestach" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4EA4EE8F0DD7ABE1214B0310127FB24D /* Debug */,
-				15F6F2EF6BBA33903963A971D9A7CF21 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1629F4E7691FB97E2A4647B0A9F371F7 /* Build configuration list for PBXNativeTarget "BonMot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1528,11 +1717,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		88931082C2933A1C92DC6A97ACD61B5A /* Build configuration list for PBXNativeTarget "Pods-SBohemNaCestach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				531A28A7F99C7A4A93EF3C38750698E4 /* Debug */,
+				142352EA13C9182BE02F770E6A830247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C02417645DD8D2ADC5C18E5D65150FE7 /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABED05272087058A463CDC84C0C4AC03 /* Debug */,
 				A7CF896A64C4113B25F72226100BA812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED162CA822CAFF9F3B82904FBA2988C /* Build configuration list for PBXNativeTarget "TinyConstraints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808EA8BE922628A603EFF6A61532F38E /* Debug */,
+				F94F9A7A89188A502D190530F866A5BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

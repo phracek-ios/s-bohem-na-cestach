@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DAK-4h-7qq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DAK-4h-7qq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,6 +36,65 @@
             </objects>
             <point key="canvasLocation" x="734.78260869565224" y="147.99107142857142"/>
         </scene>
+        <!--Prayer View Controller-->
+        <scene sceneID="fBr-sS-KWm">
+            <objects>
+                <viewController storyboardIdentifier="PrayerViewController" id="Ix5-iw-vMf" customClass="PrayerViewController" customModule="SBohemNaCestach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="upJ-Fi-ySe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUY-0M-2pK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUo-Fy-sMh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieO-wg-RCE">
+                                                <rect key="frame" x="20" y="20" width="374" height="734"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus luctus egestas leo. Ut tempus purus at lorem. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Phasellus faucibus molestie nisl. Nam sed tellus id magna elementum tincidunt. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Morbi scelerisque luctus velit. Duis risus. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </mutableString>
+                                                <fontDescription key="fontDescription" name="Times-Roman" family="Times" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ieO-wg-RCE" secondAttribute="bottom" constant="20" id="DH0-68-coR"/>
+                                            <constraint firstItem="ieO-wg-RCE" firstAttribute="leading" secondItem="DUo-Fy-sMh" secondAttribute="leading" constant="20" id="PfF-9w-C6u"/>
+                                            <constraint firstAttribute="trailing" secondItem="ieO-wg-RCE" secondAttribute="trailing" constant="20" id="R7I-xl-PAS"/>
+                                            <constraint firstItem="ieO-wg-RCE" firstAttribute="top" secondItem="DUo-Fy-sMh" secondAttribute="top" constant="20" id="oW1-AD-DdV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DUo-Fy-sMh" firstAttribute="top" secondItem="aUY-0M-2pK" secondAttribute="top" id="1Ov-XN-2AP"/>
+                                    <constraint firstAttribute="bottom" secondItem="DUo-Fy-sMh" secondAttribute="bottom" id="8pn-6g-tWJ"/>
+                                    <constraint firstItem="DUo-Fy-sMh" firstAttribute="width" secondItem="aUY-0M-2pK" secondAttribute="width" id="a4c-Vg-tK4"/>
+                                    <constraint firstItem="DUo-Fy-sMh" firstAttribute="height" secondItem="aUY-0M-2pK" secondAttribute="height" id="ge3-Wi-voy"/>
+                                    <constraint firstItem="DUo-Fy-sMh" firstAttribute="leading" secondItem="aUY-0M-2pK" secondAttribute="leading" id="ubA-fH-2Ff"/>
+                                    <constraint firstAttribute="trailing" secondItem="DUo-Fy-sMh" secondAttribute="trailing" id="yuT-Qe-mVk"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aUY-0M-2pK" firstAttribute="leading" secondItem="AnA-l2-5oZ" secondAttribute="leading" id="KZy-0G-VBI"/>
+                            <constraint firstItem="AnA-l2-5oZ" firstAttribute="trailing" secondItem="aUY-0M-2pK" secondAttribute="trailing" id="nvY-f7-DRo"/>
+                            <constraint firstItem="AnA-l2-5oZ" firstAttribute="bottom" secondItem="aUY-0M-2pK" secondAttribute="bottom" id="soa-0z-LU7"/>
+                            <constraint firstItem="aUY-0M-2pK" firstAttribute="top" secondItem="AnA-l2-5oZ" secondAttribute="top" id="vic-tR-Flr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AnA-l2-5oZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cAu-JZ-Rd1"/>
+                    <connections>
+                        <outlet property="prayerLabel" destination="ieO-wg-RCE" id="9gX-iH-wNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKO-Ws-b5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="147.99107142857142"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="SC9-ZZ-yZu">
             <objects>
@@ -52,6 +112,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15j-YI-7a8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-175.36231884057972" y="147.99107142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QYF-c0-kgy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nIf-bR-ObS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="stF-Jc-l1H">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ix5-iw-vMf" kind="relationship" relationship="rootViewController" id="Bk7-9l-Q2t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yiK-xj-s0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.8550724637682" y="147.99107142857142"/>
         </scene>
     </scenes>
 </document>

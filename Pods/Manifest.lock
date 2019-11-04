@@ -4,12 +4,14 @@ PODS:
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
+  - TinyConstraints (4.0.1)
   - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
   - BonMot
   - DynamicColor
   - R.swift
+  - TinyConstraints
   - TTTAttributedLabel
 
 SPEC REPOS:
@@ -18,6 +20,7 @@ SPEC REPOS:
     - DynamicColor
     - R.swift
     - R.swift.Library
+    - TinyConstraints
     - TTTAttributedLabel
 
 SPEC CHECKSUMS:
@@ -25,8 +28,9 @@ SPEC CHECKSUMS:
   DynamicColor: e72fcf4174518c514e862bb4bdea794c1865b412
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: c22a11af42b7099468aa015d463e93000214bda0
+PODFILE CHECKSUM: 909b3e68e046eee6b15dff4de84bf48ad41362db
 
 COCOAPODS: 1.7.5

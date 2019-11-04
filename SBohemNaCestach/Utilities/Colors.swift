@@ -17,6 +17,9 @@ extension UIColor {
             return UIColor(hexString: "#E0F2FE")
         }
         
+        static func titleColor() -> UIColor {
+            return UIColor(hexString: "#0096FB")
+        }
         static func blueColor() -> UIColor {
             return UIColor(hexString: "#E0F2FE")
         }
