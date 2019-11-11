@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0120BD61237974DD003415F2 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120BD60237974DD003415F2 /* SettingsTableViewController.swift */; };
+		0120BD6323799548003415F2 /* NotificationsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120BD6223799548003415F2 /* NotificationsName.swift */; };
 		013E63072375AED000910DBB /* AboutApplViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013E63062375AED000910DBB /* AboutApplViewController.swift */; };
 		01440A5B23574A0400452615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01440A5A23574A0400452615 /* AppDelegate.swift */; };
 		01440A6123574A0600452615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01440A6023574A0600452615 /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0120BD60237974DD003415F2 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		0120BD6223799548003415F2 /* NotificationsName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsName.swift; sourceTree = "<group>"; };
 		013E63062375AED000910DBB /* AboutApplViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutApplViewController.swift; sourceTree = "<group>"; };
 		01440A5723574A0400452615 /* SBohemNaCestach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBohemNaCestach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01440A5A23574A0400452615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 			children = (
 				016B2FED2359CA47005698D9 /* GeneratorText.swift */,
 				0193F34523638F5A000DF0D8 /* Colors.swift */,
+				0120BD6223799548003415F2 /* NotificationsName.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				0193F34223632C71000DF0D8 /* PrayersTableViewCell.xib */,
 				01D24F1C236895470004FB0F /* PrayerViewController.swift */,
 				013E63062375AED000910DBB /* AboutApplViewController.swift */,
+				0120BD60237974DD003415F2 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -444,7 +450,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				016B2FE72359C902005698D9 /* PrayersStructure.swift in Sources */,
+				0120BD61237974DD003415F2 /* SettingsTableViewController.swift in Sources */,
 				01D24F1D236895470004FB0F /* PrayerViewController.swift in Sources */,
+				0120BD6323799548003415F2 /* NotificationsName.swift in Sources */,
 				0193F34623638F5A000DF0D8 /* Colors.swift in Sources */,
 				01D24F1B236894DE0004FB0F /* R.generated.swift in Sources */,
 				01F9912F236B33580041A246 /* BaseViewController.swift in Sources */,
@@ -622,7 +630,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.SBohemNaCestach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -644,7 +652,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.SBohemNaCestach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

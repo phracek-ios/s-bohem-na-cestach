@@ -28,8 +28,16 @@ extension UIColor {
             return UIColor.white
         }
         
+        static func backNightColor() -> UIColor {
+            return UIColor.black
+        }
+        
         static func textNightColor() -> UIColor {
             return UIColor.white
+        }
+        
+        static func textLightColor() -> UIColor {
+            return UIColor.black
         }
         
     }
