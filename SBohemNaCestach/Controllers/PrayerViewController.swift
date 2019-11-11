@@ -15,13 +15,16 @@ class PrayerViewController: BaseViewController {
     var prayerTitle: String = ""
     var prayer: String = ""
 
-    @IBOutlet weak var prayerLabel: UILabel!
 
+    @IBOutlet weak var prayerLabel: UILabel!
     // MARK: View controller lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = prayerTitle
+        prayerLabel.sizeToFit()
+        prayerLabel.numberOfLines = 0
+        prayerLabel.textAlignment = NSTextAlignment.left
         prayerLabel.attributedText = generateContent(text: prayer)
 
    }

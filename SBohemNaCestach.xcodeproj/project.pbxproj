@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013E63072375AED000910DBB /* AboutApplViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013E63062375AED000910DBB /* AboutApplViewController.swift */; };
 		01440A5B23574A0400452615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01440A5A23574A0400452615 /* AppDelegate.swift */; };
 		01440A6123574A0600452615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01440A6023574A0600452615 /* Assets.xcassets */; };
 		01440A6423574A0600452615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01440A6323574A0600452615 /* Preview Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		013E63062375AED000910DBB /* AboutApplViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutApplViewController.swift; sourceTree = "<group>"; };
 		01440A5723574A0400452615 /* SBohemNaCestach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBohemNaCestach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01440A5A23574A0400452615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01440A6023574A0600452615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				0193F34123632C71000DF0D8 /* PrayersTableViewCell.swift */,
 				0193F34223632C71000DF0D8 /* PrayersTableViewCell.xib */,
 				01D24F1C236895470004FB0F /* PrayerViewController.swift */,
+				013E63062375AED000910DBB /* AboutApplViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				01F9912F236B33580041A246 /* BaseViewController.swift in Sources */,
 				016B2FE92359C93A005698D9 /* Prayer.swift in Sources */,
 				0193F34023632C58000DF0D8 /* PrayersTableViewController.swift in Sources */,
+				013E63072375AED000910DBB /* AboutApplViewController.swift in Sources */,
 				0193F34323632C71000DF0D8 /* PrayersTableViewCell.swift in Sources */,
 				016B2FEE2359CA47005698D9 /* GeneratorText.swift in Sources */,
 				016B2FEB2359C98D005698D9 /* PrayersDataService.swift in Sources */,
@@ -610,6 +614,7 @@
 				DEVELOPMENT_TEAM = 32253C46P7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SBohemNaCestach/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -631,6 +636,7 @@
 				DEVELOPMENT_TEAM = 32253C46P7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SBohemNaCestach/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
