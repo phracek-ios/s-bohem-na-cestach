@@ -6,13 +6,12 @@
 //  Copyright © 2019 Petr Hracek. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import BonMot
-import Foundation
 
-class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingsTableViewController: UITableViewController {
 
-    @IBOutlet weak var fontNamePickerView: UIPickerView!
     @IBOutlet weak var dimOffSwitchLabel: UILabel!
     @IBOutlet weak var fontPickerLabel: UILabel!
     @IBOutlet weak var dimOffSwitch: UISwitch!
@@ -20,35 +19,29 @@ class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, 
     @IBOutlet weak var fontCell: UITableViewCell!
     @IBOutlet weak var nightSwitch: UISwitch!
     @IBOutlet weak var nightSwitchCell: UITableViewCell!
+    @IBOutlet weak var footLabel: UILabel!
+    @IBOutlet weak var footSwitch: UISwitch!
     @IBOutlet weak var nightSwitchLabel: UILabel!
+    @IBOutlet weak var footCell: UITableViewCell!
+    @IBOutlet weak var labelExample: UILabel!
+    @IBOutlet weak var slider: UISlider!
     
-    var pickerData: [[String]] = [[String]]()
     var darkMode: Bool = false
     var back: UIColor = .black
     var text: UIColor = .white
+    var exampleText: String = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam neque."
+    var fontName: String = "Helvetica"
+    var fontSize: String = "16"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let userDefaults = UserDefaults.standard
-        let fontNames: [String] = [
-            "Arial", "Helvetica", "Times New Roman", "Baskerville", "Didot", "Gill Sans", "Hoefler Text", "Palatino", "Trebuchet MS", "Verdana"
-        ]
-        self.fontNamePickerView.delegate = self
-        self.fontNamePickerView.dataSource = self
-        let fontSizes: [String] = ["14", "16", "18", "20", "22", "24", "26", "28", "30"]
-        pickerData = [fontNames, fontSizes]
-        var fontName = userDefaults.string(forKey: "FontName")
-        var fontSize = userDefaults.string(forKey: "FontSize")
-        if fontName == nil {
-            fontName = "Helvetica"
-        }
-        if fontSize == nil {
-            fontSize = "14"
-        }
-
-        self.fontNamePickerView.selectRow(fontNames.firstIndex(of: fontName!)!, inComponent: 0, animated: true)
-        self.fontNamePickerView.selectRow(fontSizes.firstIndex(of: fontSize!)!, inComponent: 1, animated: true)
-        navigationController?.navigationBar.barStyle = UIBarStyle.black;
+        self.fontName = userDefaults.string(forKey: "FootFont") ?? "Helvetica"
+        self.fontSize = userDefaults.string(forKey: "FontSize") ?? "16"
+        slider.setValue(Float(Int(self.fontSize)!), animated: true)
+        labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
+        navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()
+        //navigationController?.navigationBar.barStyle = UIBarStyle.black;
         self.tableView.tableFooterView = UIView()
     }
 
@@ -71,26 +64,24 @@ class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, 
         refresh_ui()
         dimOffSwitch.isOn = userDefaults.bool(forKey: "DimmScreen")
     }
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 2
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return self.pickerData[component].count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        let attributes = [NSAttributedString.Key.foregroundColor: self.text]
-        return NSAttributedString(string: self.pickerData[component][row], attributes: attributes)
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    @IBAction func sliderValueChanged(_ sender: Any) {
         let userDefaults = UserDefaults.standard
-        let fontName = pickerData[0][pickerView.selectedRow(inComponent: 0)]
-        let fontStr = pickerData[1][pickerView.selectedRow(inComponent: 1)]
-        guard let n = NumberFormatter().number(from: fontStr) else { return }
-        userDefaults.set(fontStr, forKey: "FontSize")
-        userDefaults.set(fontName, forKey: "FontName")
+        self.fontSize = "\(Int(slider.value))"
+        userDefaults.set(self.fontSize, forKey: "FontSize")
+        labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
+    }
+    
+    @IBAction func footMode(_ sender: Any) {
+        let userDefaults = UserDefaults.standard
+        if footSwitch.isOn == true {
+            self.fontName = "Times New Roman"
+        } else {
+            self.fontName = "Helvetica"
+            
+        }
+        userDefaults.set(self.fontName, forKey: "FootFont")
+        labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
     }
     
     @IBAction func funcDisableDisplay(_ sender: Any) {
@@ -134,6 +125,7 @@ class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, 
         self.fontCell.backgroundColor = self.back
         self.fontPickerLabel.backgroundColor = self.back
         self.fontPickerLabel.textColor = self.text
-        self.fontNamePickerView.backgroundColor = self.back
+        self.labelExample.backgroundColor = self.back
+        self.labelExample.textColor = self.text
     }
 }

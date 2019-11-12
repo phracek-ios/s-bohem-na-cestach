@@ -19,6 +19,7 @@
 		016B2FE92359C93A005698D9 /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B2FE82359C93A005698D9 /* Prayer.swift */; };
 		016B2FEB2359C98D005698D9 /* PrayersDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B2FEA2359C98D005698D9 /* PrayersDataService.swift */; };
 		016B2FEE2359CA47005698D9 /* GeneratorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B2FED2359CA47005698D9 /* GeneratorText.swift */; };
+		0178F6D0237AE09200DB3305 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178F6CF237AE09200DB3305 /* Utils.swift */; };
 		0193F34023632C58000DF0D8 /* PrayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0193F33F23632C58000DF0D8 /* PrayersTableViewController.swift */; };
 		0193F34323632C71000DF0D8 /* PrayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0193F34123632C71000DF0D8 /* PrayersTableViewCell.swift */; };
 		0193F34423632C71000DF0D8 /* PrayersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0193F34223632C71000DF0D8 /* PrayersTableViewCell.xib */; };
@@ -68,6 +69,7 @@
 		016B2FE82359C93A005698D9 /* Prayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
 		016B2FEA2359C98D005698D9 /* PrayersDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayersDataService.swift; sourceTree = "<group>"; };
 		016B2FED2359CA47005698D9 /* GeneratorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorText.swift; sourceTree = "<group>"; };
+		0178F6CF237AE09200DB3305 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0193F33F23632C58000DF0D8 /* PrayersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayersTableViewController.swift; sourceTree = "<group>"; };
 		0193F34123632C71000DF0D8 /* PrayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayersTableViewCell.swift; sourceTree = "<group>"; };
 		0193F34223632C71000DF0D8 /* PrayersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrayersTableViewCell.xib; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				016B2FED2359CA47005698D9 /* GeneratorText.swift */,
 				0193F34523638F5A000DF0D8 /* Colors.swift */,
 				0120BD6223799548003415F2 /* NotificationsName.swift */,
+				0178F6CF237AE09200DB3305 /* Utils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				01D24F1D236895470004FB0F /* PrayerViewController.swift in Sources */,
 				0120BD6323799548003415F2 /* NotificationsName.swift in Sources */,
 				0193F34623638F5A000DF0D8 /* Colors.swift in Sources */,
+				0178F6D0237AE09200DB3305 /* Utils.swift in Sources */,
 				01D24F1B236894DE0004FB0F /* R.generated.swift in Sources */,
 				01F9912F236B33580041A246 /* BaseViewController.swift in Sources */,
 				016B2FE92359C93A005698D9 /* Prayer.swift in Sources */,

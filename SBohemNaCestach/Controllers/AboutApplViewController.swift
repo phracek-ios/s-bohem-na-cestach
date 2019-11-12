@@ -44,7 +44,7 @@ class AboutApplViewController: UIViewController, TTTAttributedLabelDelegate {
         aboutLabel.addLink(to: URL(string: phracek_email), with: NSRange(location: numberWords, length: phracek_email.count))
         numberWords += phracek_email.count + about_text_3.count - 20
         aboutLabel.addLink(to: URL(string: paulin_god_road), with: NSRange(location: numberWords, length: paulin_god_road.count + 1))
-
+        navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()
         navigationController?.navigationBar.barStyle = UIBarStyle.black
     }
     

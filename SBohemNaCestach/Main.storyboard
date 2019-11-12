@@ -216,33 +216,77 @@
                                             <constraint firstItem="gDB-Ot-6AE" firstAttribute="leading" secondItem="N0k-Tj-hv6" secondAttribute="leading" constant="10" id="zL1-1s-eAQ"/>
                                         </constraints>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="qxM-TP-k6R">
+                                        <rect key="frame" x="0.0" y="115.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qxM-TP-k6R" id="kS1-UM-VDi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patkové písmo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9g-1L-TNg">
+                                                    <rect key="frame" x="10" y="10" width="112" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJ5-6t-fQr">
+                                                    <rect key="frame" x="316" y="10" width="51" height="24"/>
+                                                    <connections>
+                                                        <action selector="footMode:" destination="AbQ-KN-pL8" eventType="valueChanged" id="nZy-be-g8b"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="KJ5-6t-fQr" secondAttribute="bottom" constant="10" id="8Mz-fO-JMQ"/>
+                                            <constraint firstItem="C9g-1L-TNg" firstAttribute="top" secondItem="qxM-TP-k6R" secondAttribute="top" constant="10" id="CJf-KP-HvM"/>
+                                            <constraint firstItem="KJ5-6t-fQr" firstAttribute="top" secondItem="qxM-TP-k6R" secondAttribute="top" constant="10" id="ItB-K0-h5d"/>
+                                            <constraint firstAttribute="trailing" secondItem="KJ5-6t-fQr" secondAttribute="trailing" constant="10" id="XzR-of-X6W"/>
+                                            <constraint firstItem="C9g-1L-TNg" firstAttribute="leading" secondItem="qxM-TP-k6R" secondAttribute="leading" constant="10" id="aKw-wY-s5X"/>
+                                            <constraint firstAttribute="bottom" secondItem="C9g-1L-TNg" secondAttribute="bottom" constant="10" id="ua9-w1-XHB"/>
+                                        </constraints>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="4Wp-yl-2pN">
-                                        <rect key="frame" x="0.0" y="115.5" width="375" height="130"/>
+                                        <rect key="frame" x="0.0" y="159.5" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Wp-yl-2pN" id="h9G-m7-V1n">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nastavení písma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNx-oX-B56">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Velikost písma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNx-oX-B56">
                                                     <rect key="frame" x="10" y="10" width="355" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="wgl-bg-hHP">
-                                                    <rect key="frame" x="10" y="41" width="355" height="79"/>
-                                                </pickerView>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="14" maxValue="26" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-W8-ejq">
+                                                    <rect key="frame" x="213" y="10" width="154" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="j2c-9d-c69"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="sliderValueChanged:" destination="AbQ-KN-pL8" eventType="valueChanged" id="9fZ-ym-c7c"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCs-z2-8qD" userLabel="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam neque.">
+                                                    <rect key="frame" x="10" y="51" width="355" height="69"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="wgl-bg-hHP" firstAttribute="top" secondItem="TNx-oX-B56" secondAttribute="bottom" constant="10" id="zgy-Y8-a4U"/>
+                                                <constraint firstItem="eCs-z2-8qD" firstAttribute="top" secondItem="TNx-oX-B56" secondAttribute="bottom" constant="20" id="q9f-G0-Soa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eCs-z2-8qD" secondAttribute="trailing" constant="10" id="21u-P4-N2D"/>
                                             <constraint firstItem="TNx-oX-B56" firstAttribute="top" secondItem="4Wp-yl-2pN" secondAttribute="top" constant="10" id="7nl-ao-Nkr"/>
-                                            <constraint firstAttribute="bottom" secondItem="wgl-bg-hHP" secondAttribute="bottom" constant="10" id="M2q-mY-ndz"/>
-                                            <constraint firstItem="wgl-bg-hHP" firstAttribute="leading" secondItem="4Wp-yl-2pN" secondAttribute="leading" constant="10" id="YeN-z9-H0J"/>
+                                            <constraint firstItem="eCs-z2-8qD" firstAttribute="leading" secondItem="4Wp-yl-2pN" secondAttribute="leading" constant="10" id="ZnY-In-kHu"/>
+                                            <constraint firstAttribute="bottom" secondItem="eCs-z2-8qD" secondAttribute="bottom" constant="10" id="elu-Sw-4gy"/>
                                             <constraint firstAttribute="trailing" secondItem="TNx-oX-B56" secondAttribute="trailing" constant="10" id="fPc-6N-5SN"/>
-                                            <constraint firstAttribute="trailing" secondItem="wgl-bg-hHP" secondAttribute="trailing" constant="10" id="uFc-nI-tdf"/>
+                                            <constraint firstAttribute="trailing" secondItem="aKD-W8-ejq" secondAttribute="trailing" constant="10" id="fg8-nw-mKH"/>
+                                            <constraint firstItem="aKD-W8-ejq" firstAttribute="top" secondItem="4Wp-yl-2pN" secondAttribute="top" constant="10" id="qLk-xW-NS2"/>
                                             <constraint firstItem="TNx-oX-B56" firstAttribute="leading" secondItem="4Wp-yl-2pN" secondAttribute="leading" constant="10" id="yji-WU-14a"/>
                                         </constraints>
                                     </tableViewCell>
@@ -260,11 +304,15 @@
                         <outlet property="dimOffSwitchCell" destination="wdV-2Q-Puj" id="i3X-yB-DuC"/>
                         <outlet property="dimOffSwitchLabel" destination="pXI-tV-1nd" id="u3k-Qh-6q6"/>
                         <outlet property="fontCell" destination="4Wp-yl-2pN" id="Qin-YD-EOe"/>
-                        <outlet property="fontNamePickerView" destination="wgl-bg-hHP" id="ABq-Us-Hlt"/>
                         <outlet property="fontPickerLabel" destination="TNx-oX-B56" id="8JB-6D-ruz"/>
+                        <outlet property="footCell" destination="qxM-TP-k6R" id="hyt-Ki-4eh"/>
+                        <outlet property="footLabel" destination="C9g-1L-TNg" id="KLI-7x-C7q"/>
+                        <outlet property="footSwitch" destination="KJ5-6t-fQr" id="ukp-2f-qdV"/>
+                        <outlet property="labelExample" destination="eCs-z2-8qD" id="K1j-sh-5Pz"/>
                         <outlet property="nightSwitch" destination="4i8-yE-eDb" id="d68-TA-pjU"/>
                         <outlet property="nightSwitchCell" destination="N0k-Tj-hv6" id="reT-x4-Rfh"/>
                         <outlet property="nightSwitchLabel" destination="gDB-Ot-6AE" id="4wZ-et-KfR"/>
+                        <outlet property="slider" destination="aKD-W8-ejq" id="ggZ-UT-vuJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gct-ZK-fHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
