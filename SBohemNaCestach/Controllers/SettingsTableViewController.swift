@@ -41,7 +41,6 @@ class SettingsTableViewController: UITableViewController {
         slider.setValue(Float(Int(self.fontSize)!), animated: true)
         labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
         navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()
-        //navigationController?.navigationBar.barStyle = UIBarStyle.black;
         self.tableView.tableFooterView = UIView()
     }
 
@@ -127,5 +126,9 @@ class SettingsTableViewController: UITableViewController {
         self.fontPickerLabel.textColor = self.text
         self.labelExample.backgroundColor = self.back
         self.labelExample.textColor = self.text
+        self.footCell.backgroundColor = self.back
+        self.footSwitch.backgroundColor = self.back
+        self.footLabel.backgroundColor = self.back
+        self.footLabel.textColor = self.text
     }
 }

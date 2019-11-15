@@ -10,7 +10,7 @@ import UIKit
 import TTTAttributedLabel
 import BonMot
 
-class AboutApplViewController: UIViewController, TTTAttributedLabelDelegate {
+class AboutApplViewController: BaseViewController, TTTAttributedLabelDelegate {
 
     let paulin_web = "http://www.paulinky.cz"
     let paulin_email = "paulinky@paulinky.cz"
@@ -45,7 +45,6 @@ class AboutApplViewController: UIViewController, TTTAttributedLabelDelegate {
         numberWords += phracek_email.count + about_text_3.count - 20
         aboutLabel.addLink(to: URL(string: paulin_god_road), with: NSRange(location: numberWords, length: paulin_god_road.count + 1))
         navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()
-        navigationController?.navigationBar.barStyle = UIBarStyle.black
     }
     
     override func viewWillAppear(_ animated: Bool) {

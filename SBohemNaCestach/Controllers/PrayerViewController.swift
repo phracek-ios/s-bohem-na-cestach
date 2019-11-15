@@ -42,6 +42,28 @@ class PrayerViewController: BaseViewController, UIGestureRecognizerDelegate {
         prayerLabel.textAlignment = NSTextAlignment.left
         update_fonts()
         setupUI()
+        if #available(iOS 13.0, *) {
+            let app = UIApplication.shared
+            let statusBarHeight: CGFloat = app.statusBarFrame.size.height
+            
+            let statusbarView = UIView()
+            statusbarView.backgroundColor = UIColor.WithGodOnRoad.titleColor()
+            view.addSubview(statusbarView)
+          
+            statusbarView.translatesAutoresizingMaskIntoConstraints = false
+            statusbarView.heightAnchor
+                .constraint(equalToConstant: statusBarHeight).isActive = true
+            statusbarView.widthAnchor
+                .constraint(equalTo: view.widthAnchor, multiplier: 1.0).isActive = true
+            statusbarView.topAnchor
+                .constraint(equalTo: view.topAnchor).isActive = true
+            statusbarView.centerXAnchor
+                .constraint(equalTo: view.centerXAnchor).isActive = true
+          
+        } else {
+            let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
+            statusBar?.backgroundColor = UIColor.WithGodOnRoad.titleColor()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,6 +80,7 @@ class PrayerViewController: BaseViewController, UIGestureRecognizerDelegate {
         update_fonts()
         refresh_ui()
     }
+    
     func refresh_ui() {
         self.view.backgroundColor = self.back
         self.prayerLabel.backgroundColor = self.back
@@ -68,6 +91,7 @@ class PrayerViewController: BaseViewController, UIGestureRecognizerDelegate {
     }
     func toggleNavigationBarVisibility() {
         if let isNarBarHidden = navigationController?.isNavigationBarHidden {
+            print(isNarBarHidden)
             if !isNarBarHidden { // It's necessary to hide the status bar before  nav bar hidding (because of a jump of content)...
                 isStatusBarHidden = !isNarBarHidden
             }
@@ -75,6 +99,7 @@ class PrayerViewController: BaseViewController, UIGestureRecognizerDelegate {
             if isNarBarHidden { // ... and it's necessary to show the status bar after nav bar showing (because of a jump of content).
                 isStatusBarHidden = !isNarBarHidden
             }
+            print(isStatusBarHidden)
         }
     }
     @objc func didTapOnScreen() {

@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         PrayersDataService.shared.loadData()
         UINavigationBar.appearance().barTintColor = UIColor.WithGodOnRoad.titleColor()
-        UINavigationBar.appearance().tintColor = UIColor.WithGodOnRoad.textNightColor()
+        //UINavigationBar.appearance().tintColor = UIColor.WithGodOnRoad.textNightColor()
         UINavigationBar.appearance().isTranslucent = false
         return true
     }
