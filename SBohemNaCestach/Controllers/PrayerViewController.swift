@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PrayerViewController: BaseViewController, UIGestureRecognizerDelegate {
+class PrayerViewController: UIViewController, UIGestureRecognizerDelegate {
 
     // MARK: - Properties
     
@@ -23,6 +23,9 @@ class PrayerViewController: BaseViewController, UIGestureRecognizerDelegate {
         }
     }
 
+    override var prefersStatusBarHidden: Bool {
+        return isStatusBarHidden
+    }
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var innerContentView: UIView!
@@ -42,31 +45,12 @@ class PrayerViewController: BaseViewController, UIGestureRecognizerDelegate {
         prayerLabel.textAlignment = NSTextAlignment.left
         update_fonts()
         setupUI()
-        if #available(iOS 13.0, *) {
-            let app = UIApplication.shared
-            let statusBarHeight: CGFloat = app.statusBarFrame.size.height
-            
-            let statusbarView = UIView()
-            statusbarView.backgroundColor = UIColor.WithGodOnRoad.titleColor()
-            view.addSubview(statusbarView)
-          
-            statusbarView.translatesAutoresizingMaskIntoConstraints = false
-            statusbarView.heightAnchor
-                .constraint(equalToConstant: statusBarHeight).isActive = true
-            statusbarView.widthAnchor
-                .constraint(equalTo: view.widthAnchor, multiplier: 1.0).isActive = true
-            statusbarView.topAnchor
-                .constraint(equalTo: view.topAnchor).isActive = true
-            statusbarView.centerXAnchor
-                .constraint(equalTo: view.centerXAnchor).isActive = true
-          
-        } else {
-            let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
-            statusBar?.backgroundColor = UIColor.WithGodOnRoad.titleColor()
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backItem
         let userDefaults = UserDefaults.standard
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
         if self.darkMode == true {
@@ -107,21 +91,17 @@ class PrayerViewController: BaseViewController, UIGestureRecognizerDelegate {
     }
     
     func setupUI() {
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
         let tap = UITapGestureRecognizer(target: self, action: #selector(didTapOnScreen))
         tap.delegate = self
         view.addGestureRecognizer(tap)
-        navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()
     }
     
     func update_fonts() {
         let userDefaults = UserDefaults.standard
-        if let saveFontName = userDefaults.string(forKey: "FootFont") {
-            self.font_name = saveFontName
+        if userDefaults.bool(forKey: "FootFont") {
+            self.font_name = "Times New Roman"
         } else {
-            userDefaults.set("Helvetica", forKey: "FootFont")
+            userDefaults.set(true, forKey: "FootFont")
             self.font_name = "Helvetica"
         }
         

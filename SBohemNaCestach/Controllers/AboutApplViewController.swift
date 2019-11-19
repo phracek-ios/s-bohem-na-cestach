@@ -10,7 +10,7 @@ import UIKit
 import TTTAttributedLabel
 import BonMot
 
-class AboutApplViewController: BaseViewController, TTTAttributedLabelDelegate {
+class AboutApplViewController: UIViewController, TTTAttributedLabelDelegate {
 
     let paulin_web = "http://www.paulinky.cz"
     let paulin_email = "paulinky@paulinky.cz"

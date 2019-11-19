@@ -30,16 +30,12 @@ class SettingsTableViewController: UITableViewController {
     var back: UIColor = .black
     var text: UIColor = .white
     var exampleText: String = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam neque."
-    var fontName: String = "Helvetica"
+    var fontName: String = ""
     var fontSize: String = "16"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let userDefaults = UserDefaults.standard
-        self.fontName = userDefaults.string(forKey: "FootFont") ?? "Helvetica"
-        self.fontSize = userDefaults.string(forKey: "FontSize") ?? "16"
-        slider.setValue(Float(Int(self.fontSize)!), animated: true)
-        labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
         navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()
         self.tableView.tableFooterView = UIView()
     }
@@ -60,8 +56,17 @@ class SettingsTableViewController: UITableViewController {
             self.back = UIColor.WithGodOnRoad.backLightColor()
             self.text = UIColor.WithGodOnRoad.textLightColor()
         }
-        refresh_ui()
         dimOffSwitch.isOn = userDefaults.bool(forKey: "DimmScreen")
+        footSwitch.isOn = userDefaults.bool(forKey: "FootFont")
+        if footSwitch.isOn == true {
+            self.fontName = "Times New Roman"
+        } else {
+            self.fontName = "Helvetica"
+        }
+        self.fontSize = userDefaults.string(forKey: "FontSize") ?? "16"
+        slider.setValue(Float(Int(self.fontSize)!), animated: true)
+        labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
+        refresh_ui()
     }
     
     @IBAction func sliderValueChanged(_ sender: Any) {

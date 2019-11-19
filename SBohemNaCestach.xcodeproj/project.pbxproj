@@ -29,7 +29,6 @@
 		01D24F1B236894DE0004FB0F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D24F1A236894DD0004FB0F /* R.generated.swift */; };
 		01D24F1D236895470004FB0F /* PrayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D24F1C236895470004FB0F /* PrayerViewController.swift */; };
 		01E2489C2359D4C900A04B4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E2489B2359D4C900A04B4C /* Main.storyboard */; };
-		01F9912F236B33580041A246 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F9912E236B33580041A246 /* BaseViewController.swift */; };
 		3356A073B995EB2939C5C4F1 /* Pods_SBohemNaCestach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9555814B7CFCED41AE0C7C /* Pods_SBohemNaCestach.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +78,6 @@
 		01D24F1A236894DD0004FB0F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		01D24F1C236895470004FB0F /* PrayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerViewController.swift; sourceTree = "<group>"; };
 		01E2489B2359D4C900A04B4C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		01F9912E236B33580041A246 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7EE18E27E6D1995BC49116A6 /* Pods-SBohemNaCestach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBohemNaCestach.release.xcconfig"; path = "Target Support Files/Pods-SBohemNaCestach/Pods-SBohemNaCestach.release.xcconfig"; sourceTree = "<group>"; };
 		A774414DB69CD2999D434A66 /* Pods-SBohemNaCestach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBohemNaCestach.debug.xcconfig"; path = "Target Support Files/Pods-SBohemNaCestach/Pods-SBohemNaCestach.debug.xcconfig"; sourceTree = "<group>"; };
 		ED9555814B7CFCED41AE0C7C /* Pods_SBohemNaCestach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBohemNaCestach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,7 +215,6 @@
 		019E4EE123583F0600BA0117 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				01F9912D236B330F0041A246 /* Base */,
 				0193F33F23632C58000DF0D8 /* PrayersTableViewController.swift */,
 				0193F34123632C71000DF0D8 /* PrayersTableViewCell.swift */,
 				0193F34223632C71000DF0D8 /* PrayersTableViewCell.xib */,
@@ -226,14 +223,6 @@
 				0120BD60237974DD003415F2 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		01F9912D236B330F0041A246 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				01F9912E236B33580041A246 /* BaseViewController.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		6F6B14F5E72CB5E7AEA18CCB /* Pods */ = {
@@ -459,7 +448,6 @@
 				0193F34623638F5A000DF0D8 /* Colors.swift in Sources */,
 				0178F6D0237AE09200DB3305 /* Utils.swift in Sources */,
 				01D24F1B236894DE0004FB0F /* R.generated.swift in Sources */,
-				01F9912F236B33580041A246 /* BaseViewController.swift in Sources */,
 				016B2FE92359C93A005698D9 /* Prayer.swift in Sources */,
 				0193F34023632C58000DF0D8 /* PrayersTableViewController.swift in Sources */,
 				013E63072375AED000910DBB /* AboutApplViewController.swift in Sources */,
