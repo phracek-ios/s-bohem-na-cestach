@@ -7,20 +7,17 @@
 //
 
 import UIKit
-import TTTAttributedLabel
 import BonMot
+import WebKit
+import FirebaseAnalytics
 
-class AboutApplViewController: UIViewController, TTTAttributedLabelDelegate {
-
-    let paulin_web = "http://www.paulinky.cz"
-    let paulin_email = "paulinky@paulinky.cz"
-    let phracek_email = "phracek@gmail.com"
-    let paulin_god_road = "http://paulinky.cz/obchod/detail/S-Bohem-na-cestach"
-
-    @IBOutlet weak var aboutLabel: TTTAttributedLabel!
-    @IBOutlet var contentView: UIView!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var innerContentView: UIView!
+class AboutApplViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler  {
+    
+    lazy var aboutApplWebView: WKWebView = {
+         let wview = WKWebView()
+         wview.isOpaque = false
+         return wview
+     }()
     
     var darkMode: Bool = false
     var back: UIColor = .black
@@ -28,23 +25,28 @@ class AboutApplViewController: UIViewController, TTTAttributedLabelDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let about_text_1: String = "<p><b>S Bohem na cestách</b></p><p>Výběr textu:<br>Anna Mátiková FSP, Andrea Hýblová FSP<br><br>Nakladatelství PAULÍNKY, 2010<br>Petrská 9, 110 00 Praha 1 <br>"
-        let about_text_2: String = "</p><p>© Úvodní foto:<br>Mark Brown</p><p>© Program: <br>Petr Hracek "
-        let about_text_3: String = "<br></p><p>Tato aplikace vznikla proto, aby doprovázela cestovatele, poutníka, turistu či „dovolenkáře“ při získávání nových zážitků a zkušeností, a napomáhala vést jeho pohled k Bohu a otvírala jeho srdce, aby i v čase prázdnin a dovolené bylo naplňováno Božími dary.<br></p><p>Chcete-li získat i tištěnou verzi této aplikace, lze si ji objednat v e-shopu Paulínky nebo v knihkupectvích s nabídkou křesťanské literatury:<br>"
-        aboutLabel.numberOfLines = 0
-        aboutLabel.delegate = self
-        var numberWords = 0
-        let text = "\(about_text_1)\(paulin_web)<br>\(paulin_email)\(about_text_2)\(phracek_email)\(about_text_3)\(paulin_god_road)</p>"
-        aboutLabel.setText(generateContent(text: text))
-        aboutLabel.addLink(to: URL(string: paulin_web), with: NSRange(location: about_text_1.count - 30, length: paulin_web.count))
-        numberWords += about_text_1.count - 30 + paulin_web.count + 1
-        aboutLabel.addLink(to: URL(string: paulin_email), with: NSRange(location: numberWords, length: paulin_email.count))
-        numberWords += paulin_email.count + about_text_2.count - 16
-        aboutLabel.addLink(to: URL(string: phracek_email), with: NSRange(location: numberWords, length: phracek_email.count))
-        numberWords += phracek_email.count + about_text_3.count - 20
-        aboutLabel.addLink(to: URL(string: paulin_god_road), with: NSRange(location: numberWords, length: paulin_god_road.count + 1))
+        let userDefaults = UserDefaults.standard
+        self.darkMode = userDefaults.bool(forKey: "NightSwitch")
+        if self.darkMode == true {
+            self.back = UIColor.WithGodOnRoad.backNightColor()
+            self.text = UIColor.WithGodOnRoad.textNightColor()
+        }
+        else {
+            self.back = UIColor.WithGodOnRoad.backLightColor()
+            self.text = UIColor.WithGodOnRoad.textLightColor()
+        }
+        let textSource = createSimpleHtml(input: NSLocalizedString("o_aplikaci_text", comment: ""))
+        aboutApplWebView.loadHTMLString(textSource, baseURL: nil)
+        aboutApplWebView.backgroundColor = self.back
+        aboutApplWebView.tintColor = self.text
+        self.view.addSubview(aboutApplWebView)
+        view.addConstraintsWithFormat(format: "H:|[v0]|", views: aboutApplWebView)
+        view.addConstraintsWithFormat(format: "V:|-25-[v0]-15-|", views: aboutApplWebView)
         navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()
+    }
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,18 +60,38 @@ class AboutApplViewController: UIViewController, TTTAttributedLabelDelegate {
             self.back = UIColor.WithGodOnRoad.backLightColor()
             self.text = UIColor.WithGodOnRoad.textLightColor()
         }
-        refresh_ui()
     }
-    func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
-        UIApplication.shared.open(url)
+
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        guard
+            let url = navigationAction.request.url else {
+                decisionHandler(.cancel)
+                return
+        }
+        if navigationAction.navigationType == .linkActivated {
+            print("link")
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+            else
+            {
+                UIApplication.shared.openURL(url)
+            }
+            decisionHandler(.cancel)
+            return
+        }
     }
-    
-    func refresh_ui() {
-        self.view.backgroundColor = self.back
-        self.aboutLabel.backgroundColor = self.back
-        self.aboutLabel.textColor = self.text
-        self.contentView.backgroundColor = self.back
-        self.scrollView.backgroundColor = self.back
-        self.innerContentView.backgroundColor = self.back
+    func createSimpleHtml(input: String) -> String {
+        if self.darkMode {
+            return "<html><body style='margin: 40px'>" +
+                "<div style='color:#ffffff'><font size=20>" +
+                input +
+                "</font></div></body></html>";
+        } else {
+            return "<html><body style='margin: 40px'>" +
+                "<div style='color:#000000'><font size=20>" +
+                input +
+                "</font></div></body></html>";
+        }
     }
 }

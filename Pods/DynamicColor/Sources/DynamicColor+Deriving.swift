@@ -52,7 +52,7 @@ public extension DynamicColor {
    - seealso: adjustedHueColor:
    */
   final func complemented() -> DynamicColor {
-    return adjustedHue(amount: 180)
+    return adjustedHue(amount: 180.0)
   }
 
   /**
@@ -99,13 +99,25 @@ public extension DynamicColor {
   /**
    Creates and returns a color object converted to grayscale.
 
-   This is identical to desaturateColor(1).
-
    - returns: A grayscale DynamicColor.
-   - seealso: desaturateColor:
+   - seealso: desaturated:
    */
-  final func grayscaled() -> DynamicColor {
-    return desaturated(amount: 1)
+  final func grayscaled(mode: GrayscalingMode = .lightness) -> DynamicColor {
+    let (r, g, b, a) = self.toRGBAComponents()
+
+    let l: CGFloat
+    switch mode {
+    case .luminance:
+      l = (0.299 * r) + (0.587 * g) + (0.114 * b)
+    case .lightness:
+      l = 0.5 * (max(r, g, b) + min(r, g, b))
+    case .average:
+      l = (1.0 / 3.0) * (r + g + b)
+    case .value:
+      l = max(r, g, b)
+    }
+
+    return HSL(hue: 0.0, saturation: 0.0, lightness: l, alpha: a).toDynamicColor()
   }
 
   /**
@@ -116,9 +128,9 @@ public extension DynamicColor {
   final func inverted() -> DynamicColor {
     let rgba = toRGBAComponents()
 
-    let invertedRed   = 1 - rgba.r
-    let invertedGreen = 1 - rgba.g
-    let invertedBlue  = 1 - rgba.b
+    let invertedRed   = 1.0 - rgba.r
+    let invertedGreen = 1.0 - rgba.g
+    let invertedBlue  = 1.0 - rgba.b
 
     return DynamicColor(red: invertedRed, green: invertedGreen, blue: invertedBlue, alpha: rgba.a)
   }

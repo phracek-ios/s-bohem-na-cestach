@@ -55,16 +55,13 @@ public extension DynamicColor {
    - parameter hexString: A hexa-decimal color string representation.
    */
   convenience init(hexString: String) {
-    let hexString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
-    let scanner   = Scanner(string: hexString)
+    let hexString                 = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
+    let scanner                   = Scanner(string: hexString)
+    scanner.charactersToBeSkipped = CharacterSet(charactersIn: "#")
 
-    if hexString.hasPrefix("#") {
-      scanner.scanLocation = 1
-    }
+    var color: UInt64 = 0
 
-    var color: UInt32 = 0
-
-    if scanner.scanHexInt32(&color) {
+    if scanner.scanHexInt64(&color) {
       self.init(hex: color, useAlpha: hexString.count > 7)
     }
     else {
@@ -75,11 +72,11 @@ public extension DynamicColor {
   /**
    Creates a color from an hex integer (e.g. 0x3498db).
 
-   - parameter hex: A hexa-decimal UInt32 that represents a color.
-   - parameter alphaChannel: If true the given hex-decimal UInt32 includes the alpha channel (e.g. 0xFF0000FF).
+   - parameter hex: A hexa-decimal UInt64 that represents a color.
+   - parameter alphaChannel: If true the given hex-decimal UInt64 includes the alpha channel (e.g. 0xFF0000FF).
    */
-  convenience init(hex: UInt32, useAlpha alphaChannel: Bool = false) {
-    let mask      = UInt32(0xFF)
+  convenience init(hex: UInt64, useAlpha alphaChannel: Bool = false) {
+    let mask      = UInt64(0xFF)
     let cappedHex = !alphaChannel && hex > 0xffffff ? 0xffffff : hex
 
     let r = cappedHex >> (alphaChannel ? 24 : 16) & mask
@@ -87,10 +84,10 @@ public extension DynamicColor {
     let b = cappedHex >> (alphaChannel ? 8 : 0) & mask
     let a = alphaChannel ? cappedHex & mask : 255
 
-    let red   = CGFloat(r) / 255
-    let green = CGFloat(g) / 255
-    let blue  = CGFloat(b) / 255
-    let alpha = CGFloat(a) / 255
+    let red   = CGFloat(r) / 255.0
+    let green = CGFloat(g) / 255.0
+    let blue  = CGFloat(b) / 255.0
+    let alpha = CGFloat(a) / 255.0
 
     self.init(red: red, green: green, blue: blue, alpha: alpha)
   }
@@ -105,22 +102,36 @@ public extension DynamicColor {
   }
 
   /**
-   Returns the color representation as an integer.
+   Returns the color representation as an integer (without the alpha channel).
 
    - returns: A UInt32 that represents the hexa-decimal color.
    */
   final func toHex() -> UInt32 {
-    func roundToHex(_ x: CGFloat) -> UInt32 {
-      guard x > 0 else { return 0 }
-      let rounded: CGFloat = round(x * 255)
-
-      return UInt32(rounded)
-    }
-
-    let rgba       = toRGBAComponents()
-    let colorToInt = roundToHex(rgba.r) << 16 | roundToHex(rgba.g) << 8 | roundToHex(rgba.b)
-
-    return colorToInt
+    let rgba = toRGBAComponents()
+    
+    return roundToHex(rgba.r) << 16 | roundToHex(rgba.g) << 8 | roundToHex(rgba.b)
+  }
+  
+  /**
+   Returns the RGBA color representation.
+   
+   - returns: A UInt32 that represents the color as an RGBA value.
+   */
+  func toRGBA() -> UInt32 {
+    let rgba = toRGBAComponents()
+    
+    return roundToHex(rgba.r) << 24 | roundToHex(rgba.g) << 16 | roundToHex(rgba.b) << 8 | roundToHex(rgba.a)
+  }
+  
+  /**
+   Returns the AGBR color representation.
+   
+   - returns: A UInt32 that represents the color as an AGBR value.
+   */
+  func toAGBR() -> UInt32 {
+    let rgba = toRGBAComponents()
+    
+    return roundToHex(rgba.a) << 24 | roundToHex(rgba.b) << 16 | roundToHex(rgba.g) << 8 | roundToHex(rgba.r)
   }
 
   // MARK: - Identifying and Comparing Colors
@@ -156,7 +167,7 @@ public extension DynamicColor {
    */
   func isLight() -> Bool {
     let components = toRGBAComponents()
-    let brightness = ((components.r * 299) + (components.g * 587) + (components.b * 114)) / 1000
+    let brightness = ((components.r * 299.0) + (components.g * 587.0) + (components.b * 114.0)) / 1000.0
 
     return brightness >= 0.5
   }

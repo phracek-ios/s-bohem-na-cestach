@@ -8,14 +8,20 @@
 
 import UIKit
 
-class PrayersTableViewController: UITableViewController {
+class PrayersTableViewController: UIViewController, UITableViewDelegate {
 
     struct RowData {
         let type: Int
         let name: String
         let text: String
     }
-    let cellIdentifier = "PrayersTableViewCell"
+    
+    lazy var tableView: UITableView = {
+        let tv = UITableView()
+         tv.translatesAutoresizingMaskIntoConstraints = false
+         return tv
+    }()
+    
     fileprivate var rowData = [RowData]()
     fileprivate var prayersStructure: PrayersStructure?
     fileprivate var darkMode: Bool = false
@@ -29,8 +35,24 @@ class PrayersTableViewController: UITableViewController {
         label.textAlignment = .left
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
         prayersStructure = PrayersDataService.shared.prayersStructure
+        setupUI()
+        loadPrayersMenu()
+
+        NotificationCenter.default.addObserver(self, selector: #selector(darkModeEnabled(_:)), name: .darkModeEnabled, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(darkModeDisabled(_:)), name: .darkModeDisabled, object: nil)
+    }
+    
+    func setupUI() {
+        self.view.addSubview(tableView)
+        self.view.topAnchor.constraint(equalTo: tableView.topAnchor).isActive = true
+        self.view.bottomAnchor.constraint(equalTo: tableView.bottomAnchor).isActive = true
+        self.view.leftAnchor.constraint(equalTo: tableView.leftAnchor).isActive = true
+        self.view.rightAnchor.constraint(equalTo: tableView.rightAnchor).isActive = true
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 15, right: 0)
         // Register cell
-        tableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(PrayersTableViewCell.self, forCellReuseIdentifier: PrayersTableViewCell.cellId)
 
         if self.darkMode {
             self.tableView.backgroundColor = UIColor.WithGodOnRoad.backNightColor()
@@ -39,12 +61,8 @@ class PrayersTableViewController: UITableViewController {
         }
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorColor = UIColor.gray
-        loadPrayersMenu()
         self.tableView.tableFooterView = UIView()
-        NotificationCenter.default.addObserver(self, selector: #selector(darkModeEnabled(_:)), name: .darkModeEnabled, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(darkModeDisabled(_:)), name: .darkModeDisabled, object: nil)
     }
-    
     deinit {
         NotificationCenter.default.removeObserver(self, name: .darkModeEnabled, object: nil)
         NotificationCenter.default.removeObserver(self, name: .darkModeDisabled, object: nil)
@@ -55,22 +73,39 @@ class PrayersTableViewController: UITableViewController {
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
         tableView.reloadData()
     }
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    
+    private func loadPrayersMenu() {
+        guard let prayersStructure = prayersStructure else { return }
+        
+        for prayer in prayersStructure.prayers {
+            rowData.append(RowData(type: prayer.id, name: prayer.name, text: prayer.prayer))
+        }
+    }
+    @objc private func darkModeEnabled(_ notification: Notification) {
+        self.darkMode = true
+        self.tableView.backgroundColor = UIColor.WithGodOnRoad.backNightColor()
+        self.tableView.reloadData()
+    }
+    
+    @objc private func darkModeDisabled(_ notification: Notification) {
+        self.darkMode = false
+        self.tableView.backgroundColor = UIColor.WithGodOnRoad.backLightColor()
+        self.tableView.reloadData()
+    }
+}
+extension PrayersTableViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return rowData.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? PrayersTableViewCell else {
-            fatalError("The dequeue cell is not an entrance of \(cellIdentifier)")
-        }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: PrayersTableViewCell.cellId) as! PrayersTableViewCell
         cell.accessoryType = .disclosureIndicator
         cell.prayerName.text = rowData[indexPath.row].name
         cell.backgroundColor = UIColor.WithGodOnRoad.blueColor()
@@ -93,31 +128,12 @@ class PrayersTableViewController: UITableViewController {
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = rowData[indexPath.row]
         
-        let view = R.storyboard.main.prayerViewController()!
+        let view = PrayerViewController()
         view.prayerTitle = data.name
         view.prayer = data.text
         navigationController?.pushViewController(view, animated: true)
-    }
-
-    private func loadPrayersMenu() {
-        guard let prayersStructure = prayersStructure else { return }
-        
-        for prayer in prayersStructure.prayers {
-            rowData.append(RowData(type: prayer.id, name: prayer.name, text: prayer.prayer))
-        }
-    }
-    @objc private func darkModeEnabled(_ notification: Notification) {
-        self.darkMode = true
-        self.tableView.backgroundColor = UIColor.WithGodOnRoad.backNightColor()
-        self.tableView.reloadData()
-    }
-    
-    @objc private func darkModeDisabled(_ notification: Notification) {
-        self.darkMode = false
-        self.tableView.backgroundColor = UIColor.WithGodOnRoad.backLightColor()
-        self.tableView.reloadData()
     }
 }

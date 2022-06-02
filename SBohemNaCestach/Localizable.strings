@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  SBohemNaCestach
+
+  Created by Petr Hracek on 02.06.2022.
+  Copyright © 2022 Petr Hracek. All rights reserved.
+*/
+"o_aplikaci" = "O aplikaci";
+"o_aplikaci_text" = "<p><b>S Bohem na cestách</b></p>
+<p>Výběr textu:<br>Anna Mátiková FSP, Andrea Hýblová FSP<br><br>Nakladatelství PAULÍNKY, 2010<br>Petrská 9, 110 00 Praha 1 <br>
+<a href=\"http://www.paulinky.cz\">http://www.paulinky.cz</a>
+<br>
+paulinky@paulinky.cz
+</p>
+<p>© Úvodní foto:<br>Mark Brown</p><p>© Program: <br>Petr Hracek phracek@gmail.com
+<br></p><p>Tato aplikace vznikla proto, aby doprovázela cestovatele, poutníka, turistu či „dovolenkáře“ při získávání nových zážitků a zkušeností, a napomáhala vést jeho pohled k Bohu a otvírala jeho srdce, aby i v čase prázdnin a dovolené bylo naplňováno Božími dary.<br></p>
+<p>Chcete-li získat i tištěnou verzi této aplikace, lze si ji objednat v e-shopu Paulínky nebo v knihkupectvích s nabídkou křesťanské literatury:<br>
+<a href=\"http://paulinky.cz/obchod/detail/S-Bohem-na-cestach\">http://paulinky.cz/obchod/detail/S-Bohem-na-cestach</a>
+</p>
+
+";

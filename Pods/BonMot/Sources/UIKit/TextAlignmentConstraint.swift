@@ -3,8 +3,10 @@
 //  BonMot
 //
 //  Created by Cameron Pulsford on 10/4/16.
-//  Copyright © 2016 Raizlabs. All rights reserved.
+//  Copyright © 2016 Rightpoint. All rights reserved.
 //
+
+#if !os(watchOS)
 
 #if os(OSX)
     import AppKit
@@ -171,7 +173,7 @@ public class TextAlignmentConstraint: NSLayoutConstraint {
     }
 
     // Can't use block-based KVO until we can use \NSLayoutConstraint.firstItem
-    //swiftlint:disable:next block_based_kvo
+    // swiftlint:disable:next block_based_kvo
     public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
         guard context == &TextAlignmentConstraintKVOContext else {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
@@ -209,7 +211,7 @@ public class TextAlignmentConstraint: NSLayoutConstraint {
         case .top:
             distanceFromTop = 0
         case .firstBaseline, .lastBaseline, .bottom:
-            fatalError("\(attribute) alignment is not currently supported with \(self). Please check https://github.com/Raizlabs/BonMot/issues/37 for progress on this issue.")
+            fatalError("\(attribute) alignment is not currently supported with \(self). Please check https://github.com/Rightpoint/BonMot/issues/37 for progress on this issue.")
         case .unspecified:
             fatalError("Attempt to reason about unspecified constraint attribute")
         }
@@ -238,3 +240,5 @@ private extension String {
     }
 
 }
+
+#endif

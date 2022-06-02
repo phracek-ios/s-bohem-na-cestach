@@ -3,9 +3,10 @@
 //  BonMot
 //
 //  Created by Brian King on 8/11/16.
-//  Copyright © 2016 Raizlabs. All rights reserved.
+//  Copyright © 2016 Rightpoint. All rights reserved.
 //
 
+#if canImport(UIKit) && !os(watchOS)
 import UIKit
 
 extension UILabel {
@@ -64,11 +65,7 @@ extension UITextField {
             StyleableUIElementHelpers.setAssociatedStyle(on: self, style: newValue)
             styledText = text
             let attributes = (bonMotStyle?.attributes(adaptedTo: traitCollection) ?? [:])
-            #if swift(>=4.2)
-                defaultTextAttributes = attributes
-            #else
-                defaultTextAttributes = attributes.withStringKeys
-            #endif
+            defaultTextAttributes = attributes
         }
     }
 
@@ -124,17 +121,13 @@ extension UITextView {
 
     /// A string style. Stored via associated objects.
     /// - note: The style is applied to both the `attributedText` and
-    /// `typingAtributes`. If you plan on styling them differently, use
+    /// `typingAttributes`. If you plan on styling them differently, use
     /// attributed strings directly.
     public final var bonMotStyle: StringStyle? {
         get { return StyleableUIElementHelpers.getAssociatedStyle(from: self) }
         set {
             StyleableUIElementHelpers.setAssociatedStyle(on: self, style: newValue)
-            #if swift(>=4.2)
-                typingAttributes = newValue?.attributes(adaptedTo: traitCollection) ?? typingAttributes
-            #else
-                typingAttributes = newValue?.attributes(adaptedTo: traitCollection).withStringKeys ?? typingAttributes
-            #endif
+            typingAttributes = newValue?.attributes(adaptedTo: traitCollection) ?? typingAttributes
             styledText = text
         }
     }
@@ -261,3 +254,4 @@ extension Dictionary where Key == String {
     }
 
 }
+#endif

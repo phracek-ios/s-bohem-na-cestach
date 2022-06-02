@@ -3,13 +3,13 @@
 //  BonMot
 //
 //  Created by Brian King on 9/28/16.
-//  Copyright © 2016 Raizlabs. All rights reserved.
+//  Copyright © 2016 Rightpoint. All rights reserved.
 //
 
 import Foundation
 
 /// Defines a transformation to be performed on an `NSMutableAttributedString`.
-/// It is used for adative transformations that need to know about the content
+/// It is used for adaptive transformations that need to know about the content
 /// of the string in order to be performed. These are applied after the
 /// `AdaptiveStyleTransformation`s are applied.
 internal protocol AttributedStringTransformation {
