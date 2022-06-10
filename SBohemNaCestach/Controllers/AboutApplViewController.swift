@@ -40,6 +40,7 @@ class AboutApplViewController: UIViewController, WKUIDelegate, WKNavigationDeleg
         aboutApplWebView.backgroundColor = self.back
         aboutApplWebView.tintColor = self.text
         self.view.addSubview(aboutApplWebView)
+        self.view.backgroundColor = self.back
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: aboutApplWebView)
         view.addConstraintsWithFormat(format: "V:|-25-[v0]-15-|", views: aboutApplWebView)
         navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()

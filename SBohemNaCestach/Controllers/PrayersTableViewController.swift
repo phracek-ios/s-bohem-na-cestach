@@ -22,15 +22,18 @@ class PrayersTableViewController: UIViewController, UITableViewDelegate {
          return tv
     }()
     
+    let keys = SettingsBundleHelper.SettingsBundleKeys.self
     fileprivate var rowData = [RowData]()
     fileprivate var prayersStructure: PrayersStructure?
     fileprivate var darkMode: Bool = false
-    
+    var back: UIColor = UIColor.WithGodOnRoad.backLightColor()
+    var text: UIColor = UIColor.WithGodOnRoad.textLightColor()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let label = UILabel()
         let userDefaults = UserDefaults.standard
-        self.darkMode = userDefaults.bool(forKey: "NightSwitch")
+        self.darkMode = userDefaults.bool(forKey: keys.night)
         label.text = "S Bohem na cestách"
         label.textAlignment = .left
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
@@ -55,10 +58,14 @@ class PrayersTableViewController: UIViewController, UITableViewDelegate {
         tableView.register(PrayersTableViewCell.self, forCellReuseIdentifier: PrayersTableViewCell.cellId)
 
         if self.darkMode {
-            self.tableView.backgroundColor = UIColor.WithGodOnRoad.backNightColor()
+            self.back = UIColor.WithGodOnRoad.backNightColor()
+            self.text = UIColor.WithGodOnRoad.textNightColor()
         } else {
-            self.tableView.backgroundColor = UIColor.WithGodOnRoad.backLightColor()
+            self.back = UIColor.WithGodOnRoad.backLightColor()
+            self.text = UIColor.WithGodOnRoad.textLightColor()
+            
         }
+        tableView.backgroundColor = self.back
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorColor = UIColor.gray
         self.tableView.tableFooterView = UIView()
@@ -83,13 +90,13 @@ class PrayersTableViewController: UIViewController, UITableViewDelegate {
     }
     @objc private func darkModeEnabled(_ notification: Notification) {
         self.darkMode = true
-        self.tableView.backgroundColor = UIColor.WithGodOnRoad.backNightColor()
+        self.tableView.backgroundColor = self.back
         self.tableView.reloadData()
     }
     
     @objc private func darkModeDisabled(_ notification: Notification) {
         self.darkMode = false
-        self.tableView.backgroundColor = UIColor.WithGodOnRoad.backLightColor()
+        self.tableView.backgroundColor = self.back
         self.tableView.reloadData()
     }
 }
@@ -135,5 +142,12 @@ extension PrayersTableViewController: UITableViewDataSource {
         view.prayerTitle = data.name
         view.prayer = data.text
         navigationController?.pushViewController(view, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 30
     }
 }
