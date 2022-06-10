@@ -3,7 +3,7 @@
 //  BonMot
 //
 //  Created by Brian King on 7/19/16.
-//  Copyright © 2016 Raizlabs. All rights reserved.
+//  Copyright © 2016 Rightpoint. All rights reserved.
 //
 
 #if os(OSX)
@@ -30,7 +30,7 @@ extension NSAttributedString {
 
         for unicode in scalars {
             let replacementString: String?
-            switch Special(rawValue: unicode) {
+            switch Special(rawValue: String(unicode)) {
             case .space?:
                 replacementString = nil
             case .objectReplacementCharacter?:

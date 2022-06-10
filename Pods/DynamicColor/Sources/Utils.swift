@@ -61,6 +61,29 @@ internal func moda(_ x: CGFloat, m: CGFloat) -> CGFloat {
  - Parameter x: The value to round.
  - Parameter m: The precision. Default to 10000.
  */
-internal func roundDecimal(_ x: CGFloat, precision: CGFloat = 10000) -> CGFloat {
+internal func roundDecimal(_ x: CGFloat, precision: CGFloat = 10000.0) -> CGFloat {
   return CGFloat(Int(round(x * precision))) / precision
+}
+
+internal func roundToHex(_ x: CGFloat) -> UInt32 {
+  guard x > 0 else { return 0 }
+  let rounded: CGFloat = round(x * 255.0)
+  
+  return UInt32(rounded)
+}
+
+/**
+ Defines the mode (i.e color space) used for grayscaling.
+
+ [More info](https://en.wikipedia.org/wiki/Lightness#Lightness_and_human_perception)
+*/
+public enum GrayscalingMode {
+    /// XYZ luminance
+    case luminance
+    /// HSL lightness
+    case lightness
+    /// RGB average
+    case average
+    /// HSV value
+    case value
 }

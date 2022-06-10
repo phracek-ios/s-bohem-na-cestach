@@ -62,14 +62,11 @@ public extension DynamicColor {
 
       return (r, g, b, a)
     #elseif os(OSX)
-      if isEqual(DynamicColor.black) {
-        return (0, 0, 0, 0)
-      }
-      else if isEqual(DynamicColor.white) {
-        return (1, 1, 1, 1)
+      guard let rgbaColor = self.usingColorSpace(.deviceRGB) else {
+        fatalError("Could not convert color to RGBA.")
       }
 
-      getRed(&r, green: &g, blue: &b, alpha: &a)
+      rgbaColor.getRed(&r, green: &g, blue: &b, alpha: &a)
 
       return (r, g, b, a)
     #endif
@@ -115,7 +112,7 @@ public extension DynamicColor {
    */
   final func adjustedAlpha(amount: CGFloat) -> DynamicColor {
     let components      = toRGBAComponents()
-    let normalizedAlpha = clip(components.a + amount, 0, 1)
+    let normalizedAlpha = clip(components.a + amount, 0.0, 1.0)
 
     return DynamicColor(red: components.r, green: components.g, blue: components.b, alpha: normalizedAlpha)
   }

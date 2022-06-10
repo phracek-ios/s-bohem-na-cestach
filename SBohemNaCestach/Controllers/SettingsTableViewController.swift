@@ -9,34 +9,41 @@
 import Foundation
 import UIKit
 import BonMot
+import FirebaseAnalytics
 
 class SettingsTableViewController: UITableViewController {
 
-    @IBOutlet weak var dimOffSwitchLabel: UILabel!
-    @IBOutlet weak var fontPickerLabel: UILabel!
-    @IBOutlet weak var dimOffSwitch: UISwitch!
-    @IBOutlet weak var dimOffSwitchCell: UITableViewCell!
-    @IBOutlet weak var fontCell: UITableViewCell!
-    @IBOutlet weak var nightSwitch: UISwitch!
-    @IBOutlet weak var nightSwitchCell: UITableViewCell!
-    @IBOutlet weak var footLabel: UILabel!
-    @IBOutlet weak var footSwitch: UISwitch!
-    @IBOutlet weak var nightSwitchLabel: UILabel!
-    @IBOutlet weak var footCell: UITableViewCell!
-    @IBOutlet weak var labelExample: UILabel!
-    @IBOutlet weak var slider: UISlider!
+//    @IBOutlet weak var dimOffSwitchLabel: UILabel!
+//    @IBOutlet weak var fontPickerLabel: UILabel!
+//    @IBOutlet weak var dimOffSwitch: UISwitch!
+//    @IBOutlet weak var dimOffSwitchCell: UITableViewCell!
+//    @IBOutlet weak var fontCell: UITableViewCell!
+//    @IBOutlet weak var nightSwitch: UISwitch!
+//    @IBOutlet weak var nightSwitchCell: UITableViewCell!
+//    @IBOutlet weak var footLabel: UILabel!
+//    @IBOutlet weak var footSwitch: UISwitch!
+//    @IBOutlet weak var nightSwitchLabel: UILabel!
+//    @IBOutlet weak var footCell: UITableViewCell!
+//    @IBOutlet weak var labelExample: UILabel!
+//    @IBOutlet weak var slider: UISlider!
     
+    var settings = [SettingsItem]()
+    let settingsDelegate = SettingsDelegateManager()
     var darkMode: Bool = false
     var back: UIColor = .black
     var text: UIColor = .white
-    var exampleText: String = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam neque."
+    var exampleText: String = "Kdo mnoho cestoval, mnoho poznal."
     var fontName: String = ""
     var fontSize: String = "16"
-    
+    let userDefaults = UserDefaults.standard
+    let keys = SettingsBundleHelper.SettingsBundleKeys.self
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let userDefaults = UserDefaults.standard
+        
         navigationController?.navigationBar.barTintColor = UIColor.WithGodOnRoad.titleColor()
+        loadSettings()
+        setupSettingsTable()
         self.tableView.tableFooterView = UIView()
     }
 
@@ -47,8 +54,8 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         let userDefaults = UserDefaults.standard
-        nightSwitch.isOn = userDefaults.bool(forKey: "NightSwitch")
-        if nightSwitch.isOn == true {
+        darkMode = userDefaults.bool(forKey: keys.night)
+        if darkMode == true {
             self.back = UIColor.WithGodOnRoad.backNightColor()
             self.text = UIColor.WithGodOnRoad.textNightColor()
         }
@@ -56,84 +63,135 @@ class SettingsTableViewController: UITableViewController {
             self.back = UIColor.WithGodOnRoad.backLightColor()
             self.text = UIColor.WithGodOnRoad.textLightColor()
         }
-        dimOffSwitch.isOn = userDefaults.bool(forKey: "DimmScreen")
-        footSwitch.isOn = userDefaults.bool(forKey: "FootFont")
-        if footSwitch.isOn == true {
-            self.fontName = "Times New Roman"
-        } else {
-            self.fontName = "Helvetica"
-        }
-        self.fontSize = userDefaults.string(forKey: "FontSize") ?? "16"
-        slider.setValue(Float(Int(self.fontSize)!), animated: true)
-        labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
+        self.fontSize = userDefaults.string(forKey: keys.fontSize) ?? "16"
+        tableView.backgroundColor = self.back
+        tableView.allowsSelection = false
+        tableView.separatorColor = .gray
+        tableView.tableFooterView = UIView()
         refresh_ui()
     }
     
-    @IBAction func sliderValueChanged(_ sender: Any) {
-        let userDefaults = UserDefaults.standard
-        self.fontSize = "\(Int(slider.value))"
-        userDefaults.set(self.fontSize, forKey: "FontSize")
-        labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-    @IBAction func footMode(_ sender: Any) {
-        let userDefaults = UserDefaults.standard
-        if footSwitch.isOn == true {
-            self.fontName = "Times New Roman"
-        } else {
-            self.fontName = "Helvetica"
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return settings.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch settings[indexPath.row].type {
+        case .slider:
+            let cell = tableView.dequeueReusableCell(withIdentifier: SettingsSliderTableViewCell.cellId, for: indexPath) as! SettingsSliderTableViewCell
+            cell.configureCell(settingsItem: settings[indexPath.row],
+                               delegate: settingsDelegate,
+                               cellWidth: tableView.frame.width)
+            cell.accessoryType = .none
+            cell.backgroundColor = self.back
+            return cell
+//        case .text:
+//            let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTextTableViewCell.cellId, for: indexPath) as! SettingsTextTableViewCell
+//            cell.configureCell(settingsItem: settings[indexPath.row],
+//                               cellWidth: tableView.frame.width)
+//            cell.accessoryType = .disclosureIndicator
+//            cell.backgroundColor = self.back
+//            return cell
+        default:
+            let set = settings[indexPath.row]
+            print(set.prefsString)
+            let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
             
+            let sw = UISwitch()
+            sw.isOn = userDefaults.bool(forKey: set.prefsString)
+            if set.prefsString == keys.night {
+                sw.addTarget(self, action: #selector(nightTarget(_:)), for: .valueChanged)
+            }
+            else if set.prefsString == keys.idleTimer {
+                sw.addTarget(self, action: #selector(idleTarget(_:)), for: .valueChanged)
+            }
+            else if set.prefsString == keys.serifEnabled {
+                sw.addTarget(self, action: #selector(serifTarget(_:)), for: .valueChanged)
+            }
+            cell.textLabel?.text = settings[indexPath.row].title
+            cell.detailTextLabel?.text = settings[indexPath.row].detail
+
+            cell.backgroundColor = self.back
+            cell.textLabel?.backgroundColor = self.back
+            cell.textLabel?.textColor = self.text
+            cell.detailTextLabel?.backgroundColor = self.back
+            cell.detailTextLabel?.textColor = self.text
+
+            cell.accessoryView = sw
+            cell.accessoryType = .none
+            return cell
         }
-        userDefaults.set(self.fontName, forKey: "FootFont")
-        labelExample.attributedText = generateContent(text: exampleText, font_name: self.fontName, size: get_cgfloat(size: self.fontSize))
+    }
+    func setupSettingsTable() {
+        tableView.register(SettingsSwitchTableViewCell.self, forCellReuseIdentifier: SettingsSwitchTableViewCell.cellId)
+        tableView.register(SettingsSliderTableViewCell.self, forCellReuseIdentifier: SettingsSliderTableViewCell.cellId)
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 15, right: 0)
     }
     
-    @IBAction func funcDisableDisplay(_ sender: Any) {
-        let userDefaults = UserDefaults.standard
-        if dimOffSwitch.isOn == true {
-            UIApplication.shared.isIdleTimerDisabled = true
-            userDefaults.set(true, forKey: "DimmScreen")
-        }
-        else {
-            UIApplication.shared.isIdleTimerDisabled = false
-            userDefaults.set(false, forKey: "DimmScreen")
-        }
+    @objc func serifTarget(_ sender: UISwitch) {
+        print("Serif Target \(sender.isOn)")
+        userDefaults.set(sender.isOn, forKey: keys.serifEnabled)
     }
-    @IBAction func funcNightMode(_ sender: Any) {
+    
+    @objc func idleTarget(_ sender: UISwitch) {
+
+        print("Idle Target Night \(sender.isOn)")
+        userDefaults.set(sender.isOn, forKey: keys.idleTimer)
+        
+    }
+    @objc func nightTarget(_ sender: UISwitch) {
         let userDefaults = UserDefaults.standard
-        if nightSwitch.isOn == true {
-            userDefaults.set(true, forKey: "NightSwitch")
+        userDefaults.set(sender.isOn, forKey: keys.night)
+        self.darkMode = sender.isOn
+        if sender.isOn == true {
             NotificationCenter.default.post(name: .darkModeEnabled, object:nil)
             self.back = UIColor.WithGodOnRoad.backNightColor()
             self.text = UIColor.WithGodOnRoad.textNightColor()
         }
         else {
-            userDefaults.set(false, forKey: "NightSwitch")
             NotificationCenter.default.post(name: .darkModeDisabled, object: nil)
             self.back = UIColor.WithGodOnRoad.backLightColor()
             self.text = UIColor.WithGodOnRoad.textLightColor()
         }
         refresh_ui()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    func loadSettings() {
+        settings.append(SettingsItem(type: SettingsItemType.onOffSwitch,
+                                    title: "Blokovat zhasínání displeje",
+                                    description: "",
+                                    prefsString: keys.idleTimer,
+                                    defValue: false,
+                                    eventHandler: nil))
+        settings.append(SettingsItem(type: SettingsItemType.onOffSwitch,
+                                     title: "Noční režim",
+                                     description: "",
+                                     prefsString: keys.night,
+                                     defValue: false,
+                                     eventHandler: nil))
+        settings.append(SettingsItem(type: SettingsItemType.onOffSwitch,
+                                 title: "Patkové písmo",
+                                 description: "",
+                                 prefsString: keys.serifEnabled,
+                                 defValue: false,
+                                 eventHandler: nil))
+        settings.append(SettingsItem(type: SettingsItemType.slider,
+                                 title: "Velikost písma",
+                                 description: "Velikost písma, které bude použito u modliteb.",
+                                 prefsString: keys.fontSize,
+                                 defValue: false,
+                                 eventHandler: nil))
+        print("loadSettings finished")
     }
     
     func refresh_ui() {
         self.view.backgroundColor = self.back
-        self.dimOffSwitch.backgroundColor = self.back
-        self.dimOffSwitchLabel.backgroundColor = self.back
-        self.dimOffSwitchLabel.textColor = self.text
-        self.dimOffSwitchCell.backgroundColor = self.back
-        self.nightSwitch.backgroundColor = self.back
-        self.nightSwitchLabel.backgroundColor = self.back
-        self.nightSwitchLabel.textColor = self.text
-        self.nightSwitchCell.backgroundColor = self.back
-        self.fontCell.backgroundColor = self.back
-        self.fontPickerLabel.backgroundColor = self.back
-        self.fontPickerLabel.textColor = self.text
-        self.labelExample.backgroundColor = self.back
-        self.labelExample.textColor = self.text
-        self.footCell.backgroundColor = self.back
-        self.footSwitch.backgroundColor = self.back
-        self.footLabel.backgroundColor = self.back
-        self.footLabel.textColor = self.text
     }
 }

@@ -26,10 +26,26 @@ class PrayerViewController: UIViewController, UIGestureRecognizerDelegate {
     override var prefersStatusBarHidden: Bool {
         return isStatusBarHidden
     }
-    @IBOutlet var contentView: UIView!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var innerContentView: UIView!
-    @IBOutlet weak var prayerLabel: UILabel!
+    lazy var scrollView: UIScrollView = {
+        let sv = UIScrollView()
+        sv.translatesAutoresizingMaskIntoConstraints = false
+        sv.showsHorizontalScrollIndicator = false
+        return sv
+    }()
+    
+    lazy var innerContentView: UIStackView = {
+        let sv = UIStackView()
+        sv.translatesAutoresizingMaskIntoConstraints = false
+        return sv
+    }()
+    lazy var prayerLabel: UILabel = {
+        let kp = UILabel()
+        kp.translatesAutoresizingMaskIntoConstraints = false
+        kp.numberOfLines = 0
+        kp.lineBreakMode = .byWordWrapping
+        return kp
+    }()
+
     // MARK: View controller lifecycle
     
     var back: UIColor = .black
@@ -37,6 +53,8 @@ class PrayerViewController: UIViewController, UIGestureRecognizerDelegate {
     var darkMode: Bool = false
     var font_name: String = "Helvetica"
     var font_size: String = "16"
+    let keys = SettingsBundleHelper.SettingsBundleKeys.self
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = prayerTitle
@@ -44,6 +62,7 @@ class PrayerViewController: UIViewController, UIGestureRecognizerDelegate {
         prayerLabel.numberOfLines = 0
         prayerLabel.textAlignment = NSTextAlignment.left
         update_fonts()
+        setupView()
         setupUI()
     }
     
@@ -52,7 +71,7 @@ class PrayerViewController: UIViewController, UIGestureRecognizerDelegate {
         backItem.title = ""
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backItem
         let userDefaults = UserDefaults.standard
-        self.darkMode = userDefaults.bool(forKey: "NightSwitch")
+        self.darkMode = userDefaults.bool(forKey: keys.night)
         if self.darkMode == true {
             self.back = UIColor.WithGodOnRoad.backNightColor()
             self.text = UIColor.WithGodOnRoad.textNightColor()
@@ -64,12 +83,24 @@ class PrayerViewController: UIViewController, UIGestureRecognizerDelegate {
         update_fonts()
         refresh_ui()
     }
+    func setupView() {
+        self.view.addSubview(innerContentView)
+        innerContentView.addSubview(scrollView)
+        scrollView.addSubview(prayerLabel)
+        self.view.addConstraintsWithFormat(format: "H:|-5-[v0]-5-|", views: innerContentView)
+        self.view.addConstraintsWithFormat(format: "V:|[v0]|", views: innerContentView)
+        innerContentView.addConstraintsWithFormat(format: "H:|[v0]|", views: scrollView)
+        innerContentView.addConstraintsWithFormat(format: "V:|[v0]|", views: scrollView)
+        scrollView.addConstraintsWithFormat(format: "H:|-10-[v0]-10-|", views: prayerLabel)
+        scrollView.widthAnchor.constraint(equalTo: prayerLabel.widthAnchor, constant: 20).isActive = true
+        scrollView.addConstraintsWithFormat(format: "V:|-10-[v0]-10-|", views: prayerLabel)
+    }
     
     func refresh_ui() {
         self.view.backgroundColor = self.back
         self.prayerLabel.backgroundColor = self.back
         self.prayerLabel.textColor = self.text
-        self.contentView.backgroundColor = self.back
+        self.view.backgroundColor = self.back
         self.scrollView.backgroundColor = self.back
         self.innerContentView.backgroundColor = self.back
     }
@@ -98,18 +129,12 @@ class PrayerViewController: UIViewController, UIGestureRecognizerDelegate {
     
     func update_fonts() {
         let userDefaults = UserDefaults.standard
-        if userDefaults.bool(forKey: "FootFont") {
+        if userDefaults.bool(forKey: keys.serifEnabled) {
             self.font_name = "Times New Roman"
-        } else {
-            userDefaults.set(true, forKey: "FootFont")
-            self.font_name = "Helvetica"
         }
         
-        if let saveFontSize = userDefaults.string(forKey: "FontSize") {
+        if let saveFontSize = userDefaults.string(forKey: keys.fontSize) {
             self.font_size = saveFontSize
-        } else {
-            userDefaults.set(16, forKey: "FontSize")
-            self.font_size = "16"
         }
         prayerLabel.attributedText = generateContent(text: prayer, font_name: self.font_name, size: get_cgfloat(size: self.font_size))
     }

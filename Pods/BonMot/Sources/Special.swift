@@ -3,14 +3,14 @@
 //  BonMot
 //
 //  Created by Brian King on 9/1/16.
-//  Copyright © 2016 Raizlabs. All rights reserved.
+//  Copyright © 2016 Rightpoint. All rights reserved.
 //
 
 /// Interesting Unicode characters for use in creating strings. Most characters
 /// in `Special` are either non-printing (like the various space characters) or
 /// visually ambiguous when viewed with a monospace code font (like the dashes
 /// and hyphens).
-public enum Special: UnicodeScalar {
+public enum Special: String, CaseIterable {
 
     // Keep the cases sorted by unichar value when adding new cases.
     case tab = "\u{0009}"
@@ -86,33 +86,9 @@ extension Special {
     }
 
     /// All of the enum values contained in `Special`.
-    public static var all: [Special] = [
-        .tab,
-        .lineFeed,
-        .verticalTab,
-        .formFeed,
-        .carriageReturn,
-        .space,
-        .nextLine,
-        .noBreakSpace,
-        .enSpace,
-        .emSpace,
-        .figureSpace,
-        .thinSpace,
-        .hairSpace,
-        .zeroWidthSpace,
-        .nonBreakingHyphen,
-        .figureDash,
-        .enDash,
-        .emDash,
-        .horizontalEllipsis,
-        .lineSeparator,
-        .paragraphSeparator,
-        .leftToRightOverride,
-        .narrowNoBreakSpace,
-        .wordJoiner,
-        .minusSign,
-        .objectReplacementCharacter,
-    ]
+    /// Property kept here for backward compatibility
+    @available(*, deprecated, renamed: "allCases")
+    @inlinable
+    public static var all: [Special] { allCases }
 
 }

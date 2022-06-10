@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011F861D2848E1A10018EF4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F861C2848E1A10018EF4A /* SceneDelegate.swift */; };
 		0120BD61237974DD003415F2 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120BD60237974DD003415F2 /* SettingsTableViewController.swift */; };
 		0120BD6323799548003415F2 /* NotificationsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120BD6223799548003415F2 /* NotificationsName.swift */; };
 		013E63072375AED000910DBB /* AboutApplViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013E63062375AED000910DBB /* AboutApplViewController.swift */; };
@@ -15,6 +16,14 @@
 		01440A6423574A0600452615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01440A6323574A0600452615 /* Preview Assets.xcassets */; };
 		01440A7223574A0600452615 /* SBohemNaCestachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01440A7123574A0600452615 /* SBohemNaCestachTests.swift */; };
 		01440A7D23574A0600452615 /* SBohemNaCestachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01440A7C23574A0600452615 /* SBohemNaCestachUITests.swift */; };
+		014D223628520E6600F30B2D /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D223528520E6600F30B2D /* SettingsBundleHelper.swift */; };
+		014D2239285210CF00F30B2D /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D2238285210CF00F30B2D /* SettingsItem.swift */; };
+		014D223B2852121500F30B2D /* SetingsSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D223A2852121500F30B2D /* SetingsSliderTableViewCell.swift */; };
+		014D223D2852124900F30B2D /* SettingsDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D223C2852124900F30B2D /* SettingsDelegateManager.swift */; };
+		014D223F285212A600F30B2D /* SettingsSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D223E285212A600F30B2D /* SettingsSwitchTableViewCell.swift */; };
+		0153EB402848DA3500471AA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0153EB3F2848DA3400471AA7 /* GoogleService-Info.plist */; };
+		015495832848F24A00F911E7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 015495822848F24A00F911E7 /* Localizable.strings */; };
+		015495852848F69900F911E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015495842848F69900F911E7 /* Extensions.swift */; };
 		016B2FE72359C902005698D9 /* PrayersStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B2FE62359C902005698D9 /* PrayersStructure.swift */; };
 		016B2FE92359C93A005698D9 /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B2FE82359C93A005698D9 /* Prayer.swift */; };
 		016B2FEB2359C98D005698D9 /* PrayersDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B2FEA2359C98D005698D9 /* PrayersDataService.swift */; };
@@ -26,9 +35,10 @@
 		0193F34623638F5A000DF0D8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0193F34523638F5A000DF0D8 /* Colors.swift */; };
 		019E4EE423583F7700BA0117 /* prayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 019E4EE223583F7700BA0117 /* prayers.json */; };
 		019E4EE523583F7700BA0117 /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = 019E4EE323583F7700BA0117 /* about.json */; };
-		01D24F1B236894DE0004FB0F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D24F1A236894DD0004FB0F /* R.generated.swift */; };
+		019EDBDC285357CC00BBBC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019EDBDB285357CC00BBBC05 /* LaunchScreen.storyboard */; };
+		01ADE3E728464636006C4832 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ADE3E628464636006C4832 /* MainTabBarController.swift */; };
+		01ADE3E92846469F006C4832 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ADE3E82846469F006C4832 /* InfoViewController.swift */; };
 		01D24F1D236895470004FB0F /* PrayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D24F1C236895470004FB0F /* PrayerViewController.swift */; };
-		01E2489C2359D4C900A04B4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E2489B2359D4C900A04B4C /* Main.storyboard */; };
 		3356A073B995EB2939C5C4F1 /* Pods_SBohemNaCestach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9555814B7CFCED41AE0C7C /* Pods_SBohemNaCestach.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011F861C2848E1A10018EF4A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0120BD60237974DD003415F2 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		0120BD6223799548003415F2 /* NotificationsName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsName.swift; sourceTree = "<group>"; };
 		013E63062375AED000910DBB /* AboutApplViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutApplViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +75,14 @@
 		01440A7823574A0600452615 /* SBohemNaCestachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBohemNaCestachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01440A7C23574A0600452615 /* SBohemNaCestachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBohemNaCestachUITests.swift; sourceTree = "<group>"; };
 		01440A7E23574A0600452615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		014D223528520E6600F30B2D /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
+		014D2238285210CF00F30B2D /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
+		014D223A2852121500F30B2D /* SetingsSliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetingsSliderTableViewCell.swift; sourceTree = "<group>"; };
+		014D223C2852124900F30B2D /* SettingsDelegateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDelegateManager.swift; sourceTree = "<group>"; };
+		014D223E285212A600F30B2D /* SettingsSwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		0153EB3F2848DA3400471AA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		015495822848F24A00F911E7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		015495842848F69900F911E7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		016B2FE62359C902005698D9 /* PrayersStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayersStructure.swift; sourceTree = "<group>"; };
 		016B2FE82359C93A005698D9 /* Prayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
 		016B2FEA2359C98D005698D9 /* PrayersDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayersDataService.swift; sourceTree = "<group>"; };
@@ -75,9 +94,10 @@
 		0193F34523638F5A000DF0D8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		019E4EE223583F7700BA0117 /* prayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prayers.json; sourceTree = "<group>"; };
 		019E4EE323583F7700BA0117 /* about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
-		01D24F1A236894DD0004FB0F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		019EDBDB285357CC00BBBC05 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01ADE3E628464636006C4832 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		01ADE3E82846469F006C4832 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		01D24F1C236895470004FB0F /* PrayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerViewController.swift; sourceTree = "<group>"; };
-		01E2489B2359D4C900A04B4C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7EE18E27E6D1995BC49116A6 /* Pods-SBohemNaCestach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBohemNaCestach.release.xcconfig"; path = "Target Support Files/Pods-SBohemNaCestach/Pods-SBohemNaCestach.release.xcconfig"; sourceTree = "<group>"; };
 		A774414DB69CD2999D434A66 /* Pods-SBohemNaCestach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBohemNaCestach.debug.xcconfig"; path = "Target Support Files/Pods-SBohemNaCestach/Pods-SBohemNaCestach.debug.xcconfig"; sourceTree = "<group>"; };
 		ED9555814B7CFCED41AE0C7C /* Pods_SBohemNaCestach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBohemNaCestach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,17 +154,19 @@
 		01440A5923574A0400452615 /* SBohemNaCestach */ = {
 			isa = PBXGroup;
 			children = (
-				01D24F1A236894DD0004FB0F /* R.generated.swift */,
 				016B2FEC2359CA30005698D9 /* Utilities */,
 				019E4EE123583F0600BA0117 /* Controllers */,
 				019E4EE023583EFB00BA0117 /* Services */,
 				019E4EDF23583EF200BA0117 /* Model */,
 				019E4EDE23583EE900BA0117 /* SupportFiles */,
 				01440A5A23574A0400452615 /* AppDelegate.swift */,
+				019EDBDB285357CC00BBBC05 /* LaunchScreen.storyboard */,
+				011F861C2848E1A10018EF4A /* SceneDelegate.swift */,
 				01440A6023574A0600452615 /* Assets.xcassets */,
-				01E2489B2359D4C900A04B4C /* Main.storyboard */,
+				0153EB3F2848DA3400471AA7 /* GoogleService-Info.plist */,
 				01440A6823574A0600452615 /* Info.plist */,
 				01440A6223574A0600452615 /* Preview Content */,
+				015495822848F24A00F911E7 /* Localizable.strings */,
 			);
 			path = SBohemNaCestach;
 			sourceTree = "<group>";
@@ -175,6 +197,25 @@
 			path = SBohemNaCestachUITests;
 			sourceTree = "<group>";
 		};
+		014D223428520E5400F30B2D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				014D223528520E6600F30B2D /* SettingsBundleHelper.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		014D22372852106B00F30B2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				014D2238285210CF00F30B2D /* SettingsItem.swift */,
+				014D223A2852121500F30B2D /* SetingsSliderTableViewCell.swift */,
+				014D223C2852124900F30B2D /* SettingsDelegateManager.swift */,
+				014D223E285212A600F30B2D /* SettingsSwitchTableViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		016B2FEC2359CA30005698D9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +223,7 @@
 				0193F34523638F5A000DF0D8 /* Colors.swift */,
 				0120BD6223799548003415F2 /* NotificationsName.swift */,
 				0178F6CF237AE09200DB3305 /* Utils.swift */,
+				015495842848F69900F911E7 /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -215,12 +257,16 @@
 		019E4EE123583F0600BA0117 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				014D22372852106B00F30B2D /* Models */,
+				014D223428520E5400F30B2D /* Settings */,
 				0193F33F23632C58000DF0D8 /* PrayersTableViewController.swift */,
 				0193F34123632C71000DF0D8 /* PrayersTableViewCell.swift */,
 				0193F34223632C71000DF0D8 /* PrayersTableViewCell.xib */,
 				01D24F1C236895470004FB0F /* PrayerViewController.swift */,
 				013E63062375AED000910DBB /* AboutApplViewController.swift */,
 				0120BD60237974DD003415F2 /* SettingsTableViewController.swift */,
+				01ADE3E628464636006C4832 /* MainTabBarController.swift */,
+				01ADE3E82846469F006C4832 /* InfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -250,11 +296,10 @@
 			buildConfigurationList = 01440A8123574A0600452615 /* Build configuration list for PBXNativeTarget "SBohemNaCestach" */;
 			buildPhases = (
 				B1A9F5494C0251910E00F62B /* [CP] Check Pods Manifest.lock */,
-				01D24F19236893AF0004FB0F /* ShellScript */,
 				01440A5323574A0400452615 /* Sources */,
 				01440A5423574A0400452615 /* Frameworks */,
 				01440A5523574A0400452615 /* Resources */,
-				88AA3627BC474B50B6FADB11 /* [CP] Embed Pods Frameworks */,
+				82BE90D19D630441245F83EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,11 +395,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				01440A6423574A0600452615 /* Preview Assets.xcassets in Resources */,
+				019EDBDC285357CC00BBBC05 /* LaunchScreen.storyboard in Resources */,
 				019E4EE423583F7700BA0117 /* prayers.json in Resources */,
-				01E2489C2359D4C900A04B4C /* Main.storyboard in Resources */,
 				019E4EE523583F7700BA0117 /* about.json in Resources */,
+				015495832848F24A00F911E7 /* Localizable.strings in Resources */,
 				0193F34423632C71000DF0D8 /* PrayersTableViewCell.xib in Resources */,
 				01440A6123574A0600452615 /* Assets.xcassets in Resources */,
+				0153EB402848DA3500471AA7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,27 +422,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01D24F19236893AF0004FB0F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"",
-			);
-			inputPaths = (
-				"$TEMP_DIR/rswift-lastrun",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
-		88AA3627BC474B50B6FADB11 /* [CP] Embed Pods Frameworks */ = {
+		82BE90D19D630441245F83EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,19 +468,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014D223B2852121500F30B2D /* SetingsSliderTableViewCell.swift in Sources */,
 				016B2FE72359C902005698D9 /* PrayersStructure.swift in Sources */,
 				0120BD61237974DD003415F2 /* SettingsTableViewController.swift in Sources */,
+				01ADE3E728464636006C4832 /* MainTabBarController.swift in Sources */,
 				01D24F1D236895470004FB0F /* PrayerViewController.swift in Sources */,
+				014D223628520E6600F30B2D /* SettingsBundleHelper.swift in Sources */,
 				0120BD6323799548003415F2 /* NotificationsName.swift in Sources */,
 				0193F34623638F5A000DF0D8 /* Colors.swift in Sources */,
+				014D223D2852124900F30B2D /* SettingsDelegateManager.swift in Sources */,
 				0178F6D0237AE09200DB3305 /* Utils.swift in Sources */,
-				01D24F1B236894DE0004FB0F /* R.generated.swift in Sources */,
+				011F861D2848E1A10018EF4A /* SceneDelegate.swift in Sources */,
 				016B2FE92359C93A005698D9 /* Prayer.swift in Sources */,
 				0193F34023632C58000DF0D8 /* PrayersTableViewController.swift in Sources */,
 				013E63072375AED000910DBB /* AboutApplViewController.swift in Sources */,
 				0193F34323632C71000DF0D8 /* PrayersTableViewCell.swift in Sources */,
 				016B2FEE2359CA47005698D9 /* GeneratorText.swift in Sources */,
 				016B2FEB2359C98D005698D9 /* PrayersDataService.swift in Sources */,
+				015495852848F69900F911E7 /* Extensions.swift in Sources */,
+				014D223F285212A600F30B2D /* SettingsSwitchTableViewCell.swift in Sources */,
+				014D2239285210CF00F30B2D /* SettingsItem.swift in Sources */,
+				01ADE3E92846469F006C4832 /* InfoViewController.swift in Sources */,
 				01440A5B23574A0400452615 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -594,7 +629,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -614,11 +649,12 @@
 				DEVELOPMENT_TEAM = 32253C46P7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SBohemNaCestach/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.SBohemNaCestach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -636,11 +672,12 @@
 				DEVELOPMENT_TEAM = 32253C46P7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SBohemNaCestach/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.SBohemNaCestach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
